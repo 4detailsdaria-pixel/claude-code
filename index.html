@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Фінальний Спринт — підготовка до НМТ</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800;900&display=swap');
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Montserrat', Arial, sans-serif;
+      background-color: #0b1456;
+      color: #ffffff;
+      line-height: 1.6;
+    }
+
+    .container {
+      max-width: 960px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+
+    /* Hero Section */
+    .hero {
+      text-align: center;
+      padding: 60px 20px 40px;
+    }
+
+    .hero__title {
+      font-size: 48px;
+      font-weight: 900;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      margin-bottom: 20px;
+    }
+
+    .hero__subtitle {
+      font-size: 18px;
+      color: #c8b88a;
+      margin-bottom: 40px;
+      font-weight: 400;
+    }
+
+    .hero__meta {
+      display: inline-block;
+      text-align: left;
+      font-size: 16px;
+      margin-bottom: 10px;
+      position: relative;
+    }
+
+    .hero__meta-line {
+      margin-bottom: 4px;
+    }
+
+    .hero__arrow {
+      position: absolute;
+      right: -60px;
+      top: 0;
+      width: 50px;
+      height: 60px;
+    }
+
+    .hero__arrow svg {
+      width: 50px;
+      height: 60px;
+      fill: none;
+      stroke: #e8923a;
+      stroke-width: 3;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+    }
+
+    /* What's Included Section */
+    .includes {
+      padding: 50px 20px;
+    }
+
+    .includes__title {
+      text-align: center;
+      font-size: 32px;
+      font-weight: 800;
+      text-transform: uppercase;
+      margin-bottom: 40px;
+    }
+
+    .includes__list {
+      list-style: none;
+      max-width: 820px;
+      margin: 0 auto;
+    }
+
+    .includes__item {
+      font-size: 16px;
+      margin-bottom: 18px;
+      line-height: 1.7;
+      padding-left: 0;
+    }
+
+    .includes__item span.emoji {
+      margin-right: 8px;
+    }
+
+    /* Pricing Section */
+    .pricing {
+      padding: 60px 20px;
+    }
+
+    .pricing__title {
+      text-align: center;
+      font-size: 36px;
+      font-weight: 800;
+      margin-bottom: 16px;
+    }
+
+    .pricing__note {
+      text-align: center;
+      font-size: 15px;
+      margin-bottom: 50px;
+      line-height: 1.8;
+      color: #d0d0e8;
+    }
+
+    .pricing__grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 24px;
+      max-width: 780px;
+      margin: 0 auto;
+    }
+
+    .pricing__card {
+      background: #ffffff;
+      border-radius: 16px;
+      padding: 36px 28px;
+      text-align: center;
+      color: #1a1a2e;
+    }
+
+    .pricing__card-title {
+      font-size: 20px;
+      font-weight: 700;
+      margin-bottom: 24px;
+      color: #1a1a2e;
+    }
+
+    .pricing__old-price {
+      font-size: 22px;
+      font-weight: 600;
+      color: #e8923a;
+      text-decoration: line-through;
+      display: inline-block;
+      margin-bottom: 8px;
+    }
+
+    .pricing__discount {
+      display: inline-block;
+      background: #e8923a;
+      color: #ffffff;
+      font-size: 14px;
+      font-weight: 700;
+      padding: 3px 10px;
+      border-radius: 4px;
+      margin-left: 8px;
+      vertical-align: middle;
+    }
+
+    .pricing__new-price {
+      font-size: 32px;
+      font-weight: 800;
+      color: #1a1a2e;
+      margin: 12px 0 24px;
+    }
+
+    .pricing__btn {
+      display: inline-block;
+      background: #e8923a;
+      color: #ffffff;
+      text-decoration: none;
+      font-size: 16px;
+      font-weight: 700;
+      padding: 14px 32px;
+      border-radius: 30px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      border: none;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    .pricing__btn:hover {
+      background: #d47e2a;
+    }
+
+    /* Bottom Info */
+    .bottom-info {
+      text-align: center;
+      padding: 60px 20px;
+    }
+
+    .bottom-info__text {
+      font-size: 15px;
+      margin-bottom: 40px;
+      line-height: 1.8;
+      color: #d0d0e8;
+    }
+
+    .bottom-info__help {
+      font-size: 15px;
+      margin-bottom: 24px;
+      line-height: 1.8;
+      color: #d0d0e8;
+    }
+
+    .bottom-info__btn {
+      display: inline-block;
+      background: #e8923a;
+      color: #ffffff;
+      text-decoration: none;
+      font-size: 16px;
+      font-weight: 700;
+      padding: 16px 40px;
+      border-radius: 30px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      border: none;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    .bottom-info__btn:hover {
+      background: #d47e2a;
+    }
+
+    /* Responsive */
+    @media (max-width: 640px) {
+      .hero__title {
+        font-size: 30px;
+      }
+
+      .hero__subtitle {
+        font-size: 15px;
+      }
+
+      .includes__title {
+        font-size: 24px;
+      }
+
+      .pricing__title {
+        font-size: 26px;
+      }
+
+      .pricing__grid {
+        grid-template-columns: 1fr;
+        max-width: 380px;
+      }
+
+      .pricing__new-price {
+        font-size: 26px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="container">
+      <h1 class="hero__title">Фінальний спринт</h1>
+      <p class="hero__subtitle">Повний маршрут підготовки: від вступного тесту до фінального пробного НМТ.</p>
+
+      <div class="hero__meta">
+        <div class="hero__meta-line">&#127680; Старт 17 квітня</div>
+        <div class="hero__meta-line">&#127760; Кількість місць обмежена</div>
+        <div class="hero__arrow">
+          <svg viewBox="0 0 50 70">
+            <path d="M10 5 C20 25, 40 30, 35 55" />
+            <path d="M25 48 L35 55 L42 45" />
+          </svg>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- What's Included -->
+  <section class="includes">
+    <div class="container">
+      <h2 class="includes__title">Що входить у фінальний спринт:</h2>
+      <ul class="includes__list">
+        <li class="includes__item">
+          <span class="emoji">&#128221;</span>Вступний тест — фіксуємо рівень знань дитини на старті (точка А)
+        </li>
+        <li class="includes__item">
+          <span class="emoji">&#128105;&#8205;&#127979;</span>Воркшоп — 2 дні на кожен обраний предмет: живі онлайн-ефіри по 1,5 год + 30 хв перерва
+        </li>
+        <li class="includes__item">
+          <span class="emoji">&#128196;</span>Шпаргалки та конспекти до кожної теми воркшопу
+        </li>
+        <li class="includes__item">
+          <span class="emoji">&#9989;</span>Пробний НМТ #1 у форматі реального іспиту
+        </li>
+        <li class="includes__item">
+          <span class="emoji">&#127912;</span>Самостійний трек — доступ до повного курсу Олександра Авраменка, записи воркшопів тем 1 семестру, НМТ-тести для відпрацювання, психолог та мотиваційні івенти
+        </li>
+        <li class="includes__item">
+          <span class="emoji">&#127939;</span>Інтенсив — 6 уроків по 90 хв чистої практики з викладачем на кожен обраний предмет
+        </li>
+        <li class="includes__item">
+          <span class="emoji">&#9989;</span>Пробний НМТ #2 — фінальна перевірка перед реальним іспитом
+        </li>
+        <li class="includes__item">
+          <span class="emoji">&#128113;</span>Персональний менеджер — весь квітень-травень на зв'язку: координація, нагадування
+        </li>
+        <li class="includes__item">
+          <span class="emoji">&#129504;</span>Психолог перед іспитом — як не «згоріти» перед НМТ, техніки тайм-менеджменту під час тесту
+        </li>
+        <li class="includes__item">
+          <span class="emoji">&#128196;</span>Сертифікат + записка від школи, яка дозволяє пропустити школу в дні воркшопу
+        </li>
+        <li class="includes__item">
+          <span class="emoji">&#128191;</span>Записи всіх занять
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Pricing Section -->
+  <section class="pricing">
+    <div class="container">
+      <h2 class="pricing__title">Оберіть кількість предметів</h2>
+      <p class="pricing__note">
+        Врахуйте: вступ на бюджет залежить від СУМИ балів по всіх предметах.<br>
+        Один сильний предмет може не врятувати, якщо інші провисають.<br>
+        Більше предметів = вищий загальний бал НМТ.
+      </p>
+
+      <div class="pricing__grid">
+        <!-- 1 subject -->
+        <div class="pricing__card">
+          <div class="pricing__card-title">1 предмет на вибір</div>
+          <div>
+            <span class="pricing__old-price">3 980 грн</span>
+            <span class="pricing__discount">-50%</span>
+          </div>
+          <div class="pricing__new-price">1 990 грн</div>
+          <a href="#" class="pricing__btn">Перейти до оплати</a>
+        </div>
+
+        <!-- 2 subjects -->
+        <div class="pricing__card">
+          <div class="pricing__card-title">2 предмети на вибір</div>
+          <div>
+            <span class="pricing__old-price">7 860 грн</span>
+            <span class="pricing__discount">-50%</span>
+          </div>
+          <div class="pricing__new-price">3 930 грн</div>
+          <a href="#" class="pricing__btn">Перейти до оплати</a>
+        </div>
+
+        <!-- 3 subjects -->
+        <div class="pricing__card">
+          <div class="pricing__card-title">3 предмети на вибір</div>
+          <div>
+            <span class="pricing__old-price">11 640 грн</span>
+            <span class="pricing__discount">-50%</span>
+          </div>
+          <div class="pricing__new-price">5 820 грн</div>
+          <a href="#" class="pricing__btn">Перейти до оплати</a>
+        </div>
+
+        <!-- 4 subjects -->
+        <div class="pricing__card">
+          <div class="pricing__card-title">4 предмети на вибір</div>
+          <div>
+            <span class="pricing__old-price">15 600 грн</span>
+            <span class="pricing__discount">-50%</span>
+          </div>
+          <div class="pricing__new-price">7 800 грн</div>
+          <a href="#" class="pricing__btn">Перейти до оплати</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Bottom Info -->
+  <section class="bottom-info">
+    <div class="container">
+      <p class="bottom-info__text">
+        &#128188; Після оплати доступ до навчальної платформи та всіх матеріалів<br>
+        автоматично надійде вам на пошту зі всіма кроками.
+      </p>
+
+      <p class="bottom-info__help">
+        &#129303; Потрібна допомога з вибором пакету?<br>
+        Наш менеджер допоможе обрати предмети<br>
+        та відповість на запитання
+      </p>
+
+      <a href="#" class="bottom-info__btn">Залишити заявку</a>
+    </div>
+  </section>
+
+</body>
+</html>
