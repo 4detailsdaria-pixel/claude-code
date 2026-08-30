@@ -1,0 +1,1440 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>KEVIN · Матеріали запуску практикуму 8 вересня</title>
+<style>
+:root{
+  --turq:#1F7A8C;
+  --orange:#F2994A;
+  --navy:#1A2233;
+  --cream:#FEF3E2;
+  --bordo:#6B2C2C;
+  --line:#e6dbc9;
+  --muted:#6f6459;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+body{
+  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+  background:var(--cream);
+  color:var(--navy);
+  line-height:1.6;
+  font-size:15px;
+}
+.wrap{max-width:1180px;margin:0 auto;padding:0 20px 80px}
+.wrap.top{padding-bottom:0}
+
+/* ---------- header ---------- */
+header{background:var(--navy);color:#fff;padding:26px 0 22px;margin-bottom:0}
+header .wrap{padding-bottom:0}
+.logo{display:flex;align-items:center;gap:10px;font-weight:800;letter-spacing:.12em;font-size:15px}
+.logo .dot{width:10px;height:10px;border-radius:50%;background:var(--orange);display:inline-block}
+h1.main{font-size:26px;line-height:1.25;margin:14px 0 8px;font-weight:800}
+.sub{color:#c9d2dd;font-size:14px;max-width:820px}
+.facts{display:flex;flex-wrap:wrap;gap:8px;margin-top:16px}
+.fact{background:rgba(255,255,255,.09);border:1px solid rgba(255,255,255,.16);padding:5px 11px;border-radius:20px;font-size:12.5px;color:#fff}
+.fact b{color:var(--orange)}
+
+/* ---------- flags ---------- */
+.flags{background:#fff;border:1px solid var(--line);border-left:5px solid var(--orange);border-radius:10px;padding:18px 22px;margin:22px 0 6px}
+.flags h2{font-size:16px;margin-bottom:10px;color:var(--bordo)}
+.flags ol{margin-left:18px}
+.flags li{margin-bottom:6px;font-size:14px}
+.flags li b{color:var(--navy)}
+
+/* ---------- tabs ---------- */
+nav.tabs{position:sticky;top:0;z-index:20;background:var(--cream);border-bottom:1px solid var(--line);margin-top:26px}
+nav.tabs .inner{max-width:1180px;margin:0 auto;padding:0 20px;display:flex;flex-wrap:wrap;gap:6px}
+nav.tabs button{
+  background:none;border:none;border-bottom:3px solid transparent;
+  padding:13px 16px;font-size:14.5px;font-weight:700;color:var(--muted);
+  cursor:pointer;font-family:inherit;
+}
+nav.tabs button:hover{color:var(--navy)}
+nav.tabs button.active{color:var(--turq);border-bottom-color:var(--turq)}
+
+/* ---------- sections ---------- */
+section{display:none;padding-top:26px}
+section.active{display:block}
+.reminder{
+  background:#e8f2f3;border:1px solid #bcd9dd;border-radius:10px;
+  padding:12px 16px;font-size:13.5px;margin-bottom:22px;color:#14535f;
+}
+.reminder b{color:var(--turq)}
+h2.sec{font-size:22px;margin:34px 0 6px;font-weight:800}
+h2.sec:first-of-type{margin-top:0}
+h3.grp{font-size:16px;margin:30px 0 12px;color:var(--turq);text-transform:uppercase;letter-spacing:.06em;font-weight:800}
+p.note{font-size:13.5px;color:var(--muted);margin-bottom:16px;max-width:900px}
+
+/* ---------- card ---------- */
+.card{background:#fff;border:1px solid var(--line);border-radius:12px;margin-bottom:16px;overflow:hidden}
+.card-head{
+  display:flex;align-items:flex-start;justify-content:space-between;gap:14px;
+  padding:14px 18px;border-bottom:1px solid var(--line);background:#fffdf9;
+}
+.card-title{font-weight:800;font-size:15px;line-height:1.35}
+.card-title span.tag{
+  display:inline-block;background:var(--turq);color:#fff;font-size:11px;
+  padding:2px 8px;border-radius:12px;margin-right:8px;vertical-align:2px;letter-spacing:.04em;
+}
+.card-title span.tag.o{background:var(--orange)}
+.card-title span.tag.b{background:var(--bordo)}
+.card-title .hint{display:block;font-weight:500;font-size:12.5px;color:var(--muted);margin-top:4px}
+button.copy{
+  flex:0 0 auto;background:var(--turq);color:#fff;border:none;border-radius:7px;
+  padding:8px 14px;font-size:13px;font-weight:700;cursor:pointer;font-family:inherit;
+  transition:background .15s;
+}
+button.copy:hover{background:#166071}
+button.copy.done{background:#3d9970}
+.body{padding:16px 18px}
+.copysrc{white-space:pre-wrap;font-size:14.5px}
+pre.copysrc{
+  font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,"Liberation Mono",monospace;
+  font-size:13px;line-height:1.55;background:#fbf7f0;border:1px solid var(--line);
+  border-radius:8px;padding:14px;overflow-x:auto;white-space:pre-wrap;word-break:break-word;
+}
+.metaline{
+  font-size:12.5px;color:var(--muted);padding:10px 18px;background:#fbf7f0;
+  border-bottom:1px solid var(--line);
+}
+.metaline b{color:var(--navy)}
+.alt{margin-top:14px;padding-top:14px;border-top:1px dashed var(--line)}
+.alt-h{font-size:13px;font-weight:800;color:var(--bordo);margin-bottom:8px;text-transform:uppercase;letter-spacing:.05em;display:flex;align-items:center;justify-content:space-between;gap:12px}
+button.copy.sm{padding:5px 11px;font-size:12px;background:var(--bordo)}
+button.copy.sm:hover{background:#8a3a3a}
+.ph{background:#fff;border:1px solid var(--line);border-radius:10px;padding:14px 18px;margin-bottom:22px;font-size:13.5px}
+.ph b{color:var(--bordo)}
+.ph code{background:#fbf0e3;padding:1px 6px;border-radius:4px;font-size:12.5px}
+footer{text-align:center;color:var(--muted);font-size:12.5px;padding:30px 20px}
+@media(max-width:640px){
+  .card-head{flex-direction:column}
+  button.copy{align-self:flex-start}
+  h1.main{font-size:21px}
+}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap">
+    <div class="logo"><span class="dot"></span>KEVIN · МАТЕРІАЛИ ЗАПУСКУ</div>
+    <h1 class="main">Практикум для батьків майбутніх 11-класників · НМТ-2027</h1>
+    <div class="sub">Лендінги, флоу чат-бота, промпти для креативів, рекламні тексти й дожимні пуші — усе готове до копіпасту.</div>
+    <div class="facts">
+      <div class="fact"><b>8 вересня</b> · 19:00</div>
+      <div class="fact">Спікерка: <b>Саіда</b></div>
+      <div class="fact">Бонус за реєстрацію: <b>індивідуальний план (діагностика)</b></div>
+      <div class="fact">На ефірі: <b>курс зі знижкою 30%</b></div>
+      <div class="fact">Дефіцит: <b>30 місць діагностики / 100 місць ефіру</b></div>
+    </div>
+  </div>
+</header>
+
+<div class="wrap top">
+  <div class="flags">
+    <h2>⚑ Флаги для ручної перевірки перед запуском</h2>
+    <ol>
+      <li><b>Підставити реальні посилання</b> замість плейсхолдерів у квадратних дужках: лендінг, ефір WebinarJam, запис діагностики, файл чек-листа.</li>
+      <li><b>Звірити реальність дефіциту:</b> 30 місць на діагностику і 100 місць на ефір мають бути справжніми лімітами. Якщо ні — прибрати або змінити цифру в усіх матеріалах одночасно.</li>
+      <li><b>Підтвердити з методистами</b> твердження про «теми, що дають найбільший приріст балів» — це має бути реальна методична позиція, а не рекламна фраза.</li>
+      <li><b>Прохідні бали</b> — тільки як діапазон «від 180 / від 185» або з підписом «прогноз на 2027». Точних чисел по конкретних вишах не давати.</li>
+      <li><b>Перевірити, що ніде не лишились імена/дати з попередніх івентів</b> (Микола, Вікторія, Ксенія, Авраменко, старі дати ефірів). Спікерка тут одна — Саіда, дата одна — 8 вересня.</li>
+      <li><b>Підставити актуальне N</b> у соцдоказах: «уже [N] батьків зареєструвались», «зайнято [N] з 30 місць». Не запускати з порожніми дужками.</li>
+      <li><b>Перевірити на «заборонені» формулювання:</b> ніде не має бути «гарантовано вступить», «гарантія вступу», «гарантовано складе на 180».</li>
+      <li><b>ЦА в кожному матеріалі</b> — «батьки майбутніх 11-класників / НМТ-2027». Ніде не має бути «10–11 клас».</li>
+      <li><b>Логотип у креативах</b> — вставляти реальний PNG KEVIN, не генерувати в NBP.</li>
+      <li><b>Звірити воронку:</b> діагностика роздається в боті одразу після реєстрації, на ефірі цільова дія — купівля курсу зі знижкою 30%.</li>
+    </ol>
+  </div>
+</div>
+
+<nav class="tabs">
+  <div class="inner">
+    <button class="active" data-t="lp">Лендінги</button>
+    <button data-t="bot">Чат-бот</button>
+    <button data-t="cr">Креативи</button>
+    <button data-t="ads">Реклама</button>
+    <button data-t="push">Пуші</button>
+  </div>
+</nav>
+
+<div class="wrap">
+
+<!-- ============ ЛЕНДІНГИ ============ -->
+<section id="lp" class="active">
+  <div class="reminder">
+    <b>Ключове для лендінгів:</b> дата — 8 вересня, 19:00 · спікерка — Саіда · формат називаємо «практикум», не «вебінар» · ЦА — батьки майбутніх 11-класників (НМТ-2027) · бонус за реєстрацію — покроковий індивідуальний план підготовки (він же запис на діагностику) · без слів «гарантія / гарантовано вступить».
+  </div>
+
+  <h2 class="sec">Варіант 1 (основний) — сезонний кут: старт навчального року</h2>
+  <p class="note">Кут: вересень — точка, у якій або закладається система, або починається хаос. Дитина повернулась у школу, але школа не готує до НМТ. H1 за формулою: гачок-впізнавання (пряма мова батька/дитини, бордовим курсивом) + чорний рядок, що розкриває зміст зустрічі.</p>
+
+  <div class="card">
+    <div class="card-head">
+      <div class="card-title"><span class="tag">Лендінг 1</span>Бейдж над заголовком</div>
+      <button class="copy">Копіювати</button>
+    </div>
+    <div class="body"><div class="copysrc">8 ВЕРЕСНЯ · 19:00 · ПРАКТИКУМ ДЛЯ БАТЬКІВ МАЙБУТНІХ 11-КЛАСНИКІВ · НМТ-2027</div></div>
+  </div>
+
+  <div class="card">
+    <div class="card-head">
+      <div class="card-title"><span class="tag">Лендінг 1</span>H1 — основний варіант
+        <span class="hint">Перший рядок — бордовий курсив (гачок). Другий — чорний капс (розкриття).</span>
+      </div>
+      <button class="copy">Копіювати</button>
+    </div>
+    <div class="body"><div class="copysrc">«Дитина повернулась у школу — там усе вивчить»
+
+З ЧОГО ПОЧАТИ ПІДГОТОВКУ ДО НМТ-2027, ЩОБ ВИЙТИ НА 180+</div>
+      <div class="alt">
+        <div class="alt-h"><span>Альтернативні H1 до варіанта 1</span><button class="copy sm">Копіювати</button></div>
+        <div class="copysrc">АЛЬТЕРНАТИВА А
+«Ну ми ж тільки почали 11 клас, час іще є»
+
+ЩО ЗРОБИТИ У ВЕРЕСНІ, ЩОБ ДИТИНА ВИЙШЛА НА 180+ НА НМТ-2027
+
+
+АЛЬТЕРНАТИВА Б
+«Уроки є, репетитора візьмемо ближче до весни»
+
+ЯК СКЛАСТИ ПЛАН ПІДГОТОВКИ ДО НМТ-2027 З ПЕРШИХ ТИЖНІВ ВЕРЕСНЯ
+
+
+АЛЬТЕРНАТИВА В
+«У школі ж 10 і 11 балів — значить, усе добре»
+
+ЧОМУ ШКІЛЬНІ ОЦІНКИ НЕ ДОРІВНЮЮТЬ 180+ НА НМТ-2027 І З ЧОГО ПОЧАТИ ВЕРЕСЕНЬ</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-head">
+      <div class="card-title"><span class="tag">Лендінг 1</span>Підзаголовок</div>
+      <button class="copy">Копіювати</button>
+    </div>
+    <div class="body"><div class="copysrc">Безкоштовний практикум для батьків: за одну зустріч розберемо, як обрати напрям, визначити 4-й предмет НМТ-2027 і скласти реалістичний план підготовки на 180+ — з вересня, без хаосу в розкладі й без вигорання дитини.</div></div>
+  </div>
+
+  <div class="card">
+    <div class="card-head">
+      <div class="card-title"><span class="tag">Лендінг 1</span>CTA-кнопка</div>
+      <button class="copy">Копіювати</button>
+    </div>
+    <div class="body"><div class="copysrc">ЗАРЕЄСТРУВАТИСЬ БЕЗКОШТОВНО</div></div>
+  </div>
+
+  <div class="card">
+    <div class="card-head">
+      <div class="card-title"><span class="tag">Лендінг 1</span>4 картки цінності
+        <span class="hint">Ключове слово в кожній картці — болдом (позначено в тексті як BOLD-частина на початку рядка).</span>
+      </div>
+      <button class="copy">Копіювати</button>
+    </div>
+    <div class="body"><div class="copysrc">КАРТКА 1
+Як обрати напрям, навіть коли дитина каже «я не знаю»
+5 запитань, які дають відповідь за один вечір — без тестів на профорієнтацію і сварок на кухні.
+
+КАРТКА 2
+Як напрям перетворюється на 4-й предмет НМТ-2027
+Найдорожча помилка року — обрати предмет навмання у травні. Покажемо, як зробити це у вересні й більше не перегравати.
+
+КАРТКА 3
+З чого складається 180+ і які теми дають найбільший приріст
+Не «вчити все», а вчити те, що реально піднімає бал. Розберемо, з чого складається результат.
+
+КАРТКА 4
+Покроковий план підготовки з вересня — без вигорання
+Скільки годин на тиждень реально потрібно 11-класнику поруч зі школою, і як не зламати дитину до Нового року.</div></div>
+  </div>
+
+  <div class="card">
+    <div class="card-head">
+      <div class="card-title"><span class="tag">Лендінг 1</span>Блок «Спікерка»</div>
+      <button class="copy">Копіювати</button>
+    </div>
+    <div class="body"><div class="copysrc">САІДА
+Експертка з розробки індивідуальних планів підготовки до НМТ на 180+
+
+Щодня працює з батьками 11-класників: бачить, з якими балами діти стартують у вересні і з якими приходять до НМТ у червні. На практикумі покаже саме ту логіку, за якою складає плани — напрям, 4-й предмет, теми-важелі, графік.
+
+Школа KEVIN — найбільша мережа центрів підготовки до ЗНО/НМТ в Україні: 9 років досвіду, 22 753 випускники, середній приріст +55 балів, 147 учнів склали НМТ на 200.</div></div>
+  </div>
+
+  <div class="card">
+    <div class="card-head">
+      <div class="card-title"><span class="tag o">Лендінг 1</span>Бонус за реєстрацію
+        <span class="hint">Виділити окремим блоком — це головна фішка запуску.</span>
+      </div>
+      <button class="copy">Копіювати</button>
+    </div>
+    <div class="body"><div class="copysrc">БОНУС ЗА РЕЄСТРАЦІЮ
+
+Покроковий індивідуальний план підготовки до НМТ-2027 — персонально для вашої дитини.
+
+Отримаєте його не після ефіру, а одразу після реєстрації. Це індивідуальна онлайн-зустріч методиста з дитиною і з вами: пробне НМТ-тестування, розбір реального рівня, напрям, 4-й предмет і графік на рік.
+
+Приватні тьютори беруть за таку роботу 3 000–5 000 грн. Для учасників практикуму — безкоштовно. Місць 30.
+
+ЗАРЕЄСТРУВАТИСЬ І ЗАБРАТИ ПЛАН</div></div>
+  </div>
+
+  <div class="card">
+    <div class="card-head">
+      <div class="card-title"><span class="tag b">Лендінг 1</span>Додатковий блок «Розрив» (опційно, під CTA)
+        <span class="hint">Уникнення втрат + конкретика. Ставити перед фінальною кнопкою.</span>
+      </div>
+      <button class="copy">Копіювати</button>
+    </div>
+    <div class="body"><div class="copysrc">Що зазвичай стається без плану
+
+Дитина з шкільними 10–11 балами пише перший пробний НМТ на 120–140 із 200. Прохідний на бюджет — від 180.
+
+Ці 15–20 балів різниці між бюджетом і контрактом коштують родині приблизно 140 000–360 000 грн за роки навчання.
+
+Вересень — єдиний момент року, коли цю відстань ще можна пройти спокійно, а не ривком у травні.
+
+ЗАРЕЄСТРУВАТИСЬ БЕЗКОШТОВНО</div></div>
+  </div>
+
+  <h2 class="sec">Варіант 2 (A/B) — кут: напрям і вибір</h2>
+  <p class="note">Кут: невизначеність напряму → 4-й предмет → план. Заходить на батьків, чия дитина ще не обрала, куди вступати. Той самий каркас, інший гачок і акценти карток.</p>
+
+  <div class="card">
+    <div class="card-head">
+      <div class="card-title"><span class="tag">Лендінг 2</span>Бейдж над заголовком</div>
+      <button class="copy">Копіювати</button>
+    </div>
+    <div class="body"><div class="copysrc">8 ВЕРЕСНЯ · 19:00 · ПРАКТИКУМ ДЛЯ БАТЬКІВ МАЙБУТНІХ 11-КЛАСНИКІВ · НМТ-2027</div></div>
+  </div>
+
+  <div class="card">
+    <div class="card-head">
+      <div class="card-title"><span class="tag">Лендінг 2</span>H1 — основний варіант
+        <span class="hint">Перший рядок — бордовий курсив (пряма мова дитини). Другий — чорний капс.</span>
+      </div>
+      <button class="copy">Копіювати</button>
+    </div>
+    <div class="body"><div class="copysrc">«Я ще не знаю, куди вступати»
+
+ЯК ОБРАТИ НАПРЯМ, 4-Й ПРЕДМЕТ НМТ-2027 І СКЛАСТИ ПЛАН НА 180+</div>
+      <div class="alt">
+        <div class="alt-h"><span>Альтернативні H1 до варіанта 2</span><button class="copy sm">Копіювати</button></div>
+        <div class="copysrc">АЛЬТЕРНАТИВА А
+«Може, економіка. Або IT. Або медичний»
+
+ЯК ЗВУЗИТИ ВИБІР ДО ОДНОГО НАПРЯМУ Й СКЛАСТИ ПЛАН ПІДГОТОВКИ НА 180+
+
+
+АЛЬТЕРНАТИВА Б
+«Мам, я подумаю про це пізніше»
+
+ЧОМУ 4-Й ПРЕДМЕТ НМТ-2027 ТРЕБА ВИЗНАЧИТИ ВЖЕ У ВЕРЕСНІ — І ЯК ЦЕ ЗРОБИТИ
+
+
+АЛЬТЕРНАТИВА В
+«Ми оберемо ближче до весни»
+
+ЯК ОБРАТИ НАПРЯМ І 4-Й ПРЕДМЕТ, ПОКИ ЩЕ Є ЧАС ВИЙТИ НА 180+ НА НМТ-2027</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-head">
+      <div class="card-title"><span class="tag">Лендінг 2</span>Підзаголовок</div>
+      <button class="copy">Копіювати</button>
+    </div>
+    <div class="body"><div class="copysrc">Безкоштовний практикум для батьків: пройдемо ланцюжок «напрям → 4-й предмет НМТ-2027 → план на 180+» так, щоб ви завершили його з дитиною за один вечір, а не тягнули невизначеність до весни.</div></div>
+  </div>
+
+  <div class="card">
+    <div class="card-head">
+      <div class="card-title"><span class="tag">Лендінг 2</span>CTA-кнопка</div>
+      <button class="copy">Копіювати</button>
+    </div>
+    <div class="body"><div class="copysrc">ЗАРЕЄСТРУВАТИСЬ БЕЗКОШТОВНО</div></div>
+  </div>
+
+  <div class="card">
+    <div class="card-head">
+      <div class="card-title"><span class="tag">Лендінг 2</span>4 картки цінності</div>
+      <button class="copy">Копіювати</button>
+    </div>
+    <div class="body"><div class="copysrc">КАРТКА 1
+5 запитань, які визначають напрям
+Працюють навіть тоді, коли дитина каже «я не знаю». Ставите ввечері — до ранку маєте напрям, а не список із семи спеціальностей.
+
+КАРТКА 2
+Напрям → 4-й предмет НМТ-2027
+Показуємо, як з обраного напряму однозначно випливає четвертий предмет. І що робити, якщо напрямів усе ще два.
+
+КАРТКА 3
+З чого складається 180+
+Які теми в кожному предметі дають найбільший приріст балів, а на які не варто витрачати вересень.
+
+КАРТКА 4
+План підготовки з вересня — без вигорання
+Скільки годин на тиждень реально витримує 11-класник поруч зі школою і як розкласти рік, щоб дитина дійшла до червня.</div></div>
+  </div>
+
+  <div class="card">
+    <div class="card-head">
+      <div class="card-title"><span class="tag">Лендінг 2</span>Блок «Спікерка»</div>
+      <button class="copy">Копіювати</button>
+    </div>
+    <div class="body"><div class="copysrc">САІДА
+Експертка з розробки індивідуальних планів підготовки до НМТ на 180+
+
+Складає індивідуальні плани для 11-класників: від напряму й четвертого предмета до тижневого графіка. На практикумі розбере ту саму логіку, за якою працює з родинами.
+
+Школа KEVIN — найбільша мережа центрів підготовки до ЗНО/НМТ в Україні: 9 років досвіду, 22 753 випускники, середній приріст +55 балів, 147 учнів склали НМТ на 200.</div></div>
+  </div>
+
+  <div class="card">
+    <div class="card-head">
+      <div class="card-title"><span class="tag o">Лендінг 2</span>Бонус за реєстрацію</div>
+      <button class="copy">Копіювати</button>
+    </div>
+    <div class="body"><div class="copysrc">БОНУС ЗА РЕЄСТРАЦІЮ
+
+Покроковий індивідуальний план підготовки до НМТ-2027 — для вашої дитини персонально.
+
+Одразу після реєстрації, ще до практикуму: індивідуальна онлайн-зустріч методиста з дитиною і з вами, пробне НМТ-тестування, розбір реального рівня, напрям, 4-й предмет і графік на рік.
+
+Ринкова вартість такої роботи в приватного тьютора — 3 000–5 000 грн. Для учасників практикуму — безкоштовно. Місць 30.
+
+ЗАРЕЄСТРУВАТИСЬ І ЗАБРАТИ ПЛАН</div></div>
+  </div>
+
+  <div class="card">
+    <div class="card-head">
+      <div class="card-title"><span class="tag b">Лендінг 2</span>Додатковий блок «Ціна невизначеності» (опційно)</div>
+      <button class="copy">Копіювати</button>
+    </div>
+    <div class="body"><div class="copysrc">Скільки коштує «оберемо пізніше»
+
+Поки напрям не визначений, дитина готується до всього потроху — і не виходить на результат у жодному предметі. Це історія, яку ми бачимо щороку.
+
+Дитина з шкільними 10–11 балами пише перший пробний НМТ на 120–140 із 200. Бюджет — від 180. Різниця в 15–20 балів між бюджетом і контрактом — це приблизно 140 000–360 000 грн за роки навчання.
+
+Ви з тих батьків, які думають про рік наперед. Тоді вересень — саме той місяць, коли це рішення ще недороге.
+
+ЗАРЕЄСТРУВАТИСЬ БЕЗКОШТОВНО</div></div>
+  </div>
+</section>
+
+<!-- ============ ЧАТ-БОТ ============ -->
+<section id="bot">
+  <div class="reminder">
+    <b>Ключове для бота:</b> 8 вересня, 19:00 · спікерка Саіда · діагностика («покроковий індивідуальний план») роздається одразу після реєстрації, а не на ефірі · на ефірі — курс зі знижкою 30% · 30 місць на діагностику, 100 місць на ефір · говоримо до батьків, не до учнів.
+  </div>
+
+  <div class="ph">
+    <b>Плейсхолдери — підставити вручну перед запуском:</b><br>
+    <code>[посилання на лендінг]</code> · <code>[посилання на ефір WebinarJam]</code> · <code>[посилання на запис діагностики]</code> · <code>[посилання на чек-лист]</code> · <code>[N реєстрацій]</code> · <code>[N місць]</code>
+  </div>
+
+  <h3 class="grp">Гілка 1 — реєстрація і подарунки</h3>
+
+  <div class="card">
+    <div class="card-head">
+      <div class="card-title"><span class="tag">Б1.1</span>Стартовий блок</div>
+      <button class="copy">Копіювати</button>
+    </div>
+    <div class="metaline">Тригер: старт бота / кнопка «Йду на практикум». <b>Кнопка внизу:</b> Йду на практикум</div>
+    <div class="body"><div class="copysrc">Вітаю! 👋
+
+Ви за крок від участі в безкоштовному практикумі для батьків майбутніх 11-класників — тих, хто складає НМТ-2027.
+
+📅 8 вересня, 19:00
+🎤 Спікерка: Саіда — експертка з розробки індивідуальних планів підготовки до НМТ на 180+
+
+Що розберемо на зустрічі:
+
+1️⃣ Як обрати напрям, навіть якщо дитина каже «я не знаю» — 5 запитань, які дають відповідь за один вечір
+2️⃣ Як напрям перетворюється на 4-й предмет НМТ-2027 і чому цю помилку виправляти найдорожче
+3️⃣ З чого складається 180+ і які теми дають найбільший приріст балів
+4️⃣ Покроковий план підготовки з вересня — без вигорання дитини
+
+І головне: одразу після реєстрації ви отримаєте бонус — покроковий індивідуальний план підготовки до НМТ-2027 для вашої дитини. Не після ефіру. Одразу.
+
+Натискайте кнопку нижче 👇</div></div>
+  </div>
+
+  <div class="card">
+    <div class="card-head">
+      <div class="card-title"><span class="tag">Б1.2</span>Збір контакту</div>
+      <button class="copy">Копіювати</button>
+    </div>
+    <div class="metaline">Тригер: натиснуто «Йду на практикум». <b>Кнопка:</b> Зареєструватися (запит номера телефону)</div>
+    <div class="body"><div class="copysrc">Залишився один крок 👇
+
+Практикум — для батьків майбутніх 11-класників. Ми говоримо з дорослими: про напрям, про бали, про бюджет і про гроші родини. Тому реєструємо саме батьків, не учнів.
+
+Натисніть «Зареєструватися» і залиште номер телефону — на нього прийде нагадування за годину до ефіру разом із посиланням на вхід.
+
+Посилання отримають лише зареєстровані. Місць на ефірі — 100.</div></div>
+  </div>
+
+  <div class="card">
+    <div class="card-head">
+      <div class="card-title"><span class="tag">Б1.3</span>Подарунок 1 — корисний файл</div>
+      <button class="copy">Копіювати</button>
+    </div>
+    <div class="metaline">Тригер: реєстрацію завершено. Надсилати одразу, разом із файлом.</div>
+    <div class="body"><div class="copysrc">Готово ✅ Ви в списку учасників практикуму 8 вересня о 19:00.
+
+Тримайте перший подарунок — чек-лист «Старт підготовки до НМТ-2027: що зробити в перші три тижні вересня».
+
+Усередині:
+🔹 як за один вечір побачити реальний рівень дитини, а не той, що в щоденнику
+🔹 5 запитань для розмови про напрям
+🔹 таблиця «напрям → 4-й предмет → орієнтир по балах»
+🔹 скільки годин на тиждень реально потрібно 11-класнику поруч зі школою
+
+👉 [посилання на чек-лист]
+
+Прочитайте до 8 вересня — на практикумі Саіда спиратиметься саме на ці пункти.
+
+А тепер другий подарунок. Він набагато цінніший за чек-лист. Дивіться наступне повідомлення 👇</div></div>
+  </div>
+
+  <div class="card">
+    <div class="card-head">
+      <div class="card-title"><span class="tag o">Б1.4</span>Подарунок 2 — діагностика (головна фішка запуску)</div>
+      <button class="copy">Копіювати</button>
+    </div>
+    <div class="metaline">Надсилати через 1–2 хвилини після Б1.3. <b>Кнопка:</b> Записатись на діагностику → [посилання на запис діагностики]</div>
+    <div class="body"><div class="copysrc">Ви вкладаєте в дитину все — час, сили, нерви, гроші.
+
+Питання лише одне: чи веде це до результату?
+
+Найбільша втрата — не в тому, що дитина мало вчиться. А в тому, що вона цілий рік вчить не те й не так, а в червні отримує 140 замість 180. І дізнаєтесь ви про це вже тоді, коли переграти нічого не можна.
+
+Тому другий подарунок за реєстрацію — покроковий індивідуальний план підготовки до НМТ-2027 персонально для вашої дитини.
+
+Як це відбувається:
+
+🔹 індивідуальна онлайн-зустріч методиста — з дитиною і з вами
+🔹 пробне НМТ-тестування: покаже реальний стартовий рівень, а не шкільну оцінку
+🔹 розбір: які теми провалені і які з них дають найбільший приріст балів
+🔹 чітка стратегія на рік: напрям, 4-й предмет, тижневий графік, орієнтир по балах
+
+Приватні тьютори беруть за таку роботу 3 000–5 000 грн. Для учасників практикуму — безкоштовно.
+
+Місць — 30. Це реальний ліміт: більше методисти фізично не встигають провести до жовтня. Уже зайнято [N місць].
+
+Оберіть зручний час 👇</div></div>
+  </div>
+
+  <h3 class="grp">Гілка 2 — вчителі</h3>
+
+  <div class="card">
+    <div class="card-head">
+      <div class="card-title"><span class="tag">Б2.1</span>Прохання переслати в батьківський чат</div>
+      <button class="copy">Копіювати</button>
+    </div>
+    <div class="metaline">Тригер: користувач позначив себе як учитель / класний керівник.</div>
+    <div class="body"><div class="copysrc">Дякуємо, що ви з нами 🙏
+
+Найбільша користь від цієї зустрічі — саме для батьків 11-класників. Тому маленьке прохання: перешліть анонс у батьківський чат вашого класу.
+
+Одне важливе уточнення: будь ласка, не пересилайте його в учнівський чат. Практикум побудований як розмова з дорослими — про напрям, гроші родини й рішення на рік. Дітям він не дає нічого, а батьки, які прийдуть, отримають максимум.
+
+Наступним повідомленням — готовий текст, який можна переслати одним дотиком 👇</div></div>
+  </div>
+
+  <div class="card">
+    <div class="card-head">
+      <div class="card-title"><span class="tag">Б2.2</span>Готовий текст для пересилання в батьківський чат</div>
+      <button class="copy">Копіювати</button>
+    </div>
+    <div class="metaline">Надсилати одразу після Б2.1, окремим повідомленням — щоб зручно було переслати.</div>
+    <div class="body"><div class="copysrc">Шановні батьки!
+
+8 вересня о 19:00 відбудеться безкоштовний онлайн-практикум для батьків 11-класників, які складатимуть НМТ-2027.
+
+Тема: як обрати напрям, визначити 4-й предмет НМТ-2027 і скласти план підготовки на 180+.
+
+Що розберуть:
+🔹 як обрати напрям, коли дитина каже «я не знаю» — 5 запитань
+🔹 як з напряму випливає 4-й предмет НМТ-2027
+🔹 з чого складається 180+ і які теми дають найбільший приріст балів
+🔹 покроковий план підготовки з вересня — без вигорання дитини
+
+Спікерка: Саіда — експертка з розробки індивідуальних планів підготовки до НМТ на 180+.
+Організатор: школа KEVIN — найбільша мережа центрів підготовки до ЗНО/НМТ в Україні.
+
+Бонус кожному, хто зареєструється: покроковий індивідуальний план підготовки до НМТ-2027 для вашої дитини (індивідуальна зустріч з методистом і пробне НМТ). Місць — 30.
+
+Участь безкоштовна, потрібна реєстрація:
+👉 [посилання на лендінг]</div></div>
+  </div>
+
+  <h3 class="grp">Гілка 3 — каскад дожимів для тих, хто не завершив реєстрацію</h3>
+  <p class="note">Тригер: користувач стартував бота, але не залишив контакт. Ескалація тригерів: незакрита петля → подарунок → цінність через розрив → терміновість і дефіцит. Рекомендований інтервал: +30 хв, +3 год, +1 день, +2 дні (останній — не пізніше вечора 7 вересня).</p>
+
+  <div class="card">
+    <div class="card-head">
+      <div class="card-title"><span class="tag b">Б3.1</span>Незакрита петля — «лишився крок»</div>
+      <button class="copy">Копіювати</button>
+    </div>
+    <div class="metaline">Через ~30 хвилин після незавершеної реєстрації. <b>Кнопка:</b> Завершити реєстрацію</div>
+    <div class="body"><div class="copysrc">Здається, ми зупинились на півдорозі 🙂
+
+Ваша реєстрація на практикум 8 вересня не завершена — залишився один крок: залишити номер телефону.
+
+Саме на нього прийде посилання на вхід за годину до ефіру. Без цього кроку ви просто не отримаєте посилання, навіть якщо захочете зайти.
+
+Це 15 секунд 👇</div></div>
+  </div>
+
+  <div class="card">
+    <div class="card-head">
+      <div class="card-title"><span class="tag b">Б3.2</span>Подарунок як гачок</div>
+      <button class="copy">Копіювати</button>
+    </div>
+    <div class="metaline">Через ~3 години. <b>Кнопка:</b> Завершити реєстрацію і забрати план</div>
+    <div class="body"><div class="copysrc">Нагадаю, що саме лишається невідібраним.
+
+За завершену реєстрацію ви одразу отримуєте покроковий індивідуальний план підготовки до НМТ-2027 для вашої дитини: індивідуальна зустріч з методистом, пробне НМТ, розбір рівня і стратегія на рік.
+
+Це не після ефіру і не «якщо доживете до фіналу». Це приходить одразу, як тільки реєстрація завершена.
+
+Приватний тьютор бере за таку роботу 3 000–5 000 грн. Тут — безкоштовно, але місць 30, і вони розходяться швидше за реєстрації на сам практикум.
+
+Завершіть реєстрацію 👇</div></div>
+  </div>
+
+  <div class="card">
+    <div class="card-head">
+      <div class="card-title"><span class="tag b">Б3.3</span>Цінність через розрив школа/НМТ</div>
+      <button class="copy">Копіювати</button>
+    </div>
+    <div class="metaline">Через ~1 день. <b>Кнопка:</b> Зареєструватись на практикум</div>
+    <div class="body"><div class="copysrc">Одна цифра, через яку батьки зазвичай і приходять на цей практикум.
+
+Дитина з шкільними 10–11 балами пише перший пробний НМТ на 120–140 із 200. Прохідний на бюджет — від 180.
+
+Це не тому, що дитина слабка. Це тому, що школа вчить предмет, а НМТ перевіряє інший навик — швидко впізнавати тип завдання й не втрачати бали на дрібницях. Ніхто цьому в школі окремо не вчить.
+
+Різниця в 15–20 балів між бюджетом і контрактом — це приблизно 140 000–360 000 грн за роки навчання.
+
+8 вересня о 19:00 Саіда покаже, як цю відстань закривають за навчальний рік і з чого почати вже у вересні.
+
+Ваша реєстрація досі не завершена 👇</div></div>
+  </div>
+
+  <div class="card">
+    <div class="card-head">
+      <div class="card-title"><span class="tag b">Б3.4</span>Фінальна терміновість + дефіцит</div>
+      <button class="copy">Копіювати</button>
+    </div>
+    <div class="metaline">Вечір 7 вересня або ранок 8 вересня. <b>Кнопка:</b> Встигнути зареєструватись</div>
+    <div class="body"><div class="copysrc">Останнє нагадування ⏳
+
+Практикум — вже завтра, 8 вересня о 19:00. Далі реєстрація закривається.
+
+Станом на зараз:
+🔹 зареєструвалось [N реєстрацій] батьків
+🔹 місць на ефірі — 100
+🔹 місць на індивідуальний план (діагностику) — 30, зайнято [N місць]
+
+Ви відкрили цього бота не випадково. Отже, ви з тих батьків, які думають про рік наперед, а не про «розберемось у травні». Лишилося дотиснути один крок.
+
+Завершіть реєстрацію — і посилання на вхід прийде вам за годину до початку 👇</div></div>
+  </div>
+
+  <h3 class="grp">Гілка 4 — день ефіру (доходимість)</h3>
+  <p class="note">Усі повідомлення дня ефіру йдуть з кнопкою «Увійти на ефір» → <code>[посилання на ефір WebinarJam]</code>. Інструкція входу подається повністю в першому повідомленні, далі — скорочено.</p>
+
+  <div class="card">
+    <div class="card-head">
+      <div class="card-title"><span class="tag">Б4.1</span>За 1 годину — посилання + інструкція входу</div>
+      <button class="copy">Копіювати</button>
+    </div>
+    <div class="metaline">18:00. <b>Кнопка:</b> Увійти на ефір</div>
+    <div class="body"><div class="copysrc">Ваше посилання на практикум 🔗
+
+Сьогодні о 19:00 Саіда розбере, як обрати напрям, визначити 4-й предмет НМТ-2027 і скласти план підготовки на 180+.
+
+👉 [посилання на ефір WebinarJam]
+
+Як зайти — 4 кроки, займе хвилину:
+1️⃣ натисніть кнопку «Увійти на ефір»
+2️⃣ натисніть «Увійти до вебінарної кімнати»
+3️⃣ введіть ім'я та пошту → «Зареєструватися зараз»
+4️⃣ натисніть персональне посилання, яке з'явиться на екрані
+
+Зробіть це зараз, а не о 18:59 — щоб не шукати кнопки під час старту.
+
+І одразу поставте нагадування на телефоні на 18:55.
+
+До зустрічі о 19:00 🤍</div></div>
+  </div>
+
+  <div class="card">
+    <div class="card-head">
+      <div class="card-title"><span class="tag">Б4.2</span>За 30 хвилин — зміст + 100 місць</div>
+      <button class="copy">Копіювати</button>
+    </div>
+    <div class="metaline">18:30. <b>Кнопка:</b> Увійти на ефір</div>
+    <div class="body"><div class="copysrc">Через 30 хвилин починаємо ⏰
+
+Що встигнемо за зустріч:
+🔹 5 запитань, які визначають напрям, навіть коли дитина каже «я не знаю»
+🔹 як з напряму однозначно випливає 4-й предмет НМТ-2027
+🔹 з чого складається 180+ і які теми дають найбільший приріст балів
+🔹 покроковий план підготовки з вересня — без вигорання
+
+Кімната вміщає 100 батьків. Заходьте заздалегідь — тих, хто прийде після старту, ми зможемо впустити тільки якщо будуть вільні місця.
+
+👉 [посилання на ефір WebinarJam]</div></div>
+  </div>
+
+  <div class="card">
+    <div class="card-head">
+      <div class="card-title"><span class="tag">Б4.3</span>За 15 хвилин — якір вартості + соцдоказ</div>
+      <button class="copy">Копіювати</button>
+    </div>
+    <div class="metaline">18:45. <b>Кнопка:</b> Увійти на ефір</div>
+    <div class="body"><div class="copysrc">15 хвилин до старту.
+
+У кімнаті вже [N реєстрацій] батьків майбутніх 11-класників.
+
+Те, що Саіда розбере за найближчі 90 хвилин, у приватного консультанта коштує 3 000–5 000 грн: напрям, 4-й предмет, теми-важелі, графік на рік. Сьогодні — безкоштовно, для тих, хто в кімнаті.
+
+Заходьте зараз, поки є вільні місця 👇
+[посилання на ефір WebinarJam]</div></div>
+  </div>
+
+  <div class="card">
+    <div class="card-head">
+      <div class="card-title"><span class="tag">Б4.4</span>За 5 хвилин</div>
+      <button class="copy">Копіювати</button>
+    </div>
+    <div class="metaline">18:55. <b>Кнопка:</b> Увійти на ефір</div>
+    <div class="body"><div class="copysrc">5 хвилин ⏳
+
+Візьміть аркуш і ручку — Саіда одразу дасть 5 запитань, які треба буде поставити дитині сьогодні ввечері. Записуйте, потім не відновите.
+
+👉 [посилання на ефір WebinarJam]
+
+Як зайдете — напишіть у чаті «+», щоб ми бачили, що ви на місці.</div></div>
+  </div>
+
+  <div class="card">
+    <div class="card-head">
+      <div class="card-title"><span class="tag">Б4.5</span>За 2 хвилини</div>
+      <button class="copy">Копіювати</button>
+    </div>
+    <div class="metaline">18:58. <b>Кнопка:</b> Увійти на ефір</div>
+    <div class="body"><div class="copysrc">2 хвилини до старту 🔴
+
+Заходьте зараз — перший блок найважливіший, саме в ньому напрям і 4-й предмет.
+
+👉 [посилання на ефір WebinarJam]</div></div>
+  </div>
+
+  <div class="card">
+    <div class="card-head">
+      <div class="card-title"><span class="tag">Б4.6</span>Ми в ефірі</div>
+      <button class="copy">Копіювати</button>
+    </div>
+    <div class="metaline">19:00. <b>Кнопка:</b> Увійти на ефір</div>
+    <div class="body"><div class="copysrc">🔴 Ми в ефірі!
+
+Саіда починає з 5 запитань, які визначають напрям. Заходьте — ще є вільні місця.
+
+👉 [посилання на ефір WebinarJam]</div></div>
+  </div>
+
+  <div class="card">
+    <div class="card-head">
+      <div class="card-title"><span class="tag">Б4.7</span>+15 хвилин — ядро + «впустимо ще»</div>
+      <button class="copy">Копіювати</button>
+    </div>
+    <div class="metaline">19:15. <b>Кнопка:</b> Увійти на ефір. Примітка модератору: прив'язувати до блоку, а не до годинника.</div>
+    <div class="body"><div class="copysrc">Зараз у кімнаті найважливіше 👇
+
+Саіда розбирає, як напрям перетворюється на 4-й предмет НМТ-2027 — саме тут батьки зазвичай розуміють, що предмет обрано неправильно, і що це ще можна виправити у вересні.
+
+Місця в кімнаті були розібрані, але ми відкрили ще кілька — впустимо тих, хто зайде найближчі хвилини.
+
+👉 [посилання на ефір WebinarJam]</div></div>
+  </div>
+
+  <div class="card">
+    <div class="card-head">
+      <div class="card-title"><span class="tag">Б4.8</span>+30 хвилин — «найважливіше зараз»</div>
+      <button class="copy">Копіювати</button>
+    </div>
+    <div class="metaline">19:30. <b>Кнопка:</b> Увійти на ефір. Примітка модератору: надсилати на початку блоку про план і 180+.</div>
+    <div class="body"><div class="copysrc">Якщо ви ще не зайшли — зайдіть саме зараз.
+
+Почався блок про те, з чого складається 180+ і які теми дають найбільший приріст балів. Це та частина, заради якої батьки й приходять: конкретний план на вересень, а не загальні слова.
+
+І ще: наприкінці зустрічі Саіда покаже, як приєднатися до підготовки в KEVIN зі знижкою 30% — тільки для учасників сьогоднішнього ефіру.
+
+👉 [посилання на ефір WebinarJam]</div></div>
+  </div>
+</section>
+
+<!-- ============ КРЕАТИВИ ============ -->
+<section id="cr">
+  <div class="reminder">
+    <b>Ключове для креативів:</b> промпт — англійською, текст на картинці — українською, без зовнішніх лапок · дата 8 вересня · 19:00 · маркер ЦА «батьки майбутніх 11-класників / НМТ-2027» · лого KEVIN вставляти реальним PNG, не генерувати · палітра: кремовий #FEF3E2, бірюза #1F7A8C, помаранч #F2994A, темно-синій #1A2233, бордо #6B2C2C · у 9:16 усе критичне в TOP 65%.
+  </div>
+  <p class="note">15 креативів по 8 гіпотезах. Формати: 1:1 для стрічки, 9:16 для Stories/Reels. Кожен промпт закінчується службовим рядком crisp legible Ukrainian typography, no outer quotation marks.</p>
+
+  <div class="card">
+    <div class="card-head">
+      <div class="card-title"><span class="tag">01</span>News-mimic — новинна плашка
+        <span class="hint">Хук: подія, а не реклама — «школа KEVIN оголосила безкоштовний практикум». Формат 1:1. Гіпотеза: новинна рамка дає вищий CTR, ніж промо-рамка (наш топ-патерн).</span>
+      </div>
+      <button class="copy">Копіювати</button>
+    </div>
+    <div class="body"><pre class="copysrc">Photorealistic 1:1 square social media image styled as a breaking-news screenshot on a physical surface. A slightly tilted tablet lying on a cream #FEF3E2 desk, shot from directly above with soft natural window light and realistic soft shadows. On the tablet screen: a news-site layout with a deep teal #1F7A8C top bar, a small orange #F2994A live badge, and a bold dark navy #1A2233 Ukrainian headline occupying the upper two thirds, reading exactly:
+ШКОЛА KEVIN ОГОЛОСИЛА БЕЗКОШТОВНИЙ ПРАКТИКУМ ДЛЯ БАТЬКІВ 11-КЛАСНИКІВ
+Beneath it a smaller grey subheadline in Ukrainian reading:
+Як обрати напрям, 4-й предмет НМТ-2027 і скласти план на 180+
+Below that a thin teal divider and a small date line in Ukrainian reading:
+8 ВЕРЕСНЯ · 19:00 · ОНЛАЙН
+Bottom right corner of the screen leaves a clean empty rectangle for a real uploaded KEVIN logo PNG — do not generate any logo or wordmark. Around the tablet on the desk: a real ballpoint pen, a folded paper notebook, two autumn maple leaves in warm orange tones. Shallow depth of field, crisp text on screen, editorial photography look. Colors strictly from palette: cream #FEF3E2, teal #1F7A8C, orange #F2994A, navy #1A2233. crisp legible Ukrainian typography, no outer quotation marks</pre></div>
+  </div>
+
+  <div class="card">
+    <div class="card-head">
+      <div class="card-title"><span class="tag">02</span>Крейдяна дошка з планом
+        <span class="hint">Хук: план підготовки, написаний крейдою — шкільний вересневий контекст. Формат 9:16. Гіпотеза: шкільна текстура + видимий покроковий план дає довше утримання в Stories.</span>
+      </div>
+      <button class="copy">Копіювати</button>
+    </div>
+    <div class="body"><pre class="copysrc">Photorealistic 9:16 vertical image of a real dark green school chalkboard with visible chalk dust, faint eraser smears and a worn wooden frame, shot slightly from below with warm classroom light. All critical content is placed in the TOP 65% of the frame; the bottom 35% is intentionally empty dark chalkboard for Meta Stories UI.
+Hand-written in thick white and warm orange #F2994A chalk, in real chalk texture with slightly uneven strokes, Ukrainian text arranged as a plan:
+Top line, large, white chalk:
+ПЛАН НА 180+ ПОЧИНАЄТЬСЯ У ВЕРЕСНІ
+Below, three numbered chalk lines, smaller, with hand-drawn arrows between them:
+1. НАПРЯМ
+2. 4-Й ПРЕДМЕТ НМТ-2027
+3. ПЛАН ПІДГОТОВКИ
+Under them, a chalk-underlined line in orange chalk:
+БЕЗКОШТОВНИЙ ПРАКТИКУМ ДЛЯ БАТЬКІВ · 8 ВЕРЕСНЯ · 19:00
+A real wooden chalk tray at the lower edge of the board holds a piece of white chalk and a felt eraser. Reserve a small clean area in the upper right corner for a real uploaded KEVIN logo PNG — do not generate any logo. Deep realistic shadows, tactile chalk grain, high contrast. crisp legible Ukrainian typography, no outer quotation marks</pre></div>
+  </div>
+
+  <div class="card">
+    <div class="card-head">
+      <div class="card-title"><span class="tag">03</span>Термометр 120 → 180
+        <span class="hint">Хук: з якого рівня дитина стартує вересень. Формат 1:1. Гіпотеза: візуальна шкала розриву конвертує краще за текстове формулювання того самого факту.</span>
+      </div>
+      <button class="copy">Копіювати</button>
+    </div>
+    <div class="body"><pre class="copysrc">Photorealistic 1:1 square infographic image on a cream #FEF3E2 textured paper background with subtle fiber grain and soft directional shadow. In the center, a large physically real vertical thermometer-style gauge built as a 3D glass tube with a metal base, filled from the bottom to about one third with deep teal #1F7A8C liquid. A small engraved metal plate at the liquid level shows the number 120 with a Ukrainian caption beside it reading:
+ПРОБНИЙ НМТ У ВЕРЕСНІ
+Near the top of the tube, a bright orange #F2994A engraved marker ring at the 180 level with a Ukrainian caption reading:
+ПРОХІДНИЙ НА БЮДЖЕТ
+Between the two markers, a vertical dashed navy line with a curved arrow and a short Ukrainian label reading:
+ЦЮ ВІДСТАНЬ ПРОХОДЯТЬ ЗА НАВЧАЛЬНИЙ РІК
+Top of the frame, bold navy #1A2233 Ukrainian headline set as embossed letterpress on the paper:
+З ЯКОГО РІВНЯ ВАША ДИТИНА СТАРТУЄ ЦЕЙ ВЕРЕСЕНЬ
+Bottom strip: a teal band with white Ukrainian text reading:
+ПРАКТИКУМ ДЛЯ БАТЬКІВ 11-КЛАСНИКІВ · НМТ-2027 · 8 ВЕРЕСНЯ 19:00
+Leave a clean empty space in the bottom right for a real uploaded KEVIN logo PNG — do not generate a logo. Studio product photography lighting, glass refraction, realistic reflections. crisp legible Ukrainian typography, no outer quotation marks</pre></div>
+  </div>
+
+  <div class="card">
+    <div class="card-head">
+      <div class="card-title"><span class="tag">04</span>Дві мами — порівняння
+        <span class="hint">Хук: вересень з планом vs вересень у хаосі. Формат 1:1. Гіпотеза: сплит-порівняння двох станів працює краще за один позитивний образ.</span>
+      </div>
+      <button class="copy">Копіювати</button>
+    </div>
+    <div class="body"><pre class="copysrc">Photorealistic 1:1 square split-screen image divided by a thin vertical orange #F2994A line. Documentary lifestyle photography, natural window light, real Ukrainian-looking women aged around 42, no exaggerated expressions.
+LEFT HALF: a mother sitting at a cluttered kitchen table late in the evening, cold bluish light, scattered loose papers, an open laptop with too many tabs, a cold cup of tea, tired posture, hand on forehead. A small physically printed paper label taped to the table edge with Ukrainian text reading:
+ВЕРЕСЕНЬ БЕЗ ПЛАНУ
+RIGHT HALF: the same age mother in a warm cream #FEF3E2 lit room, calm, sitting beside her teenage child, one clear printed A4 preparation plan sheet on the table with visible structured lines and a teal #1F7A8C header, a mug and a marked calendar. A small printed paper label taped to the table edge with Ukrainian text reading:
+ВЕРЕСЕНЬ ЗА ПЛАНОМ
+Across the top of the whole image, a solid navy #1A2233 band with white bold Ukrainian text:
+ОДИН І ТОЙ САМИЙ 11 КЛАС · ДВА РІЗНІ ЧЕРВНІ
+Across the bottom, a teal band with white Ukrainian text:
+БЕЗКОШТОВНИЙ ПРАКТИКУМ ДЛЯ БАТЬКІВ · НМТ-2027 · 8 ВЕРЕСНЯ 19:00
+Reserve clean space at bottom right for a real uploaded KEVIN logo PNG — do not generate a logo. Realistic skin texture, natural depth of field. crisp legible Ukrainian typography, no outer quotation marks</pre></div>
+  </div>
+
+  <div class="card">
+    <div class="card-head">
+      <div class="card-title"><span class="tag">05</span>UGC-реалізм — «там усе вивчить»
+        <span class="hint">Хук: пряма мова батька проти реального балу пробного. Формат 9:16. Гіпотеза: нерекламний UGC-кадр пробиває сліпоту до банерів у Stories.</span>
+      </div>
+      <button class="copy">Копіювати</button>
+    </div>
+    <div class="body"><pre class="copysrc">Photorealistic 9:16 vertical image that looks like an amateur phone photo taken in a real Ukrainian family kitchen in the evening, slightly imperfect framing, mild sensor noise, warm lamp light, no studio polish. All key content in the TOP 65% of the frame; bottom 35% left as plain blurred kitchen surface for Meta Stories UI.
+On the table, a real crumpled sheet of squared notebook paper with a hand-written result in blue ballpoint pen, Ukrainian text reading:
+ПРОБНИЙ НМТ: 130 БАЛІВ
+Next to it a school diary open on a page with high grades, and a phone lying face up.
+Above, integrated as a piece of masking tape stuck on the wall with hand-written marker Ukrainian text:
+ДИТИНА ПОВЕРНУЛАСЬ У ШКОЛУ — ТАМ УСЕ ВИВЧИТЬ
+Below the crumpled sheet, a small printed sticker in teal #1F7A8C with white Ukrainian text:
+ШКІЛЬНІ 10–11 БАЛІВ ЦЕ ЩЕ НЕ 180 НА НМТ-2027
+Bottom of the top-65% zone: a compact orange #F2994A rounded label with navy Ukrainian text:
+ПРАКТИКУМ ДЛЯ БАТЬКІВ · 8 ВЕРЕСНЯ 19:00
+Reserve a small clean corner for a real uploaded KEVIN logo PNG — do not generate a logo. Authentic amateur photography feel, real paper texture, real handwriting. crisp legible Ukrainian typography, no outer quotation marks</pre></div>
+  </div>
+
+  <div class="card">
+    <div class="card-head">
+      <div class="card-title"><span class="tag">06</span>Грошова інфографіка — ціна 15–20 балів
+        <span class="hint">Хук: скільки коштують 15–20 балів різниці. Формат 1:1. Гіпотеза: фінансовий тригер сильніший за освітній для ЛПР (мами 35–50, які платять).</span>
+      </div>
+      <button class="copy">Копіювати</button>
+    </div>
+    <div class="body"><pre class="copysrc">Photorealistic 1:1 square top-down studio shot on a cream #FEF3E2 linen surface with soft directional light and realistic shadows. In the center, two neat physical stacks of real Ukrainian hryvnia banknotes of different heights, bound with paper bands. A thin brass ruler lies between them measuring the height difference, with a small engraved metal tag beside it.
+Above the stacks, embossed navy #1A2233 Ukrainian headline pressed into the linen:
+15–20 БАЛІВ РІЗНИЦІ
+Directly under the headline, a smaller teal #1F7A8C Ukrainian line:
+МІЖ БЮДЖЕТОМ І КОНТРАКТОМ
+Beside the taller stack, a printed paper card with navy Ukrainian text:
+ПРИБЛИЗНО 140 000 – 360 000 ГРН ЗА РОКИ НАВЧАННЯ
+Bottom of frame: a solid teal band with white Ukrainian text:
+БЕЗКОШТОВНИЙ ПРАКТИКУМ ДЛЯ БАТЬКІВ 11-КЛАСНИКІВ · НМТ-2027 · 8 ВЕРЕСНЯ 19:00
+Small orange #F2994A paperclip as an accent detail. Reserve clean empty space in the top right corner for a real uploaded KEVIN logo PNG — do not generate a logo. Macro product photography, tactile paper and metal textures, shallow depth of field. crisp legible Ukrainian typography, no outer quotation marks</pre></div>
+  </div>
+
+  <div class="card">
+    <div class="card-head">
+      <div class="card-title"><span class="tag">07</span>Календар — вересень вирішує рік
+        <span class="hint">Хук: обведений вересень як точка старту. Формат 1:1. Гіпотеза: ефект нового старту (свіжий місяць) підвищує CTR у перші два тижні вересня.</span>
+      </div>
+      <button class="copy">Копіювати</button>
+    </div>
+    <div class="body"><pre class="copysrc">Photorealistic 1:1 square close-up of a real physical wall calendar page for September, printed on thick matte paper with visible fiber texture, hanging on a warm cream #FEF3E2 wall, lit by soft morning window light with a natural soft shadow.
+The Ukrainian month title at the top reads:
+ВЕРЕСЕНЬ
+The date 8 is circled by hand with a thick orange #F2994A marker, the circle slightly uneven like a real hand stroke, with a hand-written note in navy ink in the margin beside it in Ukrainian reading:
+19:00 ПРАКТИКУМ
+A real red thumbtack holds the calendar to the wall. Below the calendar grid, printed directly on the calendar paper in bold navy #1A2233 Ukrainian type:
+ВЕРЕСЕНЬ ВИРІШУЄ ВЕСЬ 11 КЛАС
+Under it a smaller teal #1F7A8C Ukrainian line:
+НАПРЯМ · 4-Й ПРЕДМЕТ НМТ-2027 · ПЛАН НА 180+
+At the bottom edge, a small printed strip in Ukrainian:
+БЕЗКОШТОВНО · ДЛЯ БАТЬКІВ МАЙБУТНІХ 11-КЛАСНИКІВ
+Leave a clean empty area at the bottom right of the calendar sheet for a real uploaded KEVIN logo PNG — do not generate a logo. Sharp paper grain, realistic marker ink bleed, natural depth. crisp legible Ukrainian typography, no outer quotation marks</pre></div>
+  </div>
+
+  <div class="card">
+    <div class="card-head">
+      <div class="card-title"><span class="tag">08</span>Шкільне приладдя flat-lay
+        <span class="hint">Хук: back-to-school, але поруч зі шкільним — план підготовки до НМТ. Формат 1:1. Гіпотеза: сезонна естетика вересня знижує CPM і дає дешевший лід.</span>
+      </div>
+      <button class="copy">Копіювати</button>
+    </div>
+    <div class="body"><pre class="copysrc">Photorealistic 1:1 square flat-lay photographed from directly above on a cream #FEF3E2 wooden desk with warm natural light and soft realistic shadows. Neatly arranged real objects: a stack of new school notebooks, sharpened pencils, a teal #1F7A8C pencil case, a metal ruler, an orange #F2994A highlighter, a pair of dry autumn maple leaves, a white coffee mug, and a smartphone.
+In the visual center, an A4 sheet of real printed paper with a slight paper curl and visible print texture. Printed on the sheet in navy #1A2233 Ukrainian type as a document header:
+ПЛАН ПІДГОТОВКИ ДО НМТ-2027
+and beneath it four short printed lines in Ukrainian with small teal checkboxes:
+НАПРЯМ
+4-Й ПРЕДМЕТ
+ТЕМИ, ЩО ДАЮТЬ ПРИРІСТ
+ГРАФІК НА ТИЖДЕНЬ
+Across the top of the frame, bold navy Ukrainian headline floating as thick cut-paper letters casting real shadow:
+ШКОЛА ПОЧАЛАСЬ. А ПІДГОТОВКА?
+Along the bottom edge, a teal band with white Ukrainian text:
+ПРАКТИКУМ ДЛЯ БАТЬКІВ · 8 ВЕРЕСНЯ 19:00 · БЕЗКОШТОВНО
+Reserve clean empty space at the top right for a real uploaded KEVIN logo PNG — do not generate a logo. Editorial flat-lay photography, tactile textures. crisp legible Ukrainian typography, no outer quotation marks</pre></div>
+  </div>
+
+  <div class="card">
+    <div class="card-head">
+      <div class="card-title"><span class="tag">09</span>Не зламати дитину
+        <span class="hint">Хук: біль вигорання між школою і підготовкою. Формат 9:16. Гіпотеза: емоційний кут турботи заходить на мам краще за результативний.</span>
+      </div>
+      <button class="copy">Копіювати</button>
+    </div>
+    <div class="body"><pre class="copysrc">Photorealistic 9:16 vertical documentary photograph, warm evening lamp light in a real teenager room. A mother in her forties sits on the edge of a desk chair with a hand gently on the shoulder of her tired 16-year-old child, who is leaning over an open textbook. Calm, tender, non-dramatic mood, natural skin texture, realistic shadows. All critical content in the TOP 65% of the frame; the bottom 35% is soft blurred room for Meta Stories UI.
+Overlaid in the top area as thick physical cut-paper letters casting a real shadow on the wall, cream #FEF3E2 letters with bold navy #1A2233 fill, Ukrainian text:
+ПІДГОТОВКА ДО НМТ НЕ ПОВИННА ЗЛАМАТИ ДИТИНУ
+Below it, a printed teal #1F7A8C paper strip pinned to the wall with white Ukrainian text:
+СКІЛЬКИ ГОДИН НА ТИЖДЕНЬ РЕАЛЬНО ВИТРИМУЄ 11-КЛАСНИК
+At the lower boundary of the top-65% zone, a compact orange #F2994A rounded label with navy Ukrainian text:
+ПРАКТИКУМ ДЛЯ БАТЬКІВ · НМТ-2027 · 8 ВЕРЕСНЯ 19:00
+Reserve clean space in the top right corner for a real uploaded KEVIN logo PNG — do not generate a logo. Cinematic warm color grading strictly within the brand palette. crisp legible Ukrainian typography, no outer quotation marks</pre></div>
+  </div>
+
+  <div class="card">
+    <div class="card-head">
+      <div class="card-title"><span class="tag">10</span>Single-number 180
+        <span class="hint">Хук: одна велика цифра як стоп-кадр. Формат 9:16. Гіпотеза: мінімалістичний числовий хук виграє в перших 0,5 секунди перегляду.</span>
+      </div>
+      <button class="copy">Копіювати</button>
+    </div>
+    <div class="body"><pre class="copysrc">Photorealistic 9:16 vertical image on a deep navy #1A2233 background with subtle textured paper grain and dramatic side lighting. All critical content in the TOP 65%; bottom 35% is clean empty navy for Meta Stories UI.
+Dominating the upper half, an enormous three-dimensional number 180 built from thick cream #FEF3E2 cardboard letters standing physically on a surface, casting long realistic shadows to the right, edges showing real cardboard fiber. A thin orange #F2994A neon-like line runs horizontally behind the number.
+Directly beneath the number, bold white Ukrainian text:
+ЦЕ НЕ МРІЯ. ЦЕ ПЛАН.
+Below it, a smaller teal #1F7A8C Ukrainian line:
+З ЧОГО ПОЧАТИ ПІДГОТОВКУ ДО НМТ-2027 У ВЕРЕСНІ
+At the lower boundary of the top-65% zone, a compact cream label with navy Ukrainian text:
+БЕЗКОШТОВНИЙ ПРАКТИКУМ ДЛЯ БАТЬКІВ 11-КЛАСНИКІВ · 8 ВЕРЕСНЯ 19:00
+Reserve clean space in the top right for a real uploaded KEVIN logo PNG — do not generate a logo. Studio lighting, tactile cardboard, strong depth. crisp legible Ukrainian typography, no outer quotation marks</pre></div>
+  </div>
+
+  <div class="card">
+    <div class="card-head">
+      <div class="card-title"><span class="tag">11</span>Single-number 30 місць
+        <span class="hint">Хук: дефіцит як самостійна цифра. Формат 1:1. Гіпотеза: дефіцит + соцдоказ разом дають вищу конверсію лендінга, ніж сама тема.</span>
+      </div>
+      <button class="copy">Копіювати</button>
+    </div>
+    <div class="body"><pre class="copysrc">Photorealistic 1:1 square macro photograph of a real wooden peg board on a cream #FEF3E2 wall, warm directional light, deep realistic shadows. The board holds a grid of small round wooden tokens; most tokens are turned to their teal #1F7A8C painted side, a few remaining tokens are blank cream, visually communicating limited remaining places.
+Beside the board, a large physically real number 30 made of thick orange #F2994A painted wood standing against the wall, with realistic paint texture and shadow.
+Above, embossed navy #1A2233 Ukrainian headline:
+30 МІСЦЬ НА ІНДИВІДУАЛЬНИЙ ПЛАН ПІДГОТОВКИ
+Under it, a printed white card pinned to the board with navy Ukrainian text:
+БОНУС КОЖНОМУ, ХТО ЗАРЕЄСТРУЄТЬСЯ НА ПРАКТИКУМ
+Bottom band in teal with white Ukrainian text:
+ДЛЯ БАТЬКІВ МАЙБУТНІХ 11-КЛАСНИКІВ · НМТ-2027 · 8 ВЕРЕСНЯ 19:00
+Reserve clean empty space at the bottom right for a real uploaded KEVIN logo PNG — do not generate a logo. Tactile wood grain, matte paint, natural light. crisp legible Ukrainian typography, no outer quotation marks</pre></div>
+  </div>
+
+  <div class="card">
+    <div class="card-head">
+      <div class="card-title"><span class="tag o">12</span>Бонус-діагностика — індивідуальний план
+        <span class="hint">Хук: унікальна перевага цього запуску — план видають одразу за реєстрацію. Формат 1:1. Гіпотеза: лід-магніт у креативі дає дешевший лід, ніж сама тема ефіру.</span>
+      </div>
+      <button class="copy">Копіювати</button>
+    </div>
+    <div class="body"><pre class="copysrc">Photorealistic 1:1 square top-down shot on a cream #FEF3E2 desk with warm soft light. In the center, a real printed A4 document lying at a slight angle, thick matte paper with visible texture and a subtle curl, held by a teal #1F7A8C metal clip. The document is designed as a personal preparation plan: a navy #1A2233 header bar, a name field line, a small table with weeks and subjects, and a printed score-progress chart in teal and orange #F2994A rising from left to right.
+Printed header on the document in Ukrainian:
+ІНДИВІДУАЛЬНИЙ ПЛАН ПІДГОТОВКИ ДО НМТ-2027
+Beside the document: a fountain pen, a pair of glasses, a small paper card with a printed orange price-tag style stamp in Ukrainian reading:
+ВАРТІСТЬ У ТЬЮТОРА 3000–5000 ГРН · ДЛЯ УЧАСНИКІВ 0 ГРН
+Above the document, thick cut-paper navy Ukrainian letters casting real shadow:
+ПЛАН ДЛЯ ВАШОЇ ДИТИНИ — ОДРАЗУ ЗА РЕЄСТРАЦІЮ
+Bottom band in teal with white Ukrainian text:
+ПРАКТИКУМ ДЛЯ БАТЬКІВ 11-КЛАСНИКІВ · 8 ВЕРЕСНЯ 19:00 · 30 МІСЦЬ
+Reserve clean space at the top right for a real uploaded KEVIN logo PNG — do not generate a logo. Realistic paper fiber, metal reflections, editorial styling. crisp legible Ukrainian typography, no outer quotation marks</pre></div>
+  </div>
+
+  <div class="card">
+    <div class="card-head">
+      <div class="card-title"><span class="tag o">13</span>Бонус-діагностика — вертикаль
+        <span class="hint">Хук: той самий лід-магніт у Stories-форматі. Формат 9:16. Гіпотеза: перевіряємо, чи тримає лід-магніт формат Stories так само, як стрічку.</span>
+      </div>
+      <button class="copy">Копіювати</button>
+    </div>
+    <div class="body"><pre class="copysrc">Photorealistic 9:16 vertical image, warm cream #FEF3E2 studio background with soft gradient light and realistic shadow. All critical content in the TOP 65%; bottom 35% left as clean empty cream for Meta Stories UI.
+In the upper area, a real printed personal plan document floats at a slight three-dimensional angle, thick matte paper with a visible curl and drop shadow, showing a navy #1A2233 header, a small weekly table and a rising teal #1F7A8C progress chart. Printed header in Ukrainian:
+ІНДИВІДУАЛЬНИЙ ПЛАН ПІДГОТОВКИ ДО НМТ-2027
+Behind it, a soft-focus second sheet suggesting a full set of documents.
+Above the document, thick orange #F2994A cut-paper Ukrainian letters:
+БОНУС ЗА РЕЄСТРАЦІЮ
+Below the document, bold navy Ukrainian text on cream:
+ЗУСТРІЧ З МЕТОДИСТОМ · ПРОБНЕ НМТ · СТРАТЕГІЯ НА РІК
+Under it a compact teal label with white Ukrainian text:
+БЕЗКОШТОВНО · 30 МІСЦЬ · 8 ВЕРЕСНЯ 19:00
+Reserve clean space in the top right for a real uploaded KEVIN logo PNG — do not generate a logo. Tactile paper realism, gentle depth of field. crisp legible Ukrainian typography, no outer quotation marks</pre></div>
+  </div>
+
+  <div class="card">
+    <div class="card-head">
+      <div class="card-title"><span class="tag b">14</span>Спікерка Саіда — стрічка
+        <span class="hint">Хук: людина і регалії замість плашки. Формат 1:1, з місцем під реальне фото. Гіпотеза: обличчя експерта підвищує довіру й доходимість, навіть якщо CTR нижчий.</span>
+      </div>
+      <button class="copy">Копіювати</button>
+    </div>
+    <div class="body"><pre class="copysrc">Photorealistic 1:1 square composite layout on a cream #FEF3E2 background with subtle paper texture and soft studio light. The RIGHT HALF of the frame is left as a clean empty cutout area with a soft natural shadow edge, prepared for a real uploaded photograph of the speaker to be composited in — do not generate any human face or figure in this area.
+The LEFT HALF contains a designed information block built as layered physical paper cards with real drop shadows:
+Top card, navy #1A2233 with white Ukrainian text:
+САІДА
+Second line on the same card, smaller, in orange #F2994A:
+ЕКСПЕРТКА З РОЗРОБКИ ІНДИВІДУАЛЬНИХ ПЛАНІВ ПІДГОТОВКИ ДО НМТ НА 180+
+Middle cream card with navy Ukrainian text:
+ЯК ОБРАТИ НАПРЯМ, 4-Й ПРЕДМЕТ НМТ-2027 І СКЛАСТИ ПЛАН НА 180+
+Bottom teal #1F7A8C card with white Ukrainian text:
+БЕЗКОШТОВНИЙ ПРАКТИКУМ ДЛЯ БАТЬКІВ · 8 ВЕРЕСНЯ 19:00
+A thin orange vertical accent bar separates the two halves. Reserve clean empty space at the bottom left for a real uploaded KEVIN logo PNG — do not generate a logo or wordmark. Layered paper realism, precise shadows, editorial poster look. crisp legible Ukrainian typography, no outer quotation marks</pre></div>
+  </div>
+
+  <div class="card">
+    <div class="card-head">
+      <div class="card-title"><span class="tag b">15</span>Спікерка Саіда — Stories
+        <span class="hint">Хук: обличчя + одна обіцянка зустрічі. Формат 9:16, з місцем під реальне фото. Гіпотеза: вертикальний портретний формат дає вищу доходимість з Reels.</span>
+      </div>
+      <button class="copy">Копіювати</button>
+    </div>
+    <div class="body"><pre class="copysrc">Photorealistic 9:16 vertical poster layout on a cream #FEF3E2 background with soft paper grain and warm studio light. The lower-middle portion of the TOP 65% zone is a clean empty vertical cutout with a soft feathered shadow edge, prepared for a real uploaded portrait photograph of the speaker to be composited in — do not generate any human face or figure. The bottom 35% of the frame stays empty cream for Meta Stories UI.
+At the very top, a navy #1A2233 band with white Ukrainian text:
+8 ВЕРЕСНЯ · 19:00 · ПРАКТИКУМ ДЛЯ БАТЬКІВ 11-КЛАСНИКІВ
+Below it, thick cut-paper navy Ukrainian headline casting a real shadow:
+ПЛАН НА 180+ ЗА ОДНУ ЗУСТРІЧ
+Under the headline, a slim teal #1F7A8C paper strip with white Ukrainian text:
+САІДА · ЕКСПЕРТКА З ІНДИВІДУАЛЬНИХ ПЛАНІВ ПІДГОТОВКИ ДО НМТ
+At the lower boundary of the top-65% zone, an orange #F2994A rounded label with navy Ukrainian text:
+БЕЗКОШТОВНО · НМТ-2027
+Reserve a small clean corner at the top right for a real uploaded KEVIN logo PNG — do not generate a logo. Layered paper realism, precise soft shadows. crisp legible Ukrainian typography, no outer quotation marks</pre></div>
+  </div>
+</section>
+
+<!-- ============ РЕКЛАМА ============ -->
+<section id="ads">
+  <div class="reminder">
+    <b>Ключове для реклами:</b> ЦА — батьки майбутніх 11-класників (НМТ-2027), ніколи не «10–11 клас» · дата 8 вересня, 19:00 · спікерка Саіда · бонус за реєстрацію — індивідуальний план · без слів «гарантія / гарантовано вступить» · прохідні бали — тільки «від 180» або «прогноз 2027» · без шок-емодзі й паніки.
+  </div>
+  <p class="note">Структура кожного тексту: гачок → буліти цінності → бонус за реєстрацію → CTA. Чотири різні кути для тестування.</p>
+
+  <div class="card">
+    <div class="card-head">
+      <div class="card-title"><span class="tag">Текст 1</span>Сезонний кут — школа почалась, підготовка ні</div>
+      <button class="copy">Копіювати</button>
+    </div>
+    <div class="body"><div class="copysrc">Дитина повернулась у школу. Але школа не готує до НМТ.
+
+Це не претензія до вчителів — у школи інша програма й інші завдання. Просто діти, які мають у щоденнику 10–11, пишуть перший пробний НМТ на 120–140 із 200. А на бюджет потрібно від 180.
+
+Різницю закривають за навчальний рік. Але тільки якщо почати з вересня і за планом.
+
+8 вересня о 19:00 — безкоштовний практикум для батьків майбутніх 11-класників. Розберемо:
+
+🔹 як обрати напрям, коли дитина каже «я не знаю» — 5 запитань, що дають відповідь за вечір
+🔹 як з напряму випливає 4-й предмет НМТ-2027
+🔹 з чого складається 180+ і які теми дають найбільший приріст балів
+🔹 скільки годин на тиждень реально потрібно 11-класнику — без вигорання
+
+Спікерка: Саіда, експертка з розробки індивідуальних планів підготовки до НМТ на 180+.
+
+Бонус кожному, хто зареєструється: покроковий індивідуальний план підготовки до НМТ-2027 для вашої дитини — зустріч з методистом, пробне НМТ, стратегія на рік. Безкоштовно, 30 місць.
+
+Реєстрація 👉 [посилання на лендінг]</div></div>
+  </div>
+
+  <div class="card">
+    <div class="card-head">
+      <div class="card-title"><span class="tag">Текст 2</span>Прямий анонс з акцентом на бонус</div>
+      <button class="copy">Копіювати</button>
+    </div>
+    <div class="body"><div class="copysrc">Індивідуальний план підготовки до НМТ-2027 — просто за реєстрацію на практикум.
+
+Не після ефіру. Не «якщо купите курс». Одразу після реєстрації.
+
+Що входить у план:
+🔹 індивідуальна онлайн-зустріч методиста з дитиною і з вами
+🔹 пробне НМТ-тестування — покаже реальний рівень, а не шкільну оцінку
+🔹 розбір, які теми провалені і які дають найбільший приріст балів
+🔹 стратегія на рік: напрям, 4-й предмет, тижневий графік
+
+Приватні тьютори беруть за таку роботу 3 000–5 000 грн. Тут — безкоштовно. Місць 30.
+
+А сам практикум — 8 вересня о 19:00, для батьків майбутніх 11-класників. Саіда, експертка з планів підготовки на 180+, розбере, як обрати напрям, визначити 4-й предмет НМТ-2027 і скласти план на 180+ з перших тижнів вересня.
+
+Школа KEVIN: 9 років, 22 753 випускники, середній приріст +55 балів.
+
+Забрати план і місце на практикумі 👉 [посилання на лендінг]</div></div>
+  </div>
+
+  <div class="card">
+    <div class="card-head">
+      <div class="card-title"><span class="tag">Текст 3</span>Розрив школа/НМТ + фінансова рамка</div>
+      <button class="copy">Копіювати</button>
+    </div>
+    <div class="body"><div class="copysrc">10 балів у щоденнику. 130 на пробному НМТ.
+
+Це історія, яку ми бачимо щороку у вересні. Батьки спокійні, бо оцінки хороші. А потім перший пробний тест показує реальну картину — і виявляється, що до прохідних 180 ще далеко.
+
+І тут починається арифметика, про яку не люблять говорити: 15–20 балів різниці між бюджетом і контрактом — це приблизно 140 000–360 000 грн за роки навчання.
+
+8 вересня о 19:00 — безкоштовний практикум для батьків майбутніх 11-класників. Саіда розбере:
+
+🔹 чому шкільна оцінка і бал НМТ — це різні речі
+🔹 з чого складається 180+ і які теми дають найбільший приріст
+🔹 як обрати напрям і 4-й предмет НМТ-2027 вже цього вересня
+🔹 покроковий план підготовки на рік — без вигорання дитини
+
+Бонус за реєстрацію: індивідуальний план підготовки для вашої дитини — зустріч з методистом і пробне НМТ. Безкоштовно, 30 місць.
+
+Дізнатись реальний рівень дитини зараз, а не в травні 👉 [посилання на лендінг]</div></div>
+  </div>
+
+  <div class="card">
+    <div class="card-head">
+      <div class="card-title"><span class="tag">Текст 4</span>Напрям і вибір</div>
+      <button class="copy">Копіювати</button>
+    </div>
+    <div class="body"><div class="copysrc">«Мам, я ще не знаю, куди вступати».
+
+Знайома відповідь? Проблема не в тому, що дитина не визначилась. Проблема в тому, що поки напрям не обраний, вона готується до всього потроху — і не виходить на результат у жодному предметі.
+
+А з напряму випливає 4-й предмет НМТ-2027. І чим пізніше його обрано, тим менше часу лишається його витягнути.
+
+8 вересня о 19:00 — безкоштовний практикум для батьків майбутніх 11-класників. Пройдемо весь ланцюжок:
+
+🔹 5 запитань, які визначають напрям навіть із «я не знаю»
+🔹 напрям → 4-й предмет НМТ-2027, без вгадування
+🔹 з чого складається 180+ і на які теми ставити вересень
+🔹 план підготовки на рік, який дитина витримає поруч зі школою
+
+Спікерка: Саіда — експертка з розробки індивідуальних планів підготовки до НМТ на 180+.
+
+Бонус за реєстрацію: покроковий індивідуальний план для вашої дитини — зустріч з методистом, пробне НМТ, стратегія на рік. Безкоштовно, 30 місць.
+
+Визначитись у вересні, а не в травні 👉 [посилання на лендінг]</div></div>
+  </div>
+</section>
+
+<!-- ============ ПУШІ ============ -->
+<section id="push">
+  <div class="reminder">
+    <b>Ключове для пушів:</b> у прогріві посилання НЕ даємо — тільки «прийде за годину до ефіру, отримають лише зареєстровані» · у день ефіру — пряме <code>[посилання на ефір]</code> · фінальний стимул зайти = курс зі знижкою 30% для учасників ефіру (діагностику вже роздали за реєстрацію) · 100 місць на ефір · дожими прив'язані до блоку ефіру, а не до годинника.
+  </div>
+
+  <h3 class="grp">Підсерія 1 — прогрів до ефіру (без посилання)</h3>
+  <p class="note">Розсилка по базі зареєстрованих. Рекомендовано: за 3 дні, за 1 день, у день ефіру вранці.</p>
+
+  <div class="card">
+    <div class="card-head">
+      <div class="card-title"><span class="tag">П1.1</span>Анонс через цінність і сезон</div>
+      <button class="copy">Копіювати</button>
+    </div>
+    <div class="metaline">За 2–3 дні до ефіру.</div>
+    <div class="body"><div class="copysrc">Вересень — єдиний місяць у році, коли план підготовки ще можна скласти спокійно 🍂
+
+Далі буде тільки щільніше: контрольні, олімпіади, зимова сесія тривог і весняна паніка.
+
+8 вересня о 19:00 Саіда — експертка з розробки індивідуальних планів підготовки до НМТ на 180+ — розбере з вами:
+🔹 як обрати напрям, коли дитина каже «я не знаю»
+🔹 як з напряму випливає 4-й предмет НМТ-2027
+🔹 з чого складається 180+
+🔹 скільки годин на тиждень реально потрібно 11-класнику
+
+Одна порада, яку можна застосувати вже сьогодні: не питайте дитину «ким ти хочеш стати». Це запитання паралізує. Спитайте «який шкільний предмет тобі найменш нудно робити, навіть коли не задали». Відповідь на нього говорить більше, ніж будь-який тест на профорієнтацію.
+
+Решта 4 запитань — на практикумі.
+
+Посилання на вхід прийде за годину до ефіру, і отримають його лише зареєстровані. Місць у кімнаті — 100.</div></div>
+  </div>
+
+  <div class="card">
+    <div class="card-head">
+      <div class="card-title"><span class="tag">П1.2</span>Тригер втрати — розрив школа/НМТ</div>
+      <button class="copy">Копіювати</button>
+    </div>
+    <div class="metaline">За 1 день до ефіру.</div>
+    <div class="body"><div class="copysrc">Завтра о 19:00.
+
+І перед зустріччю — одна цифра, яку варто знати заздалегідь.
+
+Дитина зі шкільними 10–11 балами пише перший пробний НМТ на 120–140 із 200. Прохідний на бюджет — від 180.
+
+Це не про здібності дитини. Це про те, що НМТ перевіряє інший навик, ніж школа: швидко впізнати тип завдання і не втратити бали там, де все насправді знаєш.
+
+Ті, хто дізнається про цей розрив у вересні, встигають його закрити. Ті, хто дізнається в березні, — вже обирають між контрактом і рік перездавати.
+
+Завтра Саіда покаже, з чого складається 180+ і з яких тем починати вересень.
+
+Посилання на вхід прийде за годину до ефіру — лише зареєстрованим. Місць 100.</div></div>
+  </div>
+
+  <div class="card">
+    <div class="card-head">
+      <div class="card-title"><span class="tag">П1.3</span>Нагадування + мікро-інструкція дії</div>
+      <button class="copy">Копіювати</button>
+    </div>
+    <div class="metaline">Ранок 8 вересня.</div>
+    <div class="body"><div class="copysrc">Сьогодні о 19:00 🤍
+
+Прохання на 20 секунд — зробіть це зараз, поки читаєте:
+
+1️⃣ поставте нагадування на телефоні на 18:55
+2️⃣ подивіться на свій вечір і скажіть удома, що з 19:00 до 20:30 ви зайняті
+3️⃣ покладіть поруч аркуш і ручку — Саіда одразу дасть 5 запитань, які треба буде поставити дитині сьогодні ввечері
+
+Це та година, яку ви витрачаєте не на зустріч, а на майбутнє дитини. Наступного такого вересня в 11 класі не буде.
+
+Посилання на вхід надішлемо за годину до ефіру — о 18:00, і тільки зареєстрованим. Місць у кімнаті 100.</div></div>
+  </div>
+
+  <h3 class="grp">Підсерія 2 — день ефіру, з прямим посиланням</h3>
+  <p class="note"><b>Примітка модератору:</b> дожими прив'язані до блоку ефіру, а не до годинника. Якщо Саіда йде швидше або повільніше — надсилайте повідомлення тоді, коли реально почався відповідний блок, а не за таймером.</p>
+
+  <div class="card">
+    <div class="card-head">
+      <div class="card-title"><span class="tag">П2.1</span>За 40 хвилин</div>
+      <button class="copy">Копіювати</button>
+    </div>
+    <div class="metaline">≈18:20.</div>
+    <div class="body"><div class="copysrc">За 40 хвилин починаємо ⏰
+
+Ваше посилання на вхід:
+👉 [посилання на ефір]
+
+Зайдіть зараз, не о 18:59: перший вхід потребує хвилини — треба натиснути «Увійти до вебінарної кімнати», ввести ім'я і пошту, а потім персональне посилання.
+
+Сьогодні розберемо напрям, 4-й предмет НМТ-2027 і план на 180+ з вересня. Це те, що визначає весь 11 клас.
+
+Місць у кімнаті — 100.</div></div>
+  </div>
+
+  <div class="card">
+    <div class="card-head">
+      <div class="card-title"><span class="tag">П2.2</span>За 20 хвилин + соцдоказ</div>
+      <button class="copy">Копіювати</button>
+    </div>
+    <div class="metaline">≈18:40.</div>
+    <div class="body"><div class="copysrc">20 хвилин до старту.
+
+Уже [N реєстрацій] батьків підтвердили, що будуть, і кімната заповнюється швидше, ніж зазвичай.
+
+Нагадаю, чому це важливо саме зараз: без плану дитина витрачає вересень на «вчити все потроху», а в травні виявляється, що на 180 не вистачило кількох тем. Саме тих, які видно ще у вересні.
+
+👉 [посилання на ефір]
+
+Заходьте — і напишіть у чаті «+», щоб ми бачили, що ви на місці.</div></div>
+  </div>
+
+  <div class="card">
+    <div class="card-head">
+      <div class="card-title"><span class="tag">П2.3</span>За 2 хвилини</div>
+      <button class="copy">Копіювати</button>
+    </div>
+    <div class="metaline">18:58.</div>
+    <div class="body"><div class="copysrc">2 хвилини 🔴
+
+Заходьте зараз — перший блок про напрям і 5 запитань, і він найкорисніший.
+
+👉 [посилання на ефір]
+
+Аркуш і ручку — поруч.</div></div>
+  </div>
+
+  <div class="card">
+    <div class="card-head">
+      <div class="card-title"><span class="tag">П2.4</span>Ми в ефірі</div>
+      <button class="copy">Копіювати</button>
+    </div>
+    <div class="metaline">19:00–19:05, на старті першого блоку.</div>
+    <div class="body"><div class="copysrc">🔴 Ми в ефірі!
+
+Саіда вже дає 5 запитань, які визначають напрям — ті самі, що працюють, коли дитина каже «я не знаю».
+
+Заходьте, ще є вільні місця зі 100:
+👉 [посилання на ефір]</div></div>
+  </div>
+
+  <div class="card">
+    <div class="card-head">
+      <div class="card-title"><span class="tag">П2.5</span>+10 хвилин — «впустимо ще»</div>
+      <button class="copy">Копіювати</button>
+    </div>
+    <div class="metaline">На початку блоку про 4-й предмет НМТ-2027.</div>
+    <div class="body"><div class="copysrc">Зараз у кімнаті найдорожча частина 👇
+
+Саіда розбирає, як напрям перетворюється на 4-й предмет НМТ-2027. Це той момент, де батьки зазвичай розуміють, що предмет обрано навмання — і що у вересні це ще можна виправити без втрат.
+
+Місця були розібрані, але ми відкрили ще п'ять — впустимо тих, хто зайде найближчі хвилини.
+
+👉 [посилання на ефір]</div></div>
+  </div>
+
+  <div class="card">
+    <div class="card-head">
+      <div class="card-title"><span class="tag o">П2.6</span>+20 хвилин — знижка 30% як фінальний стимул</div>
+      <button class="copy">Копіювати</button>
+    </div>
+    <div class="metaline">На початку блоку про план і 180+. Головний peak-end гачок цього запуску.</div>
+    <div class="body"><div class="copysrc">Якщо ви ще не зайшли — зайдіть саме зараз.
+
+Почався блок про те, з чого складається 180+ і які теми дають найбільший приріст балів. Далі — покроковий план підготовки з вересня.
+
+І ще одне, заради чого варто дійти до кінця: наприкінці зустрічі Саіда покаже, як приєднатися до підготовки в KEVIN зі знижкою 30%. Ця умова діє тільки для тих, хто сьогодні в кімнаті, і тільки під час ефіру.
+
+👉 [посилання на ефір]</div></div>
+  </div>
+</section>
+
+</div><!-- /wrap -->
+
+<footer>
+  KEVIN · Матеріали запуску практикуму 8 вересня, 19:00 · Спікерка: Саіда · Перед запуском пройдіть чек-лист «Флаги для ручної перевірки» вгорі сторінки.
+</footer>
+
+<script>
+(function () {
+  // --- таби ---
+  var tabs = document.querySelectorAll('nav.tabs button');
+  var secs = document.querySelectorAll('section');
+  tabs.forEach(function (b) {
+    b.addEventListener('click', function () {
+      tabs.forEach(function (x) { x.classList.remove('active'); });
+      secs.forEach(function (s) { s.classList.remove('active'); });
+      b.classList.add('active');
+      var target = document.getElementById(b.dataset.t);
+      if (target) target.classList.add('active');
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+  });
+
+  // --- копіювання ---
+  function textOf(btn) {
+    var nodes;
+    var alt = btn.closest('.alt');
+    if (alt) {
+      nodes = alt.querySelectorAll('.copysrc');
+    } else {
+      nodes = Array.prototype.filter.call(
+        btn.closest('.card').querySelectorAll('.copysrc'),
+        function (el) { return !el.closest('.alt'); }
+      );
+    }
+    var parts = [];
+    Array.prototype.forEach.call(nodes, function (el) {
+      parts.push(el.innerText.replace(/\u00a0/g, ' ').trim());
+    });
+    return parts.join('\n\n');
+  }
+
+  function fallbackCopy(text) {
+    var ta = document.createElement('textarea');
+    ta.value = text;
+    ta.setAttribute('readonly', '');
+    ta.style.position = 'fixed';
+    ta.style.top = '-1000px';
+    document.body.appendChild(ta);
+    ta.select();
+    var ok = false;
+    try { ok = document.execCommand('copy'); } catch (e) { ok = false; }
+    document.body.removeChild(ta);
+    return ok;
+  }
+
+  function flash(btn, ok) {
+    var old = btn.textContent;
+    btn.textContent = ok ? 'Скопійовано ✓' : 'Не вдалось';
+    btn.classList.toggle('done', ok);
+    setTimeout(function () {
+      btn.textContent = old;
+      btn.classList.remove('done');
+    }, 1600);
+  }
+
+  document.querySelectorAll('button.copy').forEach(function (btn) {
+    btn.addEventListener('click', function () {
+      var text = textOf(btn);
+      if (navigator.clipboard && window.isSecureContext) {
+        navigator.clipboard.writeText(text).then(
+          function () { flash(btn, true); },
+          function () { flash(btn, fallbackCopy(text)); }
+        );
+      } else {
+        flash(btn, fallbackCopy(text));
+      }
+    });
+  });
+})();
+</script>
+
+</body>
+</html>
