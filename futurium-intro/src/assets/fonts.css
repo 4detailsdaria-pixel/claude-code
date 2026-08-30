@@ -1,0 +1,44 @@
+/* Брендові шрифти Futurium (e-Ukraine / e-Ukraine Head).
+   Сабсет: латиниця + кирилиця + пунктуація, ~15 КБ на накреслення. */
+@font-face {
+  font-family: 'e-Ukraine';
+  src: url('./fonts/eUkraine-Light.woff2') format('woff2');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'e-Ukraine';
+  src: url('./fonts/eUkraine-Regular.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'e-Ukraine';
+  src: url('./fonts/eUkraine-Medium.woff2') format('woff2');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'e-Ukraine';
+  src: url('./fonts/eUkraine-Bold.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'e-Ukraine Head';
+  src: url('./fonts/eUkraineHead-Light.woff2') format('woff2');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'e-Ukraine Head';
+  src: url('./fonts/eUkraineHead-Medium.woff2') format('woff2');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
