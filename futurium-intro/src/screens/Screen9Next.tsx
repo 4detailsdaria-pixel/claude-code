@@ -16,7 +16,9 @@ export function Screen9Next() {
     setBusy(true);
     setError(null);
     try {
-      await downloadPlanPdf(session, derived);
+      const outcome = await downloadPlanPdf(session, derived);
+      if (outcome === 'declined') setError('Збереження скасовано.');
+      if (outcome === 'failed') setError('Не вдалося зберегти файл.');
     } catch (e) {
       setError('Не вдалося зібрати PDF. Спробуйте ще раз.');
       console.error(e);

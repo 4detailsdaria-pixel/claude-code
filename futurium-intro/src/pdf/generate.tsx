@@ -1,5 +1,6 @@
 import type { ConsultationSession, Derived } from '../types';
 import { pdfFileName } from '../lib/format';
+import { saveFile, type SaveOutcome } from '../lib/host-downloads';
 
 /**
  * PDF важкий (~1 МБ бандла), тому підвантажується лише коли його справді
@@ -22,17 +23,9 @@ async function buildBlob(
 export async function downloadPlanPdf(
   session: ConsultationSession,
   derived: Derived,
-): Promise<void> {
+): Promise<SaveOutcome> {
   const blob = await buildBlob(session, derived);
-  const url = URL.createObjectURL(blob);
-  const a = document.createElement('a');
-  a.href = url;
-  a.download = pdfFileName(session.clientName, session.createdAt);
-  document.body.appendChild(a);
-  a.click();
-  a.remove();
-  // Даємо браузеру встигнути почати завантаження
-  setTimeout(() => URL.revokeObjectURL(url), 4000);
+  return saveFile(pdfFileName(session.clientName, session.createdAt), blob);
 }
 
 /** Прев'ю PDF у новій вкладці — щоб перевірити макет, не качаючи файл. */
