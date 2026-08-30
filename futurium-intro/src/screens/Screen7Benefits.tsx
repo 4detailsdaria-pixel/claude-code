@@ -6,11 +6,11 @@ import { benefits } from '../config/benefits';
 export function Screen7Benefits() {
   return (
     <Stage eyebrow="Що входить у вартість">
-      <ul className="mt-2 space-y-6">
+      <ul className="mt-2 space-y-6 max-w-[860px]">
         {benefits.map((b) => (
           <li key={b.title} className="flex gap-5">
-            <span className="mt-[2px]">
-              <Check size={28} />
+            <span className="mt-[3px]">
+              <Check size={30} chip />
             </span>
             <div>
               <div className="text-[22px] leading-snug">{b.title}</div>

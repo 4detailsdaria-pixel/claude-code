@@ -23,7 +23,7 @@ export function LevelScale({ current, target, compact }: Props) {
   const dot = compact ? 12 : 20;
 
   return (
-    <div className={compact ? 'w-full' : 'w-full max-w-4xl'}>
+    <div className="w-full">
       <div className="relative" style={{ height: dot * 2 }}>
         {/* базова лінія */}
         <div
