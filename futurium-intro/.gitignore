@@ -1,0 +1,7 @@
+node_modules/
+dist/
+dist-single/
+dist-artifact/
+tsconfig.tsbuildinfo
+.vercel/
+*.local
