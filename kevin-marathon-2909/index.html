@@ -138,7 +138,7 @@ footer{text-align:center;color:var(--muted);font-size:12.5px;padding:30px 20px}
     <h2>⚑ Флаги для ручної перевірки перед запуском</h2>
     <ol>
       <li><b>Підставити реальні посилання:</b> два лендінги, ефіри ×3, чат марафону, гайд-подарунок, частини стратегії ×3, заявка на курс, діагностика. Тест профорієнтації вже вставлений: <code>https://kevin-career-test.vercel.app/</code></li>
-      <li><b>Підставити <code>[розмір знижки]</code>, <code>[ціни пакети]</code>, <code>[приз розіграшу]</code></b> — ці значення не вигадані й не підставлені навмисно.</li>
+      <li><b>Підставити <code>[розмір знижки]</code>, <code>[ціни пакети]</code>, <code>пробний тиждень курсу KEVIN — https://kevin-2024.kwiga.com/o/gJHyJL3QhXUh</code></b> — ці значення не вигадані й не підставлені навмисно.</li>
       <li><b>Оновити <code>[N реєстрацій]</code></b> на реальне. «100 родин» — справжній ліміт і має лишатися меншим за кількість реєстрацій.</li>
       <li><b>Регалії спікерів</b> — Даша, Віка (викладачки), Саіда, Ксенія (експерти). Точні числа учнів у регаліях позначені як <code>[регалії — уточнити]</code>: підставте реальні або лишіть загальні формулювання.</li>
       <li><b>Прохідні бали</b> — тільки «від 180 / від 185» або з підписом «прогноз на 2027».</li>
@@ -149,6 +149,9 @@ footer{text-align:center;color:var(--muted);font-size:12.5px;padding:30px 20px}
       <li><b>Кейси</b> — без вигаданих точних балів під конкретною дитиною.</li>
       <li><b>Креативи:</b> лого вставляти реальним PNG KEVIN, не генерувати. У групі 3 персонажі мають бути власними — жодних відсилань до чужих франшиз, інакше модерація й скарги.</li>
       <li><b>Розіграш:</b> три слова за три дні узгодити з куратором заздалегідь і не змінювати посеред марафону. У текстах вони позначені як <code>[слово 1/2/3]</code>.</li>
+      <li><b>Цифри ажіотажу в креативах</b> (69 родин · 82 родини · лишилось 5 місць) — підставляти на основі реальних броней і синхронно з лічильником на лендінгу. Якщо на сайті одна цифра, а в рекламі інша, це помітять і це працює проти вас.</li>
+      <li><b>«Запису не буде»</b> — це сильний драйвер доходимості, він уже стоїть у креативах дизайнерського паку. Переконайтесь, що це правда і що запис справді не розсилатиметься: одна розіслана «для тих, хто пропустив» запис вбиває механіку на всіх наступних запусках.</li>
+      <li><b>CTA на дитячих креативах</b> — «Зареєструйтесь зараз» / «Зареєструйтесь безкоштовно». Номер батьків просить віджет на реєстрації, на самому креативі про це не пишемо.</li>
     </ol>
   </div>
 </div>
@@ -159,6 +162,7 @@ footer{text-align:center;color:var(--muted);font-size:12.5px;padding:30px 20px}
     <button data-t="bot">Чат-бот</button>
     <button data-t="chat">Чат марафону</button>
     <button data-t="cr">Креативи</button>
+    <button data-t="dp">Дизайнерський пак</button>
     <button data-t="ads">Реклама</button>
     <button data-t="push">Пуші доходимості</button>
   </div>
@@ -477,7 +481,7 @@ KEVIN — найбільша мережа центрів підготовки д
   </div>
 
   <div class="ph">
-    <b>Плейсхолдери:</b> <code>[посилання лендінг]</code> · <code>[посилання ефір День 1]</code> · <code>[посилання ефір День 2]</code> · <code>[посилання ефір День 3]</code> · <code>[посилання чат марафону]</code> · <code>[посилання гайд-подарунок]</code> · <code>[посилання частина стратегії 1/2/3]</code> · <code>[посилання заявка на курс]</code> · <code>[посилання діагностика]</code> · <code>[N реєстрацій]</code> · <code>[розмір знижки]</code> · <code>[ціни пакети]</code> · <code>[приз розіграшу]</code> · <code>[слово 1/2/3]</code> · <code>[дата дії гранту]</code><br>
+    <b>Плейсхолдери:</b> <code>[посилання лендінг]</code> · <code>[посилання ефір День 1]</code> · <code>[посилання ефір День 2]</code> · <code>[посилання ефір День 3]</code> · <code>[посилання чат марафону]</code> · <code>[посилання гайд-подарунок]</code> · <code>[посилання частина стратегії 1/2/3]</code> · <code>[посилання заявка на курс]</code> · <code>[посилання діагностика]</code> · <code>[N реєстрацій]</code> · <code>[розмір знижки]</code> · <code>[ціни пакети]</code> · <code>пробний тиждень курсу KEVIN — https://kevin-2024.kwiga.com/o/gJHyJL3QhXUh</code> · <code>[слово 1/2/3]</code> · <code>[дата дії гранту]</code><br>
     <b>Уже вставлено:</b> тест профорієнтації <code>https://kevin-career-test.vercel.app/</code>
   </div>
 
@@ -615,7 +619,7 @@ crisp legible Ukrainian typography, no outer quotation marks</pre>
 
 Механіка проста: на кожному з трьох ефірів ми називаємо одне слово. Хто зібрав усі три і надіслав їх куратору в особисті після Дня 3 — бере участь у розіграші.
 
-Приз: [приз розіграшу]
+Приз: пробний тиждень курсу KEVIN — https://kevin-2024.kwiga.com/o/gJHyJL3QhXUh
 
 Щоб зібрати три слова, треба бути на всіх трьох ефірах. Пропустили день — слова немає.
 
@@ -1872,7 +1876,7 @@ crisp legible Ukrainian typography, no outer quotation marks</pre>
 
 🎁 І одразу про розіграш.
 На кожному ефірі спікер називає одне слово. Зберіть усі три і надішліть мені в особисті після Дня 3 — і ви в розіграші.
-Приз: [приз розіграшу]
+Приз: пробний тиждень курсу KEVIN — https://kevin-2024.kwiga.com/o/gJHyJL3QhXUh
 Зібрати три слова можна тільки одним способом — бути на всіх трьох ефірах.
 
 А тепер знайомство 👇 Напишіть у чат:
@@ -2011,7 +2015,7 @@ crisp legible Ukrainian typography, no outer quotation marks</pre>
 
 🎁 ЯК ВЗЯТИ УЧАСТЬ У РОЗІГРАШІ:
 Надішліть мені в особисті всі три слова одним повідомленням, у порядку днів. Приймаю до [дата дедлайну]. Переможця обираємо рандомайзером і оголошуємо тут, у чаті.
-Приз: [приз розіграшу]
+Приз: пробний тиждень курсу KEVIN — https://kevin-2024.kwiga.com/o/gJHyJL3QhXUh
 
 📝 ФІНАЛЬНЕ ЗАВДАННЯ:
 Складіть три частини стратегії разом і подивіться на них як на один документ. Потім напишіть у чат одне речення: що ви зробите вже цього тижня? Не в жовтні — цього тижня.
@@ -2476,7 +2480,7 @@ Below it, two white rounded label boxes with small arrows, dark navy #1A2233 Ukr
 Розберешся за один вечір
 29 вересня, 19:00 — безкоштовно
 At the bottom, a compact orange #F2994A rounded label with navy Ukrainian text:
-РЕЄСТРУЮТЬ БАТЬКИ — СКИНЬ ЇМ ПОСИЛАННЯ
+ЗАРЕЄСТРУЙТЕСЬ БЕЗКОШТОВНО
 Reserve a small clean corner for a real uploaded KEVIN logo PNG — do not generate a logo. crisp legible Ukrainian typography, no outer quotation marks</pre>
       <div class="alt"><div class="alt-h"><span>Ресайз 9:16</span><button class="copy sm">Копіювати 9:16</button></div>
         <pre class="copysrc">Photorealistic 9:16 vertical candid photo, a Ukrainian teenager around 17 sitting on the floor against the bed, phone in hand, hoodie, headphones around the neck, relaxed, authentic bedroom clutter, warm afternoon light, mild film grain. All critical content in the TOP 65%; the bottom 35% is blurred floor for Meta Stories UI.
@@ -2488,7 +2492,7 @@ Below it, two white rounded label boxes with small arrows, dark navy #1A2233 Ukr
 Розберешся за один вечір
 29 вересня, 19:00 — безкоштовно
 At the lower boundary of the top-65% zone, a compact orange #F2994A label with navy Ukrainian text:
-РЕЄСТРУЮТЬ БАТЬКИ — СКИНЬ ЇМ
+ЗАРЕЄСТРУЙТЕСЬ ЗАРАЗ
 Reserve a small clean corner for a real uploaded KEVIN logo PNG — do not generate a logo. crisp legible Ukrainian typography, no outer quotation marks</pre>
       </div>
     </div>
@@ -2540,7 +2544,7 @@ Below it, three white rounded label boxes with small arrows, dark navy #1A2233 U
 Порахуємо разом за один вечір
 30 вересня, 19:00 — безкоштовно
 At the bottom, a compact orange #F2994A rounded label with navy Ukrainian text:
-РЕЄСТРУЮТЬ БАТЬКИ — СКИНЬ ЇМ ПОСИЛАННЯ
+ЗАРЕЄСТРУЙТЕСЬ БЕЗКОШТОВНО
 Reserve a small clean corner for a real uploaded KEVIN logo PNG — do not generate a logo. crisp legible Ukrainian typography, no outer quotation marks</pre>
       <div class="alt"><div class="alt-h"><span>Ресайз 9:16</span><button class="copy sm">Копіювати 9:16</button></div>
         <pre class="copysrc">Photorealistic 9:16 vertical candid film-style photo, 35 mm grain, warm natural light. A Ukrainian teenager around 17 in an oversized hoodie leaning against a wall in a Kyiv courtyard, backpack beside them, looking off-camera. Pinterest aesthetic, no posing. All critical content in the TOP 65%; the bottom 35% is blurred pavement for Meta Stories UI.
@@ -2552,7 +2556,7 @@ Below it, two white rounded label boxes with small arrows, dark navy #1A2233 Ukr
 Не 180 взагалі — а під твою спеціальність
 30 вересня, 19:00 — безкоштовно
 At the lower boundary of the top-65% zone, an orange #F2994A label with navy Ukrainian text:
-РЕЄСТРУЮТЬ БАТЬКИ — СКИНЬ ЇМ
+ЗАРЕЄСТРУЙТЕСЬ ЗАРАЗ
 Reserve a small clean corner for a real uploaded KEVIN logo PNG — do not generate a logo. crisp legible Ukrainian typography, no outer quotation marks</pre>
       </div>
     </div>
@@ -2606,7 +2610,7 @@ Below it, large white sans-serif Ukrainian headline, two short lines:
 НА ВЕСЬ РІК
 Near the bottom, two white rounded label boxes with small arrows, dark navy #1A2233 Ukrainian text:
 1 жовтня, 19:00 — безкоштовно
-Реєструють батьки — скинь їм посилання
+Зареєструйтесь безкоштовно
 Reserve a small clean corner for a real uploaded KEVIN logo PNG — do not generate a logo. crisp legible Ukrainian typography, no outer quotation marks</pre>
       <div class="alt"><div class="alt-h"><span>Ресайз 9:16</span><button class="copy sm">Копіювати 9:16</button></div>
         <pre class="copysrc">Photorealistic 9:16 vertical candid bedroom photo at night: a Ukrainian teenager around 17 on a bed in a hoodie with open notes, wired earphones and a phone, warm lamp light, direct-flash feel, authentic clutter, mild grain. All critical content in the TOP 65%; the bottom 35% is blurred bedding for Meta Stories UI.
@@ -2618,7 +2622,7 @@ Below it, large white sans-serif Ukrainian headline, two short lines:
 НА ВЕСЬ РІК
 At the lower boundary of the top-65% zone, two white rounded label boxes with arrows, navy #1A2233 Ukrainian text:
 1 жовтня, 19:00 — безкоштовно
-Реєструють батьки — скинь їм
+Зареєструйтесь зараз
 Reserve a small clean corner for a real uploaded KEVIN logo PNG — do not generate a logo. crisp legible Ukrainian typography, no outer quotation marks</pre>
       </div>
     </div>
@@ -2668,7 +2672,7 @@ Above the sticker, small black centred Ukrainian caption in a clean grotesque, t
 Below, a smaller grey Ukrainian line:
 (є спосіб закрити це питання один раз — планом)
 At the bottom of the top-65% zone, a compact black rounded label with white Ukrainian text:
-МАРАФОН 29.09–01.10 · 19:00 · РЕЄСТРУЮТЬ БАТЬКИ
+МАРАФОН 29.09–01.10 · 19:00 · ЗАРЕЄСТРУЙТЕСЬ ЗАРАЗ
 Clean meme-editorial style, generous negative space, flat colours only. Reserve a small clean corner for a real uploaded KEVIN logo PNG — do not generate a logo. crisp legible Ukrainian typography, no outer quotation marks</pre>
       <div class="alt"><div class="alt-h"><span>Ресайз 1:1</span><button class="copy sm">Копіювати 1:1</button></div>
         <pre class="copysrc">Square 1:1 ad, light warm grey textured paper background with a soft white curve in the lower third. Centered, a die-cut sticker with thick white outline and soft shadow: an original cartoon teenager slumped in a chair with a blank stare and a phone, flat modern style, completely original, not resembling any existing cartoon or franchise. A small speech bubble with hand-lettered Ukrainian text:
@@ -2820,7 +2824,7 @@ Below it, four white rounded text boxes stacked, each with a small right arrow a
 → план по місяцях до травня
 → 3 вечори, безкоштовно
 At the bottom, a compact black rounded label with white Ukrainian text:
-29.09–01.10 · 19:00 · РЕЄСТРУЮТЬ БАТЬКИ
+29.09–01.10 · 19:00 · ЗАРЕЄСТРУЙТЕСЬ ЗАРАЗ
 Reserve a small clean corner for a real uploaded KEVIN logo PNG — do not generate a logo. crisp legible Ukrainian typography, no outer quotation marks</pre>
       <div class="alt"><div class="alt-h"><span>Ресайз 9:16</span><button class="copy sm">Копіювати 9:16</button></div>
         <pre class="copysrc">Vertical 9:16 film photo, 35 mm grain, a Ukrainian teenager around 17 in an oversized hoodie leaning on a street kiosk in Kyiv, candid, warm late-afternoon light, unposed, Pinterest aesthetic. All critical content in the TOP 65%; the bottom 35% is the photograph with no text, for Meta Stories UI.
@@ -2881,7 +2885,7 @@ Below it, in the lower third, two white rounded label boxes with small arrows an
 → НМТ без нервів і репетиторів до ночі
 → 3 вечори, 29.09–01.10, 19:00, безкоштовно
 At the very bottom, small white Ukrainian text with a thin outline:
-реєструють батьки — скинь їм посилання
+зареєструйтесь безкоштовно
 Reserve a small clean corner for a real uploaded KEVIN logo PNG — do not generate a logo. crisp legible Ukrainian typography, no outer quotation marks</pre>
       <div class="alt"><div class="alt-h"><span>Ресайз 9:16</span><button class="copy sm">Копіювати 9:16</button></div>
         <pre class="copysrc">Vertical 9:16 candid bedroom photo at night: a Ukrainian teenager around 17 on a bed in a hoodie with scattered notes, open textbooks, wired earphones and a phone, warm lamp light, direct-flash feel, authentic clutter, mild grain. All critical content in the TOP 65%; the bottom 35% is blurred bedding with no text.
@@ -2893,7 +2897,7 @@ Below it, two white rounded label boxes with small arrows and navy #1A2233 Ukrai
 → НМТ без нервів і репетиторів до ночі
 → 29.09–01.10, 19:00, безкоштовно
 At the lower boundary of the top-65% zone, small white Ukrainian text with a thin outline:
-реєструють батьки — скинь їм посилання
+зареєструйтесь безкоштовно
 Reserve a small clean corner for a real uploaded KEVIN logo PNG — do not generate a logo. crisp legible Ukrainian typography, no outer quotation marks</pre>
       </div>
     </div>
@@ -3292,7 +3296,9 @@ Reserve a small clean strip at the top of the screen for a real uploaded KEVIN l
 
 І бонусом: коли вдома з'являється план, до тебе перестають чіплятися з «ти взагалі готуєшся?». Перевірено багатьма родинами.
 
-Одне уточнення: реєструють батьки, на їхній номер приходять посилання. Скинь їм 👉 [посилання лендінг]
+Реєструйся 👉 [посилання лендінг]
+
+На реєстрації попросимо номер когось із батьків — марафон працює, коли ви дивитесь разом.
 
 Три вечори по годині. Це менше, ніж ти залипаєш у телефоні за один день.</div></div>
   </div>
@@ -3311,7 +3317,7 @@ Reserve a small clean strip at the top of the screen for a real uploaded KEVIN l
 
 Після цього питання «ти готуєшся?» просто зникає, бо відповідь уже написана на аркуші.
 
-Реєструють батьки — скинь їм 👉 [посилання лендінг]</div></div>
+Зареєструйтесь зараз 👉 [посилання лендінг]</div></div>
   </div>
 </section>
 
@@ -3437,6 +3443,1458 @@ SMS: 2 хв до фіналу марафону. Вхід: [посилання е
 Зараз розбирають, скільки годин на тиждень реально витримує 11-класник і як розкласти їх так, щоб дитина дійшла до травня.
 Після ефіру ви отримаєте Частину 3 — і повна стратегія буде у вас на руках. Ті, хто не був, отримають лише перші дві.
 👉 [посилання ефір День 3]</div></div>
+  </div>
+</section>
+
+<!-- ============ ДИЗАЙНЕРСЬКИЙ ПАК ============ -->
+<section id="dp">
+  <div class="reminder">
+    <b>Ключове:</b> 29.09–01.10 · 19:00 · рамка «повна стратегія за 3 вечори» · 100 родин · запису не буде · подарунок за реєстрацію — гайд мотивації · <b>CTA на всіх креативах, включно з дитячими: «Зареєструйтесь зараз» / «Зареєструйтесь безкоштовно»</b> — номер батьків просить віджет, на картинці про це не пишемо.
+  </div>
+
+  <p class="note"><b>Навіщо цей пак.</b> Основний банк креативів написаний під фотореалістичні сцени — зім'ятий папір, реальні об'єкти, об'ємні літери. Саме така картинка зчитується як AI-генерація. Тут інший підхід: промпти описують <b>плоский верстаний макет</b>, зібраний дизайнером, де фотографічні лише текстура рваного паперу й вирізане фото людини. <b>24 концепти × 2 формати = 48 промптів</b>, у двох частинах: дизайнерський стиль за вашою бренд-системою і окремо helicopter view — формати поза нашими звичними патернами.</p>
+
+  <div class="card">
+    <div class="card-head">
+      <div class="card-title"><span class="tag b">СТИЛЬ-ГАЙД</span>Бренд-система KEVIN, зчитана з дизайнерських креативів
+        <span class="hint">Довідка для звірки результату. Кожен промпт частини 1 уже містить усі ці правила.</span>
+      </div>
+      <button class="copy">Копіювати</button>
+    </div>
+    <div class="body"><div class="copysrc">ВІЗУАЛЬНА СИСТЕМА KEVIN — що робить креатив дизайнерським, а не згенерованим
+
+1. РВАНИЙ ПАПІР. Сигнатурний прийом. Смуга сфотографованого рваного білого паперу з нерівним краєм і заломами йде через самий верх макета і дзеркально через низ. Це єдиний фотографічний елемент у композиції.
+
+2. ФОН. Плоский однотонний колір, без градієнтів-переливів. Поверх — ледь помітна сітка тонких ліній (зошит у клітинку), непрозорість 6–10%.
+
+3. ТИПОГРАФІКА. Вузький жирний гротеск, капс, щільний інтерліньяж (0.95), вирівнювання по лівому краю. Заголовок ЗАВЖДИ двоколірний: частина фрази акцентним кольором, частина — темно-синім. Жодних тіней, обведень, об'єму на тексті.
+
+4. БІЛІ БУЛЬБАШКИ. Підзаголовок і службова інформація — у білих прямокутниках зі скругленням 24px і м'якою розсіяною тінню. Текст усередині звичайної насиченості, не капс.
+
+5. ПІГУЛКА ЦІНИ. Овальна плашка з тонким контуром: закреслене 599 грн, стрілка вправо, 0 грн.
+
+6. CTA-БЛОК. Білий прямокутник, усередині зліва вертикальна кольорова смуга зі скругленням і білою стрілкою вниз, праворуч — жирний текст у два рядки.
+
+7. ЛОГО. Білий круг у правому верхньому куті з м'якою тінню. У промпті лишається порожнім — реальний PNG вставляється вручну.
+
+8. ФОТО. Вирізана по контуру постать викладачки в брендовій футболці, праворуч, частково перекриває рваний папір. Завантажується окремо.
+
+ПАЛІТРА: м'ятна #7ECFC6 · фіолетова #6C2BD9 · помаранчева #F5A623 · темно-синя #12275A · червона #E8232A · жовта #FFD84D · молочна #F7F2E8
+
+ЧОГО НЕ МАЄ БУТИ: об'ємних літер, тиснення, скосів, світіння, бліків, мальованих градієнтних переливів, декоративних завитків, тіні під текстом, глянцю. Макет має виглядати як експорт із дизайн-редактора, а не як фотографія плаката.</div></div>
+  </div>
+
+  <h3 class="grp">Частина 1 — дизайнерський стиль за бренд-системою</h3>
+
+  <div class="card">
+    <div class="card-head"><div class="card-title"><span class="tag o">Д1 · 📸 ФОТО</span>Головний оффер — стратегія за 3 вечори
+      <span class="hint">Хук: результат на руках, а не тема лекції. Гіпотеза: рідний брендовий макет упізнається як контент школи, а не як реклама.</span></div><button class="copy">Копіювати 1:1</button></div>
+    <div class="metaline"><b>📸 Завантажте:</b> фото викладачки в брендовій футболці, вирізане по контуру, поворот корпусу вліво. Зарезервована права третина.</div>
+    <div class="body"><pre class="copysrc">Flat art-directed graphic design layout, exact canvas 1080x1080 pixels. Designer's export from a layout tool, NOT a photograph of a poster, NOT a 3D render.
+
+BACKGROUND: flat mint green #7ECFC6 filling the canvas, faint grid of thin white lines about 44 px apart at 10% opacity.
+
+TORN PAPER: a horizontal band of photographed torn white crumpled paper with a ragged uneven edge across the very top, about 13% of the height, casting a soft shadow. An identical mirrored band across the very bottom.
+
+CUT-OUT PHOTO: the right third is reserved as a clean empty area with a soft feathered edge, prepared for a real uploaded cut-out photograph of a female teacher in a branded KEVIN t-shirt — do not generate, draw or invent any person, face or figure.
+
+LOGO: top right, above the reserved area, a pure white circle about 15% of the canvas width with a soft drop shadow, left completely empty for a real uploaded KEVIN logo PNG — do not draw or invent any logo.
+
+BADGE: upper left, a rounded pill in deep teal-green #17635C with white uppercase Ukrainian text:
+29.09–01.10 · 19:00 · ДЛЯ БАТЬКІВ ТА УЧНІВ 11 КЛАСУ
+
+HEADLINE: below the badge, left aligned within the left two thirds, bold condensed uppercase grotesque, tight tracking, leading 0.95, three lines. First two lines deep teal-green #17635C, the last in dark navy #12275A, Ukrainian text:
+ЗА 3 ВЕЧОРИ СКЛАДЕТЕ
+ПОВНУ СТРАТЕГІЮ
+ПІДГОТОВКИ НА 180+
+
+SUBHEAD BUBBLE: a white rounded rectangle, 24 px radius, soft shadow, two lines of dark navy regular-weight sentence-case Ukrainian text:
+Напрям · ціль у балах · план до травня
+Не почуєте про неї — складете самі
+
+PRICE PILL: a rounded pill with a thin white 2 px border, no fill: struck-through 599 грн in muted white, a short right arrow, then 0 грн in solid white.
+
+CTA BLOCK: a white rounded rectangle with a vertical rounded deep-green bar on its left inside edge holding a white downward arrow icon, then bold dark navy Ukrainian text in two lines:
+Зареєструйтесь
+безкоштовно
+
+LAYOUT: 70 px outer margins, all text confined to the left two thirds.
+
+DO NOT: no extruded or embossed letters, no bevel, no glow, no flare, no shadow on the type, no painterly gradients, no generated people. Flat and crisp.
+
+crisp legible Ukrainian typography, flat graphic-design layout, no outer quotation marks</pre>
+      <div class="alt"><div class="alt-h"><span>Ресайз 1080×1920</span><button class="copy sm">Копіювати 9:16</button></div>
+        <pre class="copysrc">Flat art-directed graphic design layout, exact canvas 1080x1920 pixels. Designer's export, NOT a photograph, NOT a 3D render.
+
+BACKGROUND: flat mint green #7ECFC6, faint grid of thin white lines about 44 px apart at 10% opacity.
+
+TORN PAPER: a band of photographed torn white crumpled paper across the very top, about 8% of the height, soft shadow; an identical mirrored band across the very bottom, about 10%.
+
+CUT-OUT PHOTO: the lower right portion from roughly 55% height down to the bottom torn band is reserved as a clean empty area with a soft feathered edge, for a real uploaded cut-out photograph of a female teacher in a branded KEVIN t-shirt — do not generate, draw or invent any person, face or figure.
+
+LOGO: top right, below the torn band, a pure white circle about 17% of the canvas width with a soft drop shadow, left completely empty for a real uploaded KEVIN logo PNG.
+
+BADGE: upper left, a rounded pill in deep teal-green #17635C with white uppercase Ukrainian text:
+29.09–01.10 · 19:00 · БЕЗКОШТОВНО
+
+HEADLINE: below the badge, left aligned, bold condensed uppercase grotesque, tight tracking, leading 0.95, four lines. First two deep teal-green #17635C, the rest dark navy #12275A, Ukrainian text:
+ЗА 3 ВЕЧОРИ
+СКЛАДЕТЕ ПОВНУ
+СТРАТЕГІЮ ПІДГОТОВКИ
+НА 180+
+
+SUBHEAD BUBBLE: white rounded rectangle, 24 px radius, soft shadow, two lines of dark navy regular-weight Ukrainian text:
+Напрям · ціль у балах · план до травня
+Не почуєте про неї — складете самі
+
+PRICE PILL: rounded pill, thin white 2 px border, no fill: struck-through 599 грн, a short right arrow, 0 грн in solid white.
+
+CTA BLOCK: white rounded rectangle with a vertical rounded deep-green bar on its left inside edge holding a white downward arrow icon, then bold dark navy Ukrainian text in two lines:
+Зареєструйтесь
+безкоштовно
+
+VERTICAL COMPOSITION: all text in the top 55%; the reserved photo area occupies the lower right and carries no text.
+
+DO NOT: no 3D or embossed letters, no bevel, no glow, no shadow on the type, no generated people. Flat and crisp.
+
+crisp legible Ukrainian typography, flat graphic-design layout, no outer quotation marks</pre>
+      </div>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-head"><div class="card-title"><span class="tag">Д2</span>Три кроки — напрям, ціль, план
+      <span class="hint">Хук: видима механіка продукту. Гіпотеза: пронумерована структура обіцяє конкретику й фільтрує випадкових.</span></div><button class="copy">Копіювати 1:1</button></div>
+    <div class="body"><pre class="copysrc">Flat art-directed graphic design layout, exact canvas 1080x1080 pixels. Designer's export, NOT a photograph, NOT a 3D render.
+
+BACKGROUND: flat deep navy #12275A, faint grid of thin lighter navy lines about 44 px apart at 8% opacity. Deliberately sparse.
+
+TORN PAPER: a band of photographed torn white crumpled paper across the very top, about 12% of the height, soft shadow onto the navy; an identical mirrored band across the very bottom.
+
+LOGO: top right, below the torn band, a pure white circle about 15% of the canvas width with a soft drop shadow, left completely empty for a real uploaded KEVIN logo PNG — do not draw or invent any logo.
+
+BADGE: upper left, a rounded pill in bright yellow #FFD84D with dark navy uppercase Ukrainian text:
+29.09–01.10 · 19:00 · БЕЗКОШТОВНО
+
+HEADLINE: below the badge, left aligned, bold condensed uppercase grotesque, tight tracking, leading 0.95, two lines. First line bright yellow #FFD84D, the second pure white, Ukrainian text:
+СТРАТЕГІЯ ЗБИРАЄТЬСЯ
+ЗА ТРИ ВЕЧОРИ
+
+STEPS: three rows below the headline, each a white rounded rectangle with a soft shadow containing a large yellow numeral on the left and dark navy Ukrainian text on the right:
+1  НАПРЯМ І 4-Й ПРЕДМЕТ · 29.09
+2  ЦІЛЬ У БАЛАХ І ТОЧКА А · 30.09
+3  ПЛАН ДО ТРАВНЯ · 01.10
+A thin yellow vertical connector line runs down the left edge linking the three numerals.
+
+FOOTNOTE: a single line of white regular-weight Ukrainian text under the steps:
+Пропустите день — стратегія буде з діркою
+
+CTA BLOCK: a white rounded rectangle with a vertical rounded yellow bar on its left inside edge holding a dark navy downward arrow icon, then bold dark navy Ukrainian text:
+Зареєструйтесь зараз
+
+LAYOUT: 70 px outer margins, generous space between rows.
+
+DO NOT: no extruded or embossed letters, no bevel, no glow, no flare, no shadow on the type, no gradient sheen, no ornament. Flat and crisp.
+
+crisp legible Ukrainian typography, flat graphic-design layout, no outer quotation marks</pre>
+      <div class="alt"><div class="alt-h"><span>Ресайз 1080×1920</span><button class="copy sm">Копіювати 9:16</button></div>
+        <pre class="copysrc">Flat art-directed graphic design layout, exact canvas 1080x1920 pixels. Designer's export, NOT a photograph, NOT a 3D render.
+
+BACKGROUND: flat deep navy #12275A, faint grid of thin lighter navy lines about 44 px apart at 8% opacity.
+
+TORN PAPER: a band of photographed torn white crumpled paper across the very top, about 8% of the height; an identical mirrored band across the very bottom, about 10%.
+
+LOGO: top right, below the torn band, a pure white circle about 17% of the canvas width with a soft drop shadow, left completely empty for a real uploaded KEVIN logo PNG.
+
+BADGE: upper left, a rounded pill in bright yellow #FFD84D with dark navy uppercase Ukrainian text:
+29.09–01.10 · 19:00 · БЕЗКОШТОВНО
+
+HEADLINE: below the badge, left aligned, bold condensed uppercase grotesque, leading 0.95, three lines. First two bright yellow #FFD84D, the last pure white, Ukrainian text:
+СТРАТЕГІЯ
+ЗБИРАЄТЬСЯ
+ЗА ТРИ ВЕЧОРИ
+
+STEPS: three stacked white rounded rectangles with soft shadows, each with a large yellow numeral on the left and dark navy Ukrainian text:
+1  НАПРЯМ І 4-Й ПРЕДМЕТ · 29.09
+2  ЦІЛЬ У БАЛАХ · 30.09
+3  ПЛАН ДО ТРАВНЯ · 01.10
+A thin yellow vertical connector line links the three numerals.
+
+FOOTNOTE: one line of white regular-weight Ukrainian text:
+Пропустите день — стратегія буде з діркою
+
+CTA BLOCK: white rounded rectangle with a vertical rounded yellow bar on its left inside edge holding a dark navy downward arrow icon, then bold dark navy Ukrainian text:
+Зареєструйтесь зараз
+
+VERTICAL COMPOSITION: all content within the top 72%; the lower area stays clean navy with only the bottom torn band.
+
+DO NOT: no 3D or embossed letters, no bevel, no glow, no shadow on the type, no ornament. Flat and crisp.
+
+crisp legible Ukrainian typography, flat graphic-design layout, no outer quotation marks</pre>
+      </div>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-head"><div class="card-title"><span class="tag b">Д3</span>9 місяців — великий лічильник
+      <span class="hint">Хук: дедлайн як одне число. Гіпотеза: single-number виграє першу пів секунди й не потребує читання.</span></div><button class="copy">Копіювати 1:1</button></div>
+    <div class="body"><pre class="copysrc">Flat art-directed graphic design layout, exact canvas 1080x1080 pixels. Designer's export, NOT a photograph, NOT a 3D render.
+
+BACKGROUND: flat warm orange #F5A623, faint grid of thin white lines about 44 px apart at 9% opacity.
+
+TORN PAPER: a band of photographed torn white crumpled paper across the very top, about 13% of the height, soft shadow; an identical mirrored band across the very bottom.
+
+LOGO: top right, below the torn band, a pure white circle about 15% of the canvas width with a soft drop shadow, left completely empty for a real uploaded KEVIN logo PNG — do not draw or invent any logo.
+
+BIG NUMBER: left aligned, an extremely large numeral set in bold condensed grotesque in dark navy #12275A, occupying about 40% of the canvas height:
+9
+Immediately to its right, stacked in two lines of bold condensed uppercase grotesque in vivid violet #6C2BD9, Ukrainian text:
+МІСЯЦІВ
+ДО НМТ-2027
+
+SUBHEAD BUBBLE: below, a white rounded rectangle, 24 px radius, soft shadow, two lines of dark navy regular-weight sentence-case Ukrainian text where the second line is bold:
+Скільки з них уже витрачено без плану?
+За 3 вечори складемо план на всі, що лишились
+
+CTA BLOCK: a white rounded rectangle with a vertical rounded violet bar on its left inside edge holding a white downward arrow icon, then bold violet Ukrainian text in two lines:
+Зареєструйтесь
+безкоштовно
+
+DATE STRIP: a slim dark navy band along the lower area with white uppercase Ukrainian text:
+МАРАФОН 29.09–01.10 · 19:00 · ДЛЯ БАТЬКІВ ТА УЧНІВ 11 КЛАСУ
+
+DO NOT: no extruded or embossed letters, no bevel, no glow, no flare, no shadow on the type, no gradient sheen, no ornament. Flat and crisp.
+
+crisp legible Ukrainian typography, flat graphic-design layout, no outer quotation marks</pre>
+      <div class="alt"><div class="alt-h"><span>Ресайз 1080×1920</span><button class="copy sm">Копіювати 9:16</button></div>
+        <pre class="copysrc">Flat art-directed graphic design layout, exact canvas 1080x1920 pixels. Designer's export, NOT a photograph, NOT a 3D render.
+
+BACKGROUND: flat warm orange #F5A623, faint grid of thin white lines about 44 px apart at 9% opacity.
+
+TORN PAPER: a band of photographed torn white crumpled paper across the very top, about 8% of the height; an identical mirrored band across the very bottom, about 10%.
+
+LOGO: top right, below the torn band, a pure white circle about 17% of the canvas width with a soft drop shadow, left completely empty for a real uploaded KEVIN logo PNG.
+
+BIG NUMBER: centred horizontally in the upper area, an extremely large numeral in bold condensed grotesque, dark navy #12275A, occupying about 28% of the canvas height:
+9
+Directly beneath it, two lines of bold condensed uppercase grotesque in vivid violet #6C2BD9, centred, Ukrainian text:
+МІСЯЦІВ
+ДО НМТ-2027
+
+SUBHEAD BUBBLE: below, a white rounded rectangle, 24 px radius, soft shadow, two lines of dark navy Ukrainian text where the second is bold:
+Скільки з них уже витрачено без плану?
+За 3 вечори складемо план на всі, що лишились
+
+CTA BLOCK: white rounded rectangle with a vertical rounded violet bar on its left inside edge holding a white downward arrow icon, then bold violet Ukrainian text in two lines:
+Зареєструйтесь
+безкоштовно
+
+DATE STRIP: at the boundary of the top 72%, a slim dark navy band with white uppercase Ukrainian text:
+МАРАФОН 29.09–01.10 · 19:00 · БЕЗКОШТОВНО
+
+DO NOT: no 3D or embossed letters, no bevel, no glow, no shadow on the type, no ornament. Flat and crisp.
+
+crisp legible Ukrainian typography, flat graphic-design layout, no outer quotation marks</pre>
+      </div>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-head"><div class="card-title"><span class="tag b">Д4</span>Запису не буде
+      <span class="hint">Хук: унікальний драйвер доходимості, якого немає в конкурентів. Гіпотеза: заборона сильніша за запрошення — саме вона примушує планувати вечір.</span></div><button class="copy">Копіювати 1:1</button></div>
+    <div class="metaline"><b>Перед запуском:</b> це має бути правдою. Одна розіслана «для тих, хто пропустив» запис вбиває механіку на всіх наступних запусках.</div>
+    <div class="body"><pre class="copysrc">Flat art-directed graphic design layout, exact canvas 1080x1080 pixels. Designer's export, NOT a photograph, NOT a 3D render.
+
+BACKGROUND: flat very dark maroon-red #3A0C0C, faint grid of thin darker red lines about 44 px apart at 8% opacity. A flat hard-edged block of brighter red #E8232A occupies the left fifth as a vertical colour band, no gradient.
+
+TORN PAPER: a band of photographed torn white crumpled paper across the very top, about 12% of the height, soft shadow onto the dark red; an identical mirrored band across the very bottom.
+
+LOGO: top right, below the torn band, a pure white circle about 15% of the canvas width with a soft drop shadow, left completely empty for a real uploaded KEVIN logo PNG — do not draw or invent any logo.
+
+HEADLINE: upper left, bold condensed uppercase grotesque, tight tracking, leading 0.95, two lines. The first line pure white, the second bright yellow #FFD84D, Ukrainian text:
+ЗАПИСУ
+НЕ БУДЕ
+
+SUBHEAD BUBBLE: below, a white rounded rectangle, 24 px radius, soft shadow, three lines of dark maroon regular-weight sentence-case Ukrainian text:
+Три вечори, три частини стратегії.
+Пропустили день — цієї частини у вас не буде.
+Ні завтра, ні за тиждень.
+
+DATE BLOCK: an outlined pill with a thin white border and white uppercase Ukrainian text:
+29.09–01.10 · ЩОДНЯ О 19:00
+
+CTA BLOCK: a white rounded rectangle with a vertical rounded bright red bar on its left inside edge holding a white downward arrow icon, then bold dark maroon Ukrainian text in two lines:
+Зареєструйтесь
+зараз
+
+LAYOUT: 70 px outer margins, deliberately sparse, only three text blocks. The mood is serious, achieved through colour and scale, not effects.
+
+DO NOT: no extruded or embossed letters, no bevel, no glow, no fire, no smoke, no flare, no shadow on the type, no alarm or shock symbols. Flat and crisp.
+
+crisp legible Ukrainian typography, flat graphic-design layout, no outer quotation marks</pre>
+      <div class="alt"><div class="alt-h"><span>Ресайз 1080×1920</span><button class="copy sm">Копіювати 9:16</button></div>
+        <pre class="copysrc">Flat art-directed graphic design layout, exact canvas 1080x1920 pixels. Designer's export, NOT a photograph, NOT a 3D render.
+
+BACKGROUND: flat very dark maroon-red #3A0C0C, faint grid of thin darker red lines at 8% opacity. A flat hard-edged block of brighter red #E8232A occupies the left fifth as a vertical band.
+
+TORN PAPER: a band of photographed torn white crumpled paper across the very top, about 8% of the height; an identical mirrored band across the very bottom, about 10%.
+
+LOGO: top right, below the torn band, a pure white circle about 17% of the canvas width, left completely empty for a real uploaded KEVIN logo PNG.
+
+HEADLINE: upper left, bold condensed uppercase grotesque, leading 0.95, two lines. First line pure white, second bright yellow #FFD84D, Ukrainian text:
+ЗАПИСУ
+НЕ БУДЕ
+
+SUBHEAD BUBBLE: white rounded rectangle, 24 px radius, soft shadow, three lines of dark maroon Ukrainian text:
+Три вечори, три частини стратегії.
+Пропустили день — цієї частини у вас не буде.
+Ні завтра, ні за тиждень.
+
+DATE BLOCK: an outlined pill with a thin white border and white uppercase Ukrainian text:
+29.09–01.10 · ЩОДНЯ О 19:00
+
+CTA BLOCK: white rounded rectangle with a vertical rounded bright red bar on its left inside edge holding a white downward arrow icon, then bold dark maroon Ukrainian text in two lines:
+Зареєструйтесь
+зараз
+
+VERTICAL COMPOSITION: all content within the top 70%; the lower area stays flat dark red with only the bottom torn band.
+
+DO NOT: no 3D or embossed letters, no bevel, no glow, no fire, no smoke, no shadow on the type, no shock symbols. Flat and crisp.
+
+crisp legible Ukrainian typography, flat graphic-design layout, no outer quotation marks</pre>
+      </div>
+    </div>
+  </div>
+
+  <h3 class="grp" style="font-size:14px;color:var(--bordo)">Драбина дефіциту — запускати послідовно, не одночасно</h3>
+  <p class="note">Три різні макети, а не один із підміненим числом: якщо людина бачить ту саму картинку з іншою цифрою, механіка читається як накрутка. Розклад: Д5 за 7–10 днів до старту, Д6 за 3–4 дні, Д7 у день старту й наступні два дні. <b>Цифри мають відповідати реальним бронюванням</b> і збігатися з лічильником на лендінгу.</p>
+
+  <div class="card">
+    <div class="card-head"><div class="card-title"><span class="tag">Д5</span>Дефіцит 1 — 69 родин уже забронювали
+      <span class="hint">Хук: соцдоказ у русі. Гіпотеза: дефіцит і соцдоказ разом дають більший приріст, ніж кожен окремо.</span></div><button class="copy">Копіювати 1:1</button></div>
+    <div class="body"><pre class="copysrc">Flat art-directed graphic design layout, exact canvas 1080x1080 pixels. Designer's export, NOT a photograph, NOT a 3D render.
+
+BACKGROUND: flat vivid violet #6C2BD9, faint grid of thin white lines about 44 px apart at 9% opacity.
+
+TORN PAPER: a band of photographed torn white crumpled paper across the very top, about 13% of the height, soft shadow; an identical mirrored band across the very bottom.
+
+LOGO: top right, below the torn band, a pure white circle about 15% of the canvas width with a soft drop shadow, left completely empty for a real uploaded KEVIN logo PNG — do not draw or invent any logo.
+
+SEAT GRID: centred, a flat grid of one hundred small rounded squares arranged 10 by 10 with even gaps. Sixty-nine of them are filled solid bright yellow #FFD84D; the remaining thirty-one are outlined only, with a thin white border and no fill. The filled ones are grouped from the top left so the boundary is clearly visible.
+
+HEADLINE: above the grid, left aligned, bold condensed uppercase grotesque, leading 0.95, two lines. The number in bright yellow #FFD84D, the rest pure white, Ukrainian text:
+69 РОДИН УЖЕ
+ЗАБРОНЮВАЛИ МІСЦЕ
+
+SUBHEAD BUBBLE: below the grid, a white rounded rectangle, 24 px radius, soft shadow, two lines of dark navy regular-weight sentence-case Ukrainian text:
+Беремо лише 100 родин на всі три дні.
+Це технічний ліміт кімнати, а не маркетинг
+
+CTA BLOCK: a white rounded rectangle with a vertical rounded violet bar on its left inside edge holding a white downward arrow icon, then bold violet Ukrainian text in two lines:
+Забронюйте
+своє місце
+
+DATE STRIP: a slim yellow band with dark navy uppercase Ukrainian text:
+МАРАФОН 29.09–01.10 · 19:00 · БЕЗКОШТОВНО
+
+DO NOT: no extruded or embossed letters, no bevel, no glow, no flare, no shadow on the type, no countdown clocks, no flame symbols. Flat and crisp.
+
+crisp legible Ukrainian typography, flat graphic-design layout, no outer quotation marks</pre>
+      <div class="alt"><div class="alt-h"><span>Ресайз 1080×1920</span><button class="copy sm">Копіювати 9:16</button></div>
+        <pre class="copysrc">Flat art-directed graphic design layout, exact canvas 1080x1920 pixels. Designer's export, NOT a photograph, NOT a 3D render.
+
+BACKGROUND: flat vivid violet #6C2BD9, faint grid of thin white lines at 9% opacity.
+
+TORN PAPER: a band of photographed torn white crumpled paper across the very top, about 8% of the height; an identical mirrored band across the very bottom, about 10%.
+
+LOGO: top right, below the torn band, a pure white circle about 17% of the canvas width, left completely empty for a real uploaded KEVIN logo PNG.
+
+HEADLINE: at the top, left aligned, bold condensed uppercase grotesque, leading 0.95, three lines. The number in bright yellow #FFD84D, the rest pure white, Ukrainian text:
+69 РОДИН
+УЖЕ ЗАБРОНЮВАЛИ
+МІСЦЕ
+
+SEAT GRID: below the headline, a flat grid of one hundred small rounded squares arranged 10 by 10 with even gaps. Sixty-nine filled solid bright yellow #FFD84D grouped from the top left, the remaining thirty-one outlined only with a thin white border and no fill.
+
+SUBHEAD BUBBLE: white rounded rectangle, 24 px radius, soft shadow, two lines of dark navy Ukrainian text:
+Беремо лише 100 родин на всі три дні.
+Це технічний ліміт кімнати
+
+CTA BLOCK: white rounded rectangle with a vertical rounded violet bar on its left inside edge holding a white downward arrow icon, then bold violet Ukrainian text in two lines:
+Забронюйте
+своє місце
+
+VERTICAL COMPOSITION: all content within the top 70%; the lower area stays flat violet with only the bottom torn band.
+
+DO NOT: no 3D or embossed letters, no bevel, no glow, no shadow on the type, no countdown clocks. Flat and crisp.
+
+crisp legible Ukrainian typography, flat graphic-design layout, no outer quotation marks</pre>
+      </div>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-head"><div class="card-title"><span class="tag">Д6</span>Дефіцит 2 — 82 родини, лишилось 18 місць
+      <span class="hint">Хук: прогрес-бар, що майже заповнився. Гіпотеза: візуальна межа тисне сильніше за число словами.</span></div><button class="copy">Копіювати 1:1</button></div>
+    <div class="body"><pre class="copysrc">Flat art-directed graphic design layout, exact canvas 1080x1080 pixels. Designer's export, NOT a photograph, NOT a 3D render.
+
+BACKGROUND: flat mint green #7ECFC6, faint grid of thin white lines about 44 px apart at 10% opacity.
+
+TORN PAPER: a band of photographed torn white crumpled paper across the very top, about 13% of the height, soft shadow; an identical mirrored band across the very bottom.
+
+LOGO: top right, below the torn band, a pure white circle about 15% of the canvas width, left completely empty for a real uploaded KEVIN logo PNG — do not draw or invent any logo.
+
+HEADLINE: upper left, bold condensed uppercase grotesque, leading 0.95, two lines. The number in bordo #6B2C2C, the rest in dark navy #12275A, Ukrainian text:
+ЛИШИЛОСЬ 18 МІСЦЬ
+ЗІ 100
+
+PROGRESS BAR: centred, a wide flat rounded bar with a thin dark navy outline. It is filled 82% from the left with solid deep teal-green #17635C; the remaining 18% is plain white. Directly under the filled portion, a small dark navy Ukrainian label:
+82 родини вже з нами
+Under the empty portion, a small bordo Ukrainian label:
+вільно
+
+SUBHEAD BUBBLE: below, a white rounded rectangle, 24 px radius, soft shadow, two lines of dark navy regular-weight sentence-case Ukrainian text:
+Одна реєстрація — доступ на всі три дні.
+Коли місця закінчаться, набір закриємо
+
+CTA BLOCK: a white rounded rectangle with a vertical rounded bordo bar on its left inside edge holding a white downward arrow icon, then bold dark navy Ukrainian text in two lines:
+Зареєструйтесь
+зараз
+
+DATE STRIP: a slim dark navy band with white uppercase Ukrainian text:
+29.09–01.10 · 19:00 · ДЛЯ БАТЬКІВ ТА УЧНІВ 11 КЛАСУ
+
+DO NOT: no extruded or embossed letters, no bevel, no glow, no flare, no shadow on the type, no countdown clocks. Flat and crisp.
+
+crisp legible Ukrainian typography, flat graphic-design layout, no outer quotation marks</pre>
+      <div class="alt"><div class="alt-h"><span>Ресайз 1080×1920</span><button class="copy sm">Копіювати 9:16</button></div>
+        <pre class="copysrc">Flat art-directed graphic design layout, exact canvas 1080x1920 pixels. Designer's export, NOT a photograph, NOT a 3D render.
+
+BACKGROUND: flat mint green #7ECFC6, faint grid of thin white lines at 10% opacity.
+
+TORN PAPER: a band of photographed torn white crumpled paper across the very top, about 8% of the height; an identical mirrored band across the very bottom, about 10%.
+
+LOGO: top right, below the torn band, a pure white circle about 17% of the canvas width, left completely empty for a real uploaded KEVIN logo PNG.
+
+HEADLINE: at the top, left aligned, bold condensed uppercase grotesque, leading 0.95, two lines. The number in bordo #6B2C2C, the rest dark navy #12275A, Ukrainian text:
+ЛИШИЛОСЬ 18 МІСЦЬ
+ЗІ 100
+
+PROGRESS BAR: below the headline, a wide flat rounded bar with a thin dark navy outline, filled 82% from the left with solid deep teal-green #17635C, the remaining 18% plain white. A small dark navy Ukrainian label under the filled part:
+82 родини вже з нами
+and a small bordo label under the empty part:
+вільно
+
+SUBHEAD BUBBLE: white rounded rectangle, 24 px radius, soft shadow, two lines of dark navy Ukrainian text:
+Одна реєстрація — доступ на всі три дні.
+Коли місця закінчаться, набір закриємо
+
+CTA BLOCK: white rounded rectangle with a vertical rounded bordo bar on its left inside edge holding a white downward arrow icon, then bold dark navy Ukrainian text in two lines:
+Зареєструйтесь
+зараз
+
+VERTICAL COMPOSITION: all content within the top 70%; the lower area stays flat mint with only the bottom torn band.
+
+DO NOT: no 3D or embossed letters, no bevel, no glow, no shadow on the type, no clocks. Flat and crisp.
+
+crisp legible Ukrainian typography, flat graphic-design layout, no outer quotation marks</pre>
+      </div>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-head"><div class="card-title"><span class="tag b">Д7</span>Дефіцит 3 — лишилось 5 місць
+      <span class="hint">Хук: фінальна цифра як стоп-кадр. Гіпотеза: у день старту працює лише одне — межа, яку видно за пів секунди.</span></div><button class="copy">Копіювати 1:1</button></div>
+    <div class="body"><pre class="copysrc">Flat art-directed graphic design layout, exact canvas 1080x1080 pixels. Designer's export, NOT a photograph, NOT a 3D render.
+
+BACKGROUND: flat bright red #E8232A, faint grid of thin darker red lines about 44 px apart at 10% opacity.
+
+TORN PAPER: a band of photographed torn white crumpled paper across the very top, about 13% of the height, soft shadow; an identical mirrored band across the very bottom.
+
+LOGO: top right, below the torn band, a pure white circle about 15% of the canvas width, left completely empty for a real uploaded KEVIN logo PNG — do not draw or invent any logo.
+
+BIG NUMBER: centred, an extremely large numeral in bold condensed grotesque, pure white, occupying about 45% of the canvas height:
+5
+Immediately under it, one line of bold condensed uppercase grotesque in bright yellow #FFD84D, centred, Ukrainian text:
+МІСЦЬ ЗІ 100
+
+SUBHEAD BUBBLE: below, a white rounded rectangle, 24 px radius, soft shadow, two lines of dark maroon regular-weight sentence-case Ukrainian text where the second is bold:
+Сьогодні о 19:00 стартуємо.
+Запису не буде
+
+CTA BLOCK: a white rounded rectangle with a vertical rounded bright red bar on its left inside edge holding a white downward arrow icon, then bold dark maroon Ukrainian text in two lines:
+Зареєструйтесь
+зараз
+
+DATE STRIP: a slim dark maroon band with white uppercase Ukrainian text:
+29.09–01.10 · 19:00 · ДЛЯ БАТЬКІВ ТА УЧНІВ 11 КЛАСУ
+
+LAYOUT: extremely sparse — the numeral is the whole message.
+
+DO NOT: no extruded or embossed letters, no bevel, no glow, no flare, no shadow on the type, no countdown clocks, no flame or alarm symbols. Flat and crisp.
+
+crisp legible Ukrainian typography, flat graphic-design layout, no outer quotation marks</pre>
+      <div class="alt"><div class="alt-h"><span>Ресайз 1080×1920</span><button class="copy sm">Копіювати 9:16</button></div>
+        <pre class="copysrc">Flat art-directed graphic design layout, exact canvas 1080x1920 pixels. Designer's export, NOT a photograph, NOT a 3D render.
+
+BACKGROUND: flat bright red #E8232A, faint grid of thin darker red lines at 10% opacity.
+
+TORN PAPER: a band of photographed torn white crumpled paper across the very top, about 8% of the height; an identical mirrored band across the very bottom, about 10%.
+
+LOGO: top right, below the torn band, a pure white circle about 17% of the canvas width, left completely empty for a real uploaded KEVIN logo PNG.
+
+BIG NUMBER: centred in the upper area, an extremely large numeral in bold condensed grotesque, pure white, occupying about 32% of the canvas height:
+5
+Directly under it, one centred line of bold condensed uppercase grotesque in bright yellow #FFD84D, Ukrainian text:
+МІСЦЬ ЗІ 100
+
+SUBHEAD BUBBLE: below, a white rounded rectangle, 24 px radius, soft shadow, two lines of dark maroon Ukrainian text where the second is bold:
+Сьогодні о 19:00 стартуємо.
+Запису не буде
+
+CTA BLOCK: white rounded rectangle with a vertical rounded bright red bar on its left inside edge holding a white downward arrow icon, then bold dark maroon Ukrainian text in two lines:
+Зареєструйтесь
+зараз
+
+VERTICAL COMPOSITION: all content within the top 70%; the lower area stays flat red with only the bottom torn band.
+
+DO NOT: no 3D or embossed letters, no bevel, no glow, no shadow on the type, no clocks, no flame symbols. Flat and crisp.
+
+crisp legible Ukrainian typography, flat graphic-design layout, no outer quotation marks</pre>
+      </div>
+    </div>
+  </div>
+
+  <h3 class="grp" style="font-size:14px;color:var(--bordo)">Партія по днях і сильні кути</h3>
+
+  <div class="card">
+    <div class="card-head"><div class="card-title"><span class="tag o">Д8 · 📸 ФОТО</span>День 1 — напрям і 4-й предмет
+      <span class="hint">Хук: найдорожча помилка року. Гіпотеза: назвати ціну помилки сильніше, ніж назвати тему дня.</span></div><button class="copy">Копіювати 1:1</button></div>
+    <div class="metaline"><b>📸 Завантажте:</b> фото Даші в брендовій футболці, вирізане по контуру. Права третина зарезервована.</div>
+    <div class="body"><pre class="copysrc">Flat art-directed graphic design layout, exact canvas 1080x1080 pixels. Designer's export, NOT a photograph of a poster, NOT a 3D render.
+
+BACKGROUND: flat mint green #7ECFC6, faint grid of thin white lines about 44 px apart at 10% opacity.
+TORN PAPER: photographed torn white crumpled paper bands across the very top (13% height) and mirrored across the very bottom, with soft shadows.
+CUT-OUT PHOTO: the right third is a clean empty area with a soft feathered edge for a real uploaded cut-out photograph of a female teacher in a branded KEVIN t-shirt — do not generate, draw or invent any person, face or figure.
+LOGO: top right above the reserved area, a pure white circle about 15% of the canvas width, left completely empty for a real uploaded KEVIN logo PNG.
+
+BADGE: upper left, a rounded pill in deep teal-green #17635C with white uppercase Ukrainian text:
+ДЕНЬ 1 · 29 ВЕРЕСНЯ · 19:00
+
+HEADLINE: left aligned within the left two thirds, bold condensed uppercase grotesque, leading 0.95, three lines. First two lines dark navy #12275A, the last in bordo #6B2C2C, Ukrainian text:
+4-Й ПРЕДМЕТ ОБИРАЮТЬ
+РАЗ НА ЖИТТЯ.
+БІЛЬШІСТЬ — НАВМАННЯ
+
+SUBHEAD BUBBLE: white rounded rectangle, 24 px radius, soft shadow, two lines of dark navy regular-weight sentence-case Ukrainian text:
+5 запитань, які визначають напрям
+за один вечір — навіть із я не знаю
+
+PRICE PILL: rounded pill, thin white 2 px border, no fill: struck-through 599 грн, a short right arrow, 0 грн in solid white.
+
+CTA BLOCK: white rounded rectangle with a vertical rounded deep-green bar on its left inside edge holding a white downward arrow icon, then bold dark navy Ukrainian text in two lines:
+Зареєструйтесь
+безкоштовно
+
+DO NOT: no extruded or embossed letters, no bevel, no glow, no shadow on the type, no generated people. Flat and crisp.
+crisp legible Ukrainian typography, flat graphic-design layout, no outer quotation marks</pre>
+      <div class="alt"><div class="alt-h"><span>Ресайз 1080×1920</span><button class="copy sm">Копіювати 9:16</button></div>
+        <pre class="copysrc">Flat art-directed graphic design layout, exact canvas 1080x1920 pixels. Designer's export, NOT a photograph, NOT a 3D render.
+
+BACKGROUND: flat mint green #7ECFC6, faint white grid at 10% opacity.
+TORN PAPER: photographed torn white paper bands across the very top (8% height) and the very bottom (10%).
+CUT-OUT PHOTO: the lower right from roughly 55% height down to the bottom band is a clean empty area with a soft feathered edge for a real uploaded cut-out photograph of a female teacher in a branded KEVIN t-shirt — do not generate any person, face or figure.
+LOGO: top right, a pure white circle about 17% of the canvas width, left completely empty for a real uploaded KEVIN logo PNG.
+
+BADGE: upper left, a rounded pill in deep teal-green #17635C with white uppercase Ukrainian text:
+ДЕНЬ 1 · 29 ВЕРЕСНЯ · 19:00
+
+HEADLINE: left aligned, bold condensed uppercase grotesque, leading 0.95, four lines. First three dark navy #12275A, the last bordo #6B2C2C, Ukrainian text:
+4-Й ПРЕДМЕТ
+ОБИРАЮТЬ РАЗ
+НА ЖИТТЯ.
+БІЛЬШІСТЬ — НАВМАННЯ
+
+SUBHEAD BUBBLE: white rounded rectangle, 24 px radius, soft shadow, two lines of dark navy Ukrainian text:
+5 запитань, які визначають напрям
+за один вечір — навіть із я не знаю
+
+PRICE PILL: rounded pill, thin white border: struck-through 599 грн, right arrow, 0 грн.
+
+CTA BLOCK: white rounded rectangle with a vertical rounded deep-green bar holding a white downward arrow icon, then bold dark navy Ukrainian text in two lines:
+Зареєструйтесь
+безкоштовно
+
+VERTICAL COMPOSITION: all text in the top 55%; the reserved photo area occupies the lower right.
+DO NOT: no 3D or embossed letters, no bevel, no glow, no shadow on the type, no generated people. Flat and crisp.
+crisp legible Ukrainian typography, flat graphic-design layout, no outer quotation marks</pre>
+      </div>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-head"><div class="card-title"><span class="tag o">Д9 · 📸 ФОТО</span>День 2 — ціль у балах
+      <span class="hint">Хук: 180 — це не ваша цифра. Гіпотеза: спростування знайомої тези тримає увагу довше за її підтвердження.</span></div><button class="copy">Копіювати 1:1</button></div>
+    <div class="metaline"><b>📸 Завантажте:</b> фото Саіди, вирізане по контуру.</div>
+    <div class="body"><pre class="copysrc">Flat art-directed graphic design layout, exact canvas 1080x1080 pixels. Designer's export, NOT a photograph of a poster, NOT a 3D render.
+
+BACKGROUND: flat deep navy #12275A, faint grid of thin lighter navy lines at 8% opacity.
+TORN PAPER: photographed torn white crumpled paper bands across the very top (13%) and mirrored at the very bottom.
+CUT-OUT PHOTO: the right third is a clean empty area with a soft feathered edge for a real uploaded cut-out photograph of a female expert in a branded KEVIN t-shirt — do not generate, draw or invent any person, face or figure.
+LOGO: top right, a pure white circle about 15% of the canvas width, left completely empty for a real uploaded KEVIN logo PNG.
+
+BADGE: upper left, a rounded pill in bright yellow #FFD84D with dark navy uppercase Ukrainian text:
+ДЕНЬ 2 · 30 ВЕРЕСНЯ · 19:00
+
+HEADLINE: left aligned within the left two thirds, bold condensed uppercase grotesque, leading 0.95, three lines. The struck-through number in muted grey with a visible strike line, the rest pure white and bright yellow, Ukrainian text:
+180 — ЦЕ СЕРЕДНЯ
+ПО ЛІКАРНІ.
+ЯКА ЦИФРА У ВАС?
+
+SUBHEAD BUBBLE: white rounded rectangle, 24 px radius, soft shadow, two lines of dark navy regular-weight sentence-case Ukrainian text:
+Порахуємо ціль під вашу спеціальність
+і покажемо реальну точку А дитини
+
+PRICE PILL: rounded pill, thin white 2 px border, no fill: struck-through 599 грн, a short right arrow, 0 грн in solid white.
+
+CTA BLOCK: white rounded rectangle with a vertical rounded yellow bar on its left inside edge holding a dark navy downward arrow icon, then bold dark navy Ukrainian text in two lines:
+Зареєструйтесь
+зараз
+
+DO NOT: no extruded or embossed letters, no bevel, no glow, no shadow on the type, no generated people. Flat and crisp.
+crisp legible Ukrainian typography, flat graphic-design layout, no outer quotation marks</pre>
+      <div class="alt"><div class="alt-h"><span>Ресайз 1080×1920</span><button class="copy sm">Копіювати 9:16</button></div>
+        <pre class="copysrc">Flat art-directed graphic design layout, exact canvas 1080x1920 pixels. Designer's export, NOT a photograph, NOT a 3D render.
+
+BACKGROUND: flat deep navy #12275A, faint lighter navy grid at 8% opacity.
+TORN PAPER: photographed torn white paper bands across the very top (8%) and the very bottom (10%).
+CUT-OUT PHOTO: the lower right from roughly 55% height down to the bottom band is a clean empty area with a soft feathered edge for a real uploaded cut-out photograph of a female expert in a branded KEVIN t-shirt — do not generate any person, face or figure.
+LOGO: top right, a pure white circle about 17% of the canvas width, left completely empty for a real uploaded KEVIN logo PNG.
+
+BADGE: upper left, a rounded pill in bright yellow #FFD84D with dark navy uppercase Ukrainian text:
+ДЕНЬ 2 · 30 ВЕРЕСНЯ · 19:00
+
+HEADLINE: left aligned, bold condensed uppercase grotesque, leading 0.95, four lines. The struck-through number in muted grey with a visible strike line, the rest pure white and bright yellow, Ukrainian text:
+180 — ЦЕ СЕРЕДНЯ
+ПО ЛІКАРНІ.
+ЯКА ЦИФРА
+У ВАС?
+
+SUBHEAD BUBBLE: white rounded rectangle, 24 px radius, soft shadow, two lines of dark navy Ukrainian text:
+Порахуємо ціль під вашу спеціальність
+і покажемо реальну точку А дитини
+
+PRICE PILL: rounded pill, thin white border: struck-through 599 грн, right arrow, 0 грн.
+
+CTA BLOCK: white rounded rectangle with a vertical rounded yellow bar holding a dark navy downward arrow icon, then bold dark navy Ukrainian text in two lines:
+Зареєструйтесь
+зараз
+
+VERTICAL COMPOSITION: all text in the top 55%.
+DO NOT: no 3D or embossed letters, no bevel, no glow, no shadow on the type, no generated people. Flat and crisp.
+crisp legible Ukrainian typography, flat graphic-design layout, no outer quotation marks</pre>
+      </div>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-head"><div class="card-title"><span class="tag o">Д10 · 📸 ФОТО</span>День 3 — повний план
+      <span class="hint">Хук: план проти намірів. Гіпотеза: фінальний день продає найкраще, коли показує артефакт, який людина забирає.</span></div><button class="copy">Копіювати 1:1</button></div>
+    <div class="metaline"><b>📸 Завантажте:</b> фото Віки та Ксенії разом, вирізане по контуру — двоє в кадрі працюють як соцдоказ фіналу.</div>
+    <div class="body"><pre class="copysrc">Flat art-directed graphic design layout, exact canvas 1080x1080 pixels. Designer's export, NOT a photograph of a poster, NOT a 3D render.
+
+BACKGROUND: flat warm orange #F5A623, faint grid of thin white lines at 9% opacity.
+TORN PAPER: photographed torn white crumpled paper bands across the very top (13%) and mirrored at the very bottom.
+CUT-OUT PHOTO: the right third is a clean empty area with a soft feathered edge for a real uploaded cut-out photograph of two female teachers standing together in branded KEVIN t-shirts — do not generate, draw or invent any person, face or figure.
+LOGO: top right, a pure white circle about 15% of the canvas width, left completely empty for a real uploaded KEVIN logo PNG.
+
+BADGE: upper left, a rounded pill in dark navy #12275A with white uppercase Ukrainian text:
+ДЕНЬ 3 · 1 ЖОВТНЯ · 19:00
+
+HEADLINE: left aligned within the left two thirds, bold condensed uppercase grotesque, leading 0.95, three lines. First two lines dark navy #12275A, the last vivid violet #6C2BD9, Ukrainian text:
+НАМІР — ЦЕ НЕ ПЛАН.
+ПЛАН — ЦЕ ГРАФІК
+ПО МІСЯЦЯХ
+
+SUBHEAD BUBBLE: white rounded rectangle, 24 px radius, soft shadow, two lines of dark navy regular-weight sentence-case Ukrainian text:
+Складемо покроковий план від точки А
+до травня — і ви заберете його з собою
+
+PRICE PILL: rounded pill, thin white 2 px border, no fill: struck-through 599 грн, a short right arrow, 0 грн in solid white.
+
+CTA BLOCK: white rounded rectangle with a vertical rounded violet bar on its left inside edge holding a white downward arrow icon, then bold violet Ukrainian text in two lines:
+Зареєструйтесь
+безкоштовно
+
+DO NOT: no extruded or embossed letters, no bevel, no glow, no shadow on the type, no generated people. Flat and crisp.
+crisp legible Ukrainian typography, flat graphic-design layout, no outer quotation marks</pre>
+      <div class="alt"><div class="alt-h"><span>Ресайз 1080×1920</span><button class="copy sm">Копіювати 9:16</button></div>
+        <pre class="copysrc">Flat art-directed graphic design layout, exact canvas 1080x1920 pixels. Designer's export, NOT a photograph, NOT a 3D render.
+
+BACKGROUND: flat warm orange #F5A623, faint white grid at 9% opacity.
+TORN PAPER: photographed torn white paper bands across the very top (8%) and the very bottom (10%).
+CUT-OUT PHOTO: the lower right from roughly 55% height down to the bottom band is a clean empty area with a soft feathered edge for a real uploaded cut-out photograph of two female teachers together in branded KEVIN t-shirts — do not generate any person, face or figure.
+LOGO: top right, a pure white circle about 17% of the canvas width, left completely empty for a real uploaded KEVIN logo PNG.
+
+BADGE: upper left, a rounded pill in dark navy #12275A with white uppercase Ukrainian text:
+ДЕНЬ 3 · 1 ЖОВТНЯ · 19:00
+
+HEADLINE: left aligned, bold condensed uppercase grotesque, leading 0.95, four lines. First three dark navy #12275A, the last vivid violet #6C2BD9, Ukrainian text:
+НАМІР —
+ЦЕ НЕ ПЛАН.
+ПЛАН — ЦЕ ГРАФІК
+ПО МІСЯЦЯХ
+
+SUBHEAD BUBBLE: white rounded rectangle, 24 px radius, soft shadow, two lines of dark navy Ukrainian text:
+Складемо покроковий план від точки А
+до травня — і ви заберете його з собою
+
+PRICE PILL: rounded pill, thin white border: struck-through 599 грн, right arrow, 0 грн.
+
+CTA BLOCK: white rounded rectangle with a vertical rounded violet bar holding a white downward arrow icon, then bold violet Ukrainian text in two lines:
+Зареєструйтесь
+безкоштовно
+
+VERTICAL COMPOSITION: all text in the top 55%.
+DO NOT: no 3D or embossed letters, no bevel, no glow, no shadow on the type, no generated people. Flat and crisp.
+crisp legible Ukrainian typography, flat graphic-design layout, no outer quotation marks</pre>
+      </div>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-head"><div class="card-title"><span class="tag">Д11</span>Розрив 120 → 180 (спідометр)
+      <span class="hint">Хук: шкільні оцінки не дорівнюють балам НМТ. Гіпотеза: найсильніший факт у ніші, і в дизайнерському виконанні він не виглядає як чергова інфографіка.</span></div><button class="copy">Копіювати 1:1</button></div>
+    <div class="body"><pre class="copysrc">Flat art-directed graphic design layout, exact canvas 1080x1080 pixels. Designer's export, NOT a photograph, NOT a 3D render.
+
+BACKGROUND: flat mint green #7ECFC6, faint grid of thin white lines at 10% opacity.
+TORN PAPER: photographed torn white crumpled paper bands across the very top (13%) and mirrored at the very bottom.
+LOGO: top right, a pure white circle about 15% of the canvas width, left completely empty for a real uploaded KEVIN logo PNG — do not draw or invent any logo.
+
+HEADLINE: at the top, left aligned, bold condensed uppercase grotesque, leading 0.95, two lines. First line deep teal-green #17635C, second dark navy #12275A, Ukrainian text:
+ШКІЛЬНІ 10–11
+ЦЕ 120–140 НА НМТ
+
+GAUGE: centred, a flat semicircular gauge drawn as clean vector shapes: the left half of the arc pale grey-blue, the right half solid deep teal-green #17635C, with a bright orange #F5A623 needle pointing into the left half. No metal, no 3D, no shading.
+Flat printed labels beside the arc in dark navy Ukrainian:
+Under the needle: ШКОЛА
+At the end of the teal arc: БЮДЖЕТ ВІД 180
+
+SUBHEAD BUBBLE: below the gauge, a white rounded rectangle, 24 px radius, soft shadow, two lines of dark navy regular-weight sentence-case Ukrainian text:
+Різницю закриває стратегія, а не зусилля.
+За 3 вечори складемо її під вашу дитину
+
+CTA BLOCK: white rounded rectangle with a vertical rounded deep-green bar on its left inside edge holding a white downward arrow icon, then bold dark navy Ukrainian text in two lines:
+Зареєструйтесь
+безкоштовно
+
+DATE STRIP: a slim dark navy band with white uppercase Ukrainian text:
+МАРАФОН 29.09–01.10 · 19:00 · ДЛЯ БАТЬКІВ ТА УЧНІВ 11 КЛАСУ
+
+DO NOT: no extruded or embossed letters, no bevel, no glow, no metallic rims, no 3D dial, no shadow on the type. Everything flat and vector-clean.
+crisp legible Ukrainian typography, flat graphic-design layout, no outer quotation marks</pre>
+      <div class="alt"><div class="alt-h"><span>Ресайз 1080×1920</span><button class="copy sm">Копіювати 9:16</button></div>
+        <pre class="copysrc">Flat art-directed graphic design layout, exact canvas 1080x1920 pixels. Designer's export, NOT a photograph, NOT a 3D render.
+
+BACKGROUND: flat mint green #7ECFC6, faint white grid at 10% opacity.
+TORN PAPER: photographed torn white paper bands across the very top (8%) and the very bottom (10%).
+LOGO: top right, a pure white circle about 17% of the canvas width, left completely empty for a real uploaded KEVIN logo PNG.
+
+HEADLINE: at the top, left aligned, bold condensed uppercase grotesque, leading 0.95, three lines. First line deep teal-green #17635C, the rest dark navy #12275A, Ukrainian text:
+ШКІЛЬНІ 10–11
+ЦЕ 120–140
+НА НМТ
+
+GAUGE: below the headline, a flat semicircular gauge as clean vector shapes filling the width: left half of the arc pale grey-blue, right half solid deep teal-green #17635C, bright orange #F5A623 needle pointing into the left half. No metal, no 3D, no shading.
+Flat dark navy Ukrainian labels: ШКОЛА under the needle, БЮДЖЕТ ВІД 180 at the end of the teal arc.
+
+SUBHEAD BUBBLE: white rounded rectangle, 24 px radius, soft shadow, two lines of dark navy Ukrainian text:
+Різницю закриває стратегія, а не зусилля.
+За 3 вечори складемо її під вашу дитину
+
+CTA BLOCK: white rounded rectangle with a vertical rounded deep-green bar holding a white downward arrow icon, then bold dark navy Ukrainian text in two lines:
+Зареєструйтесь
+безкоштовно
+
+VERTICAL COMPOSITION: all content within the top 70%.
+DO NOT: no 3D or embossed letters, no bevel, no glow, no metallic rims, no shadow on the type. Flat and vector-clean.
+crisp legible Ukrainian typography, flat graphic-design layout, no outer quotation marks</pre>
+      </div>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-head"><div class="card-title"><span class="tag b">Д12</span>Ціна помилки — 140–360 тисяч
+      <span class="hint">Хук: підготовка як фінансове рішення. Гіпотеза: найсильніший тригер на ЛПР 40+, і він не конкурує з емоційними кутами.</span></div><button class="copy">Копіювати 1:1</button></div>
+    <div class="body"><pre class="copysrc">Flat art-directed graphic design layout, exact canvas 1080x1080 pixels. Designer's export, NOT a photograph, NOT a 3D render.
+
+BACKGROUND: flat deep navy #12275A, faint grid of thin lighter navy lines at 8% opacity.
+TORN PAPER: photographed torn white crumpled paper bands across the very top (13%) and mirrored at the very bottom.
+LOGO: top right, a pure white circle about 15% of the canvas width, left completely empty for a real uploaded KEVIN logo PNG.
+
+HEADLINE: at the top, left aligned, bold condensed uppercase grotesque, leading 0.95, two lines. First line pure white, second bright yellow #FFD84D, Ukrainian text:
+15–20 БАЛІВ РІЗНИЦІ
+КОШТУЮТЬ 140–360 ТИСЯЧ
+
+TWO PLATES: centred, two flat rounded rectangles side by side with a thin white outline. The left plate holds white Ukrainian text on two lines:
+БЮДЖЕТ
+від 180
+The right plate is filled bordo #6B2C2C and holds white Ukrainian text on two lines:
+КОНТРАКТ
+140 000 – 360 000 грн
+Between them, a flat yellow arrow pointing from left to right with a small white Ukrainian label above it:
+20 балів
+
+SUBHEAD BUBBLE: below, a white rounded rectangle, 24 px radius, soft shadow, two lines of dark navy regular-weight sentence-case Ukrainian text:
+Ці бали набирають за рік, а не за травень.
+Рік починається зараз
+
+CTA BLOCK: white rounded rectangle with a vertical rounded yellow bar on its left inside edge holding a dark navy downward arrow icon, then bold dark navy Ukrainian text in two lines:
+Зареєструйтесь
+безкоштовно
+
+DATE STRIP: a slim yellow band with dark navy uppercase Ukrainian text:
+МАРАФОН 29.09–01.10 · 19:00 · ДЛЯ БАТЬКІВ 11-КЛАСНИКІВ
+
+DO NOT: no extruded or embossed letters, no bevel, no glow, no banknote photographs, no shadow on the type. Flat and crisp.
+crisp legible Ukrainian typography, flat graphic-design layout, no outer quotation marks</pre>
+      <div class="alt"><div class="alt-h"><span>Ресайз 1080×1920</span><button class="copy sm">Копіювати 9:16</button></div>
+        <pre class="copysrc">Flat art-directed graphic design layout, exact canvas 1080x1920 pixels. Designer's export, NOT a photograph, NOT a 3D render.
+
+BACKGROUND: flat deep navy #12275A, faint lighter navy grid at 8% opacity.
+TORN PAPER: photographed torn white paper bands across the very top (8%) and the very bottom (10%).
+LOGO: top right, a pure white circle about 17% of the canvas width, left completely empty for a real uploaded KEVIN logo PNG.
+
+HEADLINE: at the top, left aligned, bold condensed uppercase grotesque, leading 0.95, three lines. First two pure white, the last bright yellow #FFD84D, Ukrainian text:
+15–20 БАЛІВ
+РІЗНИЦІ КОШТУЮТЬ
+140–360 ТИСЯЧ
+
+TWO PLATES: stacked vertically below the headline, two flat rounded rectangles with a thin white outline. Upper plate, white Ukrainian text on two lines:
+БЮДЖЕТ
+від 180
+Lower plate filled bordo #6B2C2C, white Ukrainian text on two lines:
+КОНТРАКТ
+140 000 – 360 000 грн
+Between them a flat yellow downward arrow with a small white Ukrainian label beside it:
+20 балів
+
+SUBHEAD BUBBLE: white rounded rectangle, 24 px radius, soft shadow, two lines of dark navy Ukrainian text:
+Ці бали набирають за рік, а не за травень.
+Рік починається зараз
+
+CTA BLOCK: white rounded rectangle with a vertical rounded yellow bar holding a dark navy downward arrow icon, then bold dark navy Ukrainian text in two lines:
+Зареєструйтесь
+безкоштовно
+
+VERTICAL COMPOSITION: all content within the top 70%.
+DO NOT: no 3D or embossed letters, no bevel, no glow, no banknote photographs, no shadow on the type. Flat and crisp.
+crisp legible Ukrainian typography, flat graphic-design layout, no outer quotation marks</pre>
+      </div>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-head"><div class="card-title"><span class="tag">Д13</span>Розіграш — тріал курсу за 3 слова
+      <span class="hint">Хук: приз, за яким треба прийти тричі. Гіпотеза: розіграш продає не приз, а причину не пропустити жоден день.</span></div><button class="copy">Копіювати 1:1</button></div>
+    <div class="body"><pre class="copysrc">Flat art-directed graphic design layout, exact canvas 1080x1080 pixels. Designer's export, NOT a photograph, NOT a 3D render.
+
+BACKGROUND: flat bright yellow #FFD84D, faint grid of thin white lines at 12% opacity.
+TORN PAPER: photographed torn white crumpled paper bands across the very top (13%) and mirrored at the very bottom.
+LOGO: top right, a pure white circle about 15% of the canvas width, left completely empty for a real uploaded KEVIN logo PNG.
+
+HEADLINE: at the top, left aligned, bold condensed uppercase grotesque, leading 0.95, two lines. First line dark navy #12275A, second vivid violet #6C2BD9, Ukrainian text:
+ТРИ СЛОВА ЗА ТРИ ВЕЧОРИ —
+І ТИЖДЕНЬ КУРСУ ВАШ
+
+THREE CARDS: centred, three flat rounded rectangles in a row, each white with a thin navy outline and a violet numeral in the corner: 1, 2, 3. Each holds a blank ruled line where a word would be written. The third card is tilted slightly, as if just turned over.
+
+SUBHEAD BUBBLE: below, a white rounded rectangle, 24 px radius, soft shadow, three lines of dark navy regular-weight sentence-case Ukrainian text:
+На кожному ефірі спікер називає одне слово.
+Зібрали всі три — берете участь у розіграші
+пробного тижня курсу KEVIN
+
+CTA BLOCK: white rounded rectangle with a vertical rounded violet bar on its left inside edge holding a white downward arrow icon, then bold violet Ukrainian text in two lines:
+Зареєструйтесь
+безкоштовно
+
+DATE STRIP: a slim dark navy band with white uppercase Ukrainian text:
+29.09–01.10 · 19:00 · ЗІБРАТИ ТРИ СЛОВА МОЖНА ЛИШЕ НА ВСІХ ТРЬОХ ЕФІРАХ
+
+DO NOT: no extruded or embossed letters, no bevel, no glow, no confetti, no gift-box clipart, no shadow on the type. Flat and crisp.
+crisp legible Ukrainian typography, flat graphic-design layout, no outer quotation marks</pre>
+      <div class="alt"><div class="alt-h"><span>Ресайз 1080×1920</span><button class="copy sm">Копіювати 9:16</button></div>
+        <pre class="copysrc">Flat art-directed graphic design layout, exact canvas 1080x1920 pixels. Designer's export, NOT a photograph, NOT a 3D render.
+
+BACKGROUND: flat bright yellow #FFD84D, faint white grid at 12% opacity.
+TORN PAPER: photographed torn white paper bands across the very top (8%) and the very bottom (10%).
+LOGO: top right, a pure white circle about 17% of the canvas width, left completely empty for a real uploaded KEVIN logo PNG.
+
+HEADLINE: at the top, left aligned, bold condensed uppercase grotesque, leading 0.95, three lines. First two dark navy #12275A, the last vivid violet #6C2BD9, Ukrainian text:
+ТРИ СЛОВА
+ЗА ТРИ ВЕЧОРИ —
+І ТИЖДЕНЬ КУРСУ ВАШ
+
+THREE CARDS: below the headline, three flat rounded white rectangles stacked with a slight offset, each with a thin navy outline and a violet numeral 1, 2, 3, each holding a blank ruled line. The third is tilted slightly.
+
+SUBHEAD BUBBLE: white rounded rectangle, 24 px radius, soft shadow, three lines of dark navy Ukrainian text:
+На кожному ефірі спікер називає одне слово.
+Зібрали всі три — берете участь у розіграші
+пробного тижня курсу KEVIN
+
+CTA BLOCK: white rounded rectangle with a vertical rounded violet bar holding a white downward arrow icon, then bold violet Ukrainian text in two lines:
+Зареєструйтесь
+безкоштовно
+
+VERTICAL COMPOSITION: all content within the top 70%.
+DO NOT: no 3D or embossed letters, no bevel, no glow, no confetti, no gift clipart, no shadow on the type. Flat and crisp.
+crisp legible Ukrainian typography, flat graphic-design layout, no outer quotation marks</pre>
+      </div>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-head"><div class="card-title"><span class="tag b">Д14</span>Для учнів — дізнайся, куди вступати
+      <span class="hint">Хук: зняти тривогу вибору. Гіпотеза: підліток реагує на «розберешся за вечір», а не на «визнач напрям». CTA прямий, без згадки батьків.</span></div><button class="copy">Копіювати 1:1</button></div>
+    <div class="body"><pre class="copysrc">Flat art-directed graphic design layout, exact canvas 1080x1080 pixels. Designer's export, NOT a photograph, NOT a 3D render.
+
+BACKGROUND: flat vivid violet #6C2BD9, faint grid of thin white lines at 9% opacity.
+TORN PAPER: photographed torn white crumpled paper bands across the very top (13%) and mirrored at the very bottom.
+LOGO: top right, a pure white circle about 15% of the canvas width, left completely empty for a real uploaded KEVIN logo PNG.
+
+HEADLINE: upper left, bold condensed uppercase grotesque, leading 0.95, three lines. First two lines pure white, the last bright yellow #FFD84D, Ukrainian text:
+УСІ ПИТАЮТЬ,
+КУДИ ТИ ВСТУПАЄШ.
+А ТИ НЕ ЗНАЄШ
+
+SUBHEAD BUBBLE: below, a white rounded rectangle, 24 px radius, soft shadow, two lines of dark navy regular-weight sentence-case Ukrainian text:
+Нормально. За один вечір розберешся —
+без тестів на 200 питань і без подумай ще
+
+THREE CHIPS: three small flat rounded chips in a row, each white with dark navy Ukrainian text:
+напрям
+скільки балів треба
+план на рік
+
+PRICE PILL: rounded pill, thin white 2 px border, no fill: struck-through 599 грн, a short right arrow, 0 грн in solid white.
+
+CTA BLOCK: white rounded rectangle with a vertical rounded yellow bar on its left inside edge holding a dark navy downward arrow icon, then bold dark navy Ukrainian text in two lines:
+Зареєструйтесь
+безкоштовно
+
+DATE STRIP: a slim yellow band with dark navy uppercase Ukrainian text:
+29.09–01.10 · ЩОДНЯ О 19:00 · ЗАПИСУ НЕ БУДЕ
+
+DO NOT: no extruded or embossed letters, no bevel, no glow, no shadow on the type, no emoji, no stickers. Flat and crisp.
+crisp legible Ukrainian typography, flat graphic-design layout, no outer quotation marks</pre>
+      <div class="alt"><div class="alt-h"><span>Ресайз 1080×1920</span><button class="copy sm">Копіювати 9:16</button></div>
+        <pre class="copysrc">Flat art-directed graphic design layout, exact canvas 1080x1920 pixels. Designer's export, NOT a photograph, NOT a 3D render.
+
+BACKGROUND: flat vivid violet #6C2BD9, faint white grid at 9% opacity.
+TORN PAPER: photographed torn white paper bands across the very top (8%) and the very bottom (10%).
+LOGO: top right, a pure white circle about 17% of the canvas width, left completely empty for a real uploaded KEVIN logo PNG.
+
+HEADLINE: upper left, bold condensed uppercase grotesque, leading 0.95, four lines. First three pure white, the last bright yellow #FFD84D, Ukrainian text:
+УСІ ПИТАЮТЬ,
+КУДИ ТИ
+ВСТУПАЄШ.
+А ТИ НЕ ЗНАЄШ
+
+SUBHEAD BUBBLE: white rounded rectangle, 24 px radius, soft shadow, two lines of dark navy Ukrainian text:
+Нормально. За один вечір розберешся —
+без тестів на 200 питань і без подумай ще
+
+THREE CHIPS: three small flat rounded white chips stacked, each with dark navy Ukrainian text:
+напрям
+скільки балів треба
+план на рік
+
+PRICE PILL: rounded pill, thin white border: struck-through 599 грн, right arrow, 0 грн.
+
+CTA BLOCK: white rounded rectangle with a vertical rounded yellow bar holding a dark navy downward arrow icon, then bold dark navy Ukrainian text in two lines:
+Зареєструйтесь
+безкоштовно
+
+VERTICAL COMPOSITION: all content within the top 70%.
+DO NOT: no 3D or embossed letters, no bevel, no glow, no shadow on the type, no emoji, no stickers. Flat and crisp.
+crisp legible Ukrainian typography, flat graphic-design layout, no outer quotation marks</pre>
+      </div>
+    </div>
+  </div>
+
+  <h3 class="grp">Частина 2 — Helicopter view</h3>
+  <p class="note">Тут я вийшов з наших напрацьованих стилів і хуків повністю. Узяв лише концепцію, ЦА та цифри — і зібрав формати, яких немає ні в нас, ні в ніші: чек, посадковий талон, табло, схема метро, інструкція зі збирання, прогноз погоди, банківський застосунок, медичний висновок, трекер звичок, друкований лист. Кожен імітує знайомий об'єкт, який мозок читає автоматично й тільки потім розуміє, що це реклама — саме це й дає дешевий клік. <b>10 концептів × 2 формати = 20 промптів.</b></p>
+
+  <div class="card">
+    <div class="card-head"><div class="card-title"><span class="tag o">H1</span>Касовий чек — рахунок за рік без плану
+      <span class="hint">Хук: підсумок унизу чека. Гіпотеза: формат чека читають повністю, бо звикли шукати суму.</span></div><button class="copy">Копіювати 4:5</button></div>
+    <div class="body"><pre class="copysrc">Photorealistic 4:5 image of a real thermal-paper receipt lying on a flat cream #FEF3E2 surface, shot from directly above, soft daylight, the paper slightly curled at the bottom edge with a torn serrated top, visible thermal print texture and faint creases.
+Printed on the receipt in monospaced receipt type, dark grey, Ukrainian text laid out as a real receipt:
+Header, centred:
+ПІДГОТОВКА ДО НМТ-2027
+РІК БЕЗ ПЛАНУ
+A dashed separator line, then line items with dotted leaders and values on the right:
+Репетитор, 9 місяців ....... 54 000 грн
+Збірники і пробні .......... 3 200 грн
+Нерви родини ............... безцінно
+Результат у червні ......... 130 балів
+Another dashed separator, then a bold total line:
+ДО РАХУНКУ: КОНТРАКТ ... 140 000 – 360 000 грн
+Below, a small printed block in Ukrainian:
+Чек можна не оплачувати.
+За 3 вечори складемо стратегію на 180+
+Marathon details printed at the very bottom like a shop footer:
+29.09–01.10 · 19:00 · БЕЗКОШТОВНО
+ЗАРЕЄСТРУЙТЕСЬ ЗАРАЗ
+A simple barcode strip and a blank square area beside it reserved for a real uploaded KEVIN logo PNG — do not generate a logo or wordmark.
+Realistic paper and print texture, no colour except the cream background.
+crisp legible Ukrainian typography, no outer quotation marks</pre>
+      <div class="alt"><div class="alt-h"><span>Ресайз 9:16</span><button class="copy sm">Копіювати 9:16</button></div>
+        <pre class="copysrc">Photorealistic 9:16 vertical image of a long real thermal-paper receipt hanging down the frame against a flat cream #FEF3E2 background, shot straight on, soft daylight, serrated torn top edge, slight curl, visible thermal print texture. The receipt fills the TOP 70%; the bottom 30% is empty cream background for Meta Stories UI.
+Printed in monospaced receipt type, dark grey, Ukrainian text as a real receipt:
+Centred header:
+ПІДГОТОВКА ДО НМТ-2027
+РІК БЕЗ ПЛАНУ
+Dashed separator, then line items with dotted leaders:
+Репетитор, 9 місяців ... 54 000 грн
+Збірники і пробні ...... 3 200 грн
+Нерви родини ........... безцінно
+Результат у червні ..... 130 балів
+Dashed separator, then a bold total:
+ДО РАХУНКУ: КОНТРАКТ 140 000 – 360 000 грн
+Below, a small printed block in Ukrainian:
+Чек можна не оплачувати.
+За 3 вечори складемо стратегію на 180+
+Footer printed at the end of the receipt:
+29.09–01.10 · 19:00 · БЕЗКОШТОВНО
+ЗАРЕЄСТРУЙТЕСЬ ЗАРАЗ
+A barcode strip and a blank square area beside it reserved for a real uploaded KEVIN logo PNG — do not generate a logo.
+crisp legible Ukrainian typography, no outer quotation marks</pre>
+      </div>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-head"><div class="card-title"><span class="tag o">H2</span>Посадковий талон — рейс НМТ-2027
+      <span class="hint">Хук: квиток на конкретний рейс із часом вильоту. Гіпотеза: метафора рейсу вбудовує дедлайн, не називаючи його дедлайном.</span></div><button class="copy">Копіювати 4:5</button></div>
+    <div class="body"><pre class="copysrc">Flat art-directed graphic design layout, 4:5, designed as a realistic airline boarding pass lying on a flat warm cream #F5F1EA surface with a soft shadow and one perforated tear line with round punch holes.
+The pass is printed in a clean airline style: a deep teal #1F7A8C header band, monospaced detail type, thin rules between fields.
+Header band, white Ukrainian text:
+ПОСАДКОВИЙ ТАЛОН · МАРАФОН KEVIN
+Fields laid out in two columns with small grey Ukrainian labels and large dark navy #1A2233 values:
+ПАСАЖИР — РОДИНА 11-КЛАСНИКА
+НАПРЯМОК — НМТ-2027 · 180+
+ВИЛІТ — 29.09, 19:00
+ПОСАДКА ЗАКІНЧУЄТЬСЯ — 29.09, 18:55
+МІСЦЬ У ЛІТАКУ — 100
+БАГАЖ — ГОТОВА СТРАТЕГІЯ
+A red #E8232A rubber-stamp impression rotated slightly across the pass with Ukrainian text:
+ЗАПИСУ НЕ БУДЕ
+On the tear-off stub at the right, a barcode, the Ukrainian line ДЕНЬ 1 · ДЕНЬ 2 · ДЕНЬ 3 and a blank square reserved for a real uploaded KEVIN logo PNG — do not generate a logo.
+At the bottom of the pass, a flat orange #F2994A rounded CTA block with dark navy Ukrainian text:
+Зареєструйтесь зараз
+DO NOT: no airline brand names or logos, no aircraft photographs, no 3D, no glow. Flat print realism only.
+crisp legible Ukrainian typography, no outer quotation marks</pre>
+      <div class="alt"><div class="alt-h"><span>Ресайз 9:16</span><button class="copy sm">Копіювати 9:16</button></div>
+        <pre class="copysrc">Flat art-directed graphic design layout, 9:16 vertical, designed as a realistic airline boarding pass held upright and filling the TOP 70% of the frame against a flat warm cream #F5F1EA background with a soft shadow; the bottom 30% is empty background for Meta Stories UI. One perforated tear line with round punch holes runs across the pass.
+Deep teal #1F7A8C header band, white Ukrainian text:
+ПОСАДКОВИЙ ТАЛОН · МАРАФОН KEVIN
+Fields stacked in one column with small grey Ukrainian labels and large dark navy #1A2233 values:
+ПАСАЖИР — РОДИНА 11-КЛАСНИКА
+НАПРЯМОК — НМТ-2027 · 180+
+ВИЛІТ — 29.09, 19:00
+ПОСАДКА ДО — 18:55
+МІСЦЬ — 100
+БАГАЖ — ГОТОВА СТРАТЕГІЯ
+A red #E8232A rubber-stamp impression rotated slightly with Ukrainian text:
+ЗАПИСУ НЕ БУДЕ
+On the tear-off stub at the bottom of the pass, a barcode and a blank square reserved for a real uploaded KEVIN logo PNG — do not generate a logo.
+A flat orange #F2994A rounded CTA block with dark navy Ukrainian text:
+Зареєструйтесь зараз
+DO NOT: no airline brand names or logos, no aircraft photographs, no 3D, no glow.
+crisp legible Ukrainian typography, no outer quotation marks</pre>
+      </div>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-head"><div class="card-title"><span class="tag">H3</span>Спортивне табло — школа проти НМТ
+      <span class="hint">Хук: рахунок, у якому ви програєте. Гіпотеза: табло зчитується за долю секунди й не потребує жодного слова.</span></div><button class="copy">Копіювати 1:1</button></div>
+    <div class="body"><pre class="copysrc">Flat art-directed graphic design layout, 1:1 square, designed as a stadium scoreboard rendered as clean flat vector shapes — not a photograph, not a 3D render.
+Background: flat near-black #0E0E12 with a very faint dot-matrix pattern at 8% opacity.
+Centered, a wide scoreboard panel with a thin grey outline, divided into two halves by a vertical rule. Each half shows a label in small white uppercase Ukrainian type and a huge amber-orange seven-segment style numeral below it:
+Left half label: ШКОЛА · ОЦІНКА
+Left numeral: 11
+Right half label: НМТ · БАЛ
+Right numeral: 130
+Between the halves, a small white Ukrainian word:
+проти
+Above the panel, a white uppercase Ukrainian line with wide letter spacing:
+РАХУНОК, ЯКИЙ БАЧАТЬ У ЛЮТОМУ
+Below the panel, a flat teal #1F7A8C rounded bar with white Ukrainian text:
+ПРОХІДНИЙ НА БЮДЖЕТ — ВІД 180
+Under it, a white rounded CTA block with dark navy #1A2233 Ukrainian text in two lines:
+Зареєструйтесь безкоштовно
+Марафон 29.09–01.10, 19:00
+A blank square area in the top right reserved for a real uploaded KEVIN logo PNG — do not generate a logo.
+DO NOT: no stadium photographs, no crowds, no glow or bloom on the digits, no 3D bevel. Flat vector only.
+crisp legible Ukrainian typography, no outer quotation marks</pre>
+      <div class="alt"><div class="alt-h"><span>Ресайз 9:16</span><button class="copy sm">Копіювати 9:16</button></div>
+        <pre class="copysrc">Flat art-directed graphic design layout, 9:16 vertical, designed as a stadium scoreboard in clean flat vector shapes — not a photograph, not a 3D render. All critical content in the TOP 65%; the bottom 35% is empty background.
+Background: flat near-black #0E0E12 with a faint dot-matrix pattern at 8% opacity.
+In the upper area, a scoreboard panel with a thin grey outline, split into two stacked halves by a horizontal rule. Each half has a small white uppercase Ukrainian label and a huge amber-orange seven-segment style numeral:
+Upper label: ШКОЛА · ОЦІНКА — numeral 11
+Lower label: НМТ · БАЛ — numeral 130
+Above the panel, a white uppercase Ukrainian line with wide letter spacing:
+РАХУНОК, ЯКИЙ БАЧАТЬ У ЛЮТОМУ
+Below the panel, a flat teal #1F7A8C rounded bar with white Ukrainian text:
+ПРОХІДНИЙ НА БЮДЖЕТ — ВІД 180
+Under it, a white rounded CTA block with dark navy #1A2233 Ukrainian text in two lines:
+Зареєструйтесь безкоштовно
+Марафон 29.09–01.10, 19:00
+A blank square in the top right reserved for a real uploaded KEVIN logo PNG — do not generate a logo.
+DO NOT: no stadium photographs, no crowds, no glow on the digits, no 3D bevel.
+crisp legible Ukrainian typography, no outer quotation marks</pre>
+      </div>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-head"><div class="card-title"><span class="tag">H4</span>Схема метро — маршрут вересень → травень
+      <span class="hint">Хук: підготовка як лінія з пересадками. Гіпотеза: схема метро читається як інформація, а не як реклама, і її розглядають.</span></div><button class="copy">Копіювати 1:1</button></div>
+    <div class="body"><pre class="copysrc">Flat art-directed graphic design layout, 1:1 square, designed as a transit map diagram in clean flat vector style on a warm cream #F5F1EA background — not a photograph, not a 3D render.
+A single thick teal #1F7A8C line runs diagonally across the canvas with evenly spaced circular station markers, each a white circle with a teal outline. Small dark navy #1A2233 Ukrainian station labels beside them, in order:
+ВЕРЕСЕНЬ · старт
+ЖОВТЕНЬ · база
+ГРУДЕНЬ · перший пробний
+ЛЮТИЙ · точка правди
+КВІТЕНЬ · шліфування
+ТРАВЕНЬ · НМТ-2027
+The last station marker is larger and filled orange #F2994A.
+A short branching line in bordo #6B2C2C splits off after the second station, ending in a dead-end marker with a small Ukrainian label:
+БЕЗ ПЛАНУ · глухий кут
+Above the diagram, a bold dark navy Ukrainian headline in two lines:
+ДЕВ'ЯТЬ МІСЯЦІВ —
+ЦЕ МАРШРУТ, А НЕ ВІДЧУТТЯ
+Below, a white rounded CTA block with a thin outline and dark navy Ukrainian text in two lines:
+За 3 вечори складемо ваш маршрут
+Зареєструйтесь безкоштовно · 29.09–01.10, 19:00
+A blank square in the top right reserved for a real uploaded KEVIN logo PNG — do not generate a logo.
+DO NOT: no real city names, no existing transit brand marks, no 3D, no gradients, no glow. Flat diagram only.
+crisp legible Ukrainian typography, no outer quotation marks</pre>
+      <div class="alt"><div class="alt-h"><span>Ресайз 9:16</span><button class="copy sm">Копіювати 9:16</button></div>
+        <pre class="copysrc">Flat art-directed graphic design layout, 9:16 vertical, designed as a transit map diagram in clean flat vector style on a warm cream #F5F1EA background. All critical content in the TOP 70%; the bottom 30% is empty background.
+A single thick teal #1F7A8C line runs vertically down the frame with evenly spaced circular station markers, each a white circle with a teal outline. Small dark navy #1A2233 Ukrainian labels beside them, top to bottom:
+ВЕРЕСЕНЬ · старт
+ЖОВТЕНЬ · база
+ГРУДЕНЬ · перший пробний
+ЛЮТИЙ · точка правди
+КВІТЕНЬ · шліфування
+ТРАВЕНЬ · НМТ-2027
+The last marker is larger and filled orange #F2994A.
+A short branching line in bordo #6B2C2C splits off after the second station into a dead-end marker labelled in Ukrainian:
+БЕЗ ПЛАНУ · глухий кут
+At the top of the frame, a bold dark navy Ukrainian headline in two lines:
+ДЕВ'ЯТЬ МІСЯЦІВ —
+ЦЕ МАРШРУТ
+Near the boundary of the top-70% zone, a white rounded CTA block with dark navy Ukrainian text in two lines:
+Зареєструйтесь безкоштовно
+29.09–01.10, 19:00
+A blank square in the top right reserved for a real uploaded KEVIN logo PNG — do not generate a logo.
+DO NOT: no real city names, no existing transit brand marks, no 3D, no gradients.
+crisp legible Ukrainian typography, no outer quotation marks</pre>
+      </div>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-head"><div class="card-title"><span class="tag">H5</span>Інструкція зі збирання — стратегія з 3 деталей
+      <span class="hint">Хук: збирається за три кроки, деталі в комплекті. Гіпотеза: мова інструкції обіцяє простоту сильніше за будь-яке слово «просто».</span></div><button class="copy">Копіювати 1:1</button></div>
+    <div class="body"><pre class="copysrc">Flat art-directed graphic design layout, 1:1 square, designed as a flat-pack furniture assembly instruction sheet in clean line-art style on a plain white background — not a photograph, not a 3D render.
+Everything is drawn as thin black outline illustrations with no shading and no colour except one accent.
+Top left, a small black Ukrainian title in a plain sans:
+ІНСТРУКЦІЯ ЗІ ЗБИРАННЯ
+Below it, larger and bolder, Ukrainian:
+СТРАТЕГІЯ НМТ-2027
+A parts list box on the right, drawn as a thin outlined rectangle with three line-art items and Ukrainian labels:
+1x НАПРЯМ
+1x ЦІЛЬ У БАЛАХ
+1x ПЛАН ДО ТРАВНЯ
+Centre of the sheet: three numbered assembly steps in a row, each a thin outlined square panel with simple line-art showing three flat pieces being joined into one document, with step numbers 1, 2, 3 in circles.
+Bottom left, a line-art figure sitting calmly beside the assembled document with a small Ukrainian caption:
+Час збирання: 3 вечори
+Bottom right, a crossed-out line-art panel showing a confused figure surrounded by scattered papers, with a Ukrainian caption:
+Без інструкції: 9 місяців
+One orange #F2994A accent: a rounded CTA bar along the bottom edge with white Ukrainian text:
+Зареєструйтесь безкоштовно · 29.09–01.10 · 19:00
+A blank square in the top right reserved for a real uploaded KEVIN logo PNG — do not generate a logo.
+DO NOT: no existing furniture brand names or marks, no colour beyond the single orange accent, no 3D, no shading.
+crisp legible Ukrainian typography, no outer quotation marks</pre>
+      <div class="alt"><div class="alt-h"><span>Ресайз 9:16</span><button class="copy sm">Копіювати 9:16</button></div>
+        <pre class="copysrc">Flat art-directed graphic design layout, 9:16 vertical, designed as a flat-pack assembly instruction sheet in clean line-art style on plain white — not a photograph, not a 3D render. All critical content in the TOP 70%; the bottom 30% is empty white.
+Thin black outline illustrations, no shading, no colour except one accent.
+At the top, a small black Ukrainian title:
+ІНСТРУКЦІЯ ЗІ ЗБИРАННЯ
+Below it, larger and bolder, Ukrainian:
+СТРАТЕГІЯ НМТ-2027
+A parts list box drawn as a thin outlined rectangle with three line-art items and Ukrainian labels:
+1x НАПРЯМ
+1x ЦІЛЬ У БАЛАХ
+1x ПЛАН ДО ТРАВНЯ
+Below it, three numbered assembly steps stacked vertically, each a thin outlined panel with simple line-art showing flat pieces joined into one document, step numbers 1, 2, 3 in circles.
+Under them, a line-art figure sitting calmly beside the assembled document with a Ukrainian caption:
+Час збирання: 3 вечори
+One orange #F2994A accent: a rounded CTA bar at the boundary of the top-70% zone with white Ukrainian text:
+Зареєструйтесь безкоштовно · 29.09–01.10 · 19:00
+A blank square in the top right reserved for a real uploaded KEVIN logo PNG — do not generate a logo.
+DO NOT: no existing furniture brand names, no colour beyond the orange accent, no 3D, no shading.
+crisp legible Ukrainian typography, no outer quotation marks</pre>
+      </div>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-head"><div class="card-title"><span class="tag">H6</span>Прогноз погоди на навчальний рік
+      <span class="hint">Хук: знайомий віджет із незнайомим змістом. Гіпотеза: формат прогнозу зупиняє скрол, бо мозок читає його автоматично.</span></div><button class="copy">Копіювати 1:1</button></div>
+    <div class="body"><pre class="copysrc">Flat art-directed graphic design layout, 1:1 square, designed as a clean weather-app forecast widget — flat UI, not a photograph, not a 3D render.
+Background: a flat two-stop vertical gradient from deep navy #1A2233 to slightly lighter navy, even and banding-free, no texture.
+A large rounded card with a subtle lighter navy fill occupies most of the canvas.
+Card header, small white uppercase Ukrainian text with wide letter spacing:
+ПРОГНОЗ НА НАВЧАЛЬНИЙ РІК
+Below it, a row of four forecast columns, each with a simple flat white weather icon, a Ukrainian month label and a value:
+ЖОВТЕНЬ — small cloud icon — спокійно
+ГРУДЕНЬ — cloud with rain icon — хмарно
+ЛЮТИЙ — storm icon — шторм · перший пробний
+ТРАВЕНЬ — sun icon — залежить від вас
+The storm column is highlighted with a bright orange #F2994A rounded outline.
+Below the row, a white rounded alert bar with dark navy Ukrainian text, styled like a weather warning:
+ПОПЕРЕДЖЕННЯ: лютневий шторм проходять тільки ті, хто вийшов з плану у вересні
+At the bottom of the card, a flat orange #F2994A rounded CTA block with dark navy Ukrainian text in two lines:
+Зареєструйтесь безкоштовно
+Марафон 29.09–01.10, 19:00
+A blank square in the top right of the card reserved for a real uploaded KEVIN logo PNG — do not generate a logo.
+DO NOT: no existing weather-app branding, no photographs of sky, no 3D, no glow, no lens flare. Flat UI only.
+crisp legible Ukrainian typography, no outer quotation marks</pre>
+      <div class="alt"><div class="alt-h"><span>Ресайз 9:16</span><button class="copy sm">Копіювати 9:16</button></div>
+        <pre class="copysrc">Flat art-directed graphic design layout, 9:16 vertical, designed as a clean weather-app forecast screen — flat UI, not a photograph, not a 3D render. All critical content in the TOP 70%; the bottom 30% is empty background.
+Background: flat two-stop vertical gradient from deep navy #1A2233 to slightly lighter navy, even, no texture.
+A large rounded card fills the upper area.
+Card header, small white uppercase Ukrainian text with wide letter spacing:
+ПРОГНОЗ НА НАВЧАЛЬНИЙ РІК
+Below, four forecast rows stacked vertically, each with a flat white weather icon on the left, a Ukrainian month label and a value:
+ЖОВТЕНЬ — cloud — спокійно
+ГРУДЕНЬ — rain — хмарно
+ЛЮТИЙ — storm — шторм · перший пробний
+ТРАВЕНЬ — sun — залежить від вас
+The storm row is highlighted with a bright orange #F2994A rounded outline.
+Below, a white rounded alert bar with dark navy Ukrainian text styled as a weather warning:
+ПОПЕРЕДЖЕННЯ: лютневий шторм проходять тільки ті, хто вийшов з плану у вересні
+At the boundary of the top-70% zone, a flat orange #F2994A rounded CTA block with dark navy Ukrainian text:
+Зареєструйтесь безкоштовно · 29.09–01.10, 19:00
+A blank square in the top right reserved for a real uploaded KEVIN logo PNG — do not generate a logo.
+DO NOT: no existing weather-app branding, no sky photographs, no 3D, no glow.
+crisp legible Ukrainian typography, no outer quotation marks</pre>
+      </div>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-head"><div class="card-title"><span class="tag b">H7</span>Банківський застосунок — списання за контракт
+      <span class="hint">Хук: сповіщення про переказ, якого ще не було. Гіпотеза: найсильніший фінансовий тригер на ЛПР — побачити суму в рідному інтерфейсі.</span></div><button class="copy">Копіювати 9:16</button></div>
+    <div class="metaline"><b>Увага:</b> Meta інколи ріже імітацію банківських інтерфейсів. Тримайте цей креатив не єдиним у зв'язці й не додавайте жодних реальних банківських знаків — у промпті це заборонено.</div>
+    <div class="body"><pre class="copysrc">Flat art-directed graphic design layout, 9:16 vertical, designed as a generic mobile banking app transaction screen — flat UI, not a photograph, not a 3D render, and not resembling any existing bank. All critical content in the TOP 70%; the bottom 30% is empty background.
+Background: flat very light grey #F2F3F5.
+A large white rounded card fills the upper area with a soft shadow, styled as a transaction detail screen.
+At the top of the card, a flat bordo #6B2C2C circle with a white downward arrow icon, and beneath it a large dark navy #1A2233 amount:
+− 360 000 ₴
+Under the amount, small grey Ukrainian label text:
+Переказ виконано
+Below, a list of detail rows with thin separators, small grey Ukrainian labels on the left and dark navy values on the right:
+Отримувач — УНІВЕРСИТЕТ · КОНТРАКТ
+Призначення — 4 роки навчання
+Підстава — не вистачило 18 балів
+Дата — ЧЕРВЕНЬ 2027
+Across the card, a flat bordo rounded banner with white Ukrainian text:
+ЦЬОГО ПЕРЕКАЗУ МОЖЕ НЕ БУТИ
+Below the card, a flat teal #1F7A8C rounded CTA block with white Ukrainian text in two lines:
+За 3 вечори складемо стратегію на 180+
+Зареєструйтесь безкоштовно · 29.09–01.10, 19:00
+A blank square in the top right of the card reserved for a real uploaded KEVIN logo PNG — do not generate a logo.
+DO NOT: no existing bank names, logos, colours or card designs, no photographs, no 3D, no glow. Generic flat UI only.
+crisp legible Ukrainian typography, no outer quotation marks</pre>
+      <div class="alt"><div class="alt-h"><span>Ресайз 1:1</span><button class="copy sm">Копіювати 1:1</button></div>
+        <pre class="copysrc">Flat art-directed graphic design layout, 1:1 square, designed as a generic mobile banking transaction card — flat UI, not a photograph, not a 3D render, not resembling any existing bank.
+Background: flat very light grey #F2F3F5.
+A white rounded card centred with a soft shadow.
+At the top of the card, a flat bordo #6B2C2C circle with a white downward arrow icon, and a large dark navy #1A2233 amount:
+− 360 000 ₴
+Under it, small grey Ukrainian label text:
+Переказ виконано
+Below, detail rows with thin separators, grey Ukrainian labels and dark navy values:
+Отримувач — УНІВЕРСИТЕТ · КОНТРАКТ
+Підстава — не вистачило 18 балів
+Дата — ЧЕРВЕНЬ 2027
+A flat bordo rounded banner across the card with white Ukrainian text:
+ЦЬОГО ПЕРЕКАЗУ МОЖЕ НЕ БУТИ
+Below the card, a flat teal #1F7A8C rounded CTA block with white Ukrainian text in two lines:
+За 3 вечори складемо стратегію на 180+
+Зареєструйтесь безкоштовно · 29.09–01.10, 19:00
+A blank square in the top right reserved for a real uploaded KEVIN logo PNG — do not generate a logo.
+DO NOT: no existing bank names, logos or colours, no photographs, no 3D, no glow.
+crisp legible Ukrainian typography, no outer quotation marks</pre>
+      </div>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-head"><div class="card-title"><span class="tag b">H8</span>Медичний висновок — діагностика підготовки
+      <span class="hint">Хук: бланк аналізів із показниками підготовки. Гіпотеза: формат висновку сприймається як об'єктивна оцінка, а не як думка школи.</span></div><button class="copy">Копіювати 4:5</button></div>
+    <div class="body"><pre class="copysrc">Photorealistic 4:5 image of a real printed laboratory results form on white paper lying on a flat cream #FEF3E2 surface, shot from directly above, soft even daylight, visible paper texture, a slight curl at one corner and one staple in the top left.
+Printed on the form in clean office type, Ukrainian text laid out as a real lab report:
+Header, left aligned, small grey type:
+ВИСНОВОК ЗА РЕЗУЛЬТАТАМИ ОБСТЕЖЕННЯ
+Larger dark navy #1A2233 title:
+ПІДГОТОВКА ДО НМТ-2027
+A ruled table with four columns and Ukrainian headers: ПОКАЗНИК · РЕЗУЛЬТАТ · НОРМА · ВІДХИЛЕННЯ
+Rows filled in, with the deviation column values printed in red #E8232A:
+Напрям — не визначено — обрано — критично
+Ціль у балах — 180 приблизно — під спеціальність — відхилення
+Точка А — невідома — виміряна — критично
+План на рік — відсутній — по місяцях — критично
+Години на тиждень — хаотично — розкладені — відхилення
+Below the table, a boxed conclusion block with dark navy Ukrainian text:
+ВИСНОВОК: підготовка триває, результат не прогнозований.
+Рекомендовано скласти стратегію до кінця вересня.
+A red rubber-stamp impression rotated slightly at the bottom right with Ukrainian text:
+ОБСТЕЖЕННЯ БЕЗКОШТОВНЕ
+At the bottom of the form, printed footer in Ukrainian:
+МАРАФОН 29.09–01.10 · 19:00 · ЗАРЕЄСТРУЙТЕСЬ ЗАРАЗ
+A blank square area in the top right of the form reserved for a real uploaded KEVIN logo PNG — do not generate a logo.
+DO NOT: no real clinic names, no medical brand marks, no photographs of people, no 3D.
+crisp legible Ukrainian typography, no outer quotation marks</pre>
+      <div class="alt"><div class="alt-h"><span>Ресайз 9:16</span><button class="copy sm">Копіювати 9:16</button></div>
+        <pre class="copysrc">Photorealistic 9:16 vertical image of a real printed laboratory results form on white paper against a flat cream #FEF3E2 background, shot straight on, soft daylight, visible paper texture, one staple in the top left. The form fills the TOP 72%; the bottom 28% is empty background for Meta Stories UI.
+Printed in clean office type, Ukrainian text as a real lab report:
+Small grey header:
+ВИСНОВОК ЗА РЕЗУЛЬТАТАМИ ОБСТЕЖЕННЯ
+Larger dark navy #1A2233 title:
+ПІДГОТОВКА ДО НМТ-2027
+A ruled table with Ukrainian headers: ПОКАЗНИК · РЕЗУЛЬТАТ · НОРМА, deviations printed in red #E8232A:
+Напрям — не визначено — обрано
+Ціль у балах — 180 приблизно — під спеціальність
+Точка А — невідома — виміряна
+План на рік — відсутній — по місяцях
+Below, a boxed conclusion with dark navy Ukrainian text:
+ВИСНОВОК: підготовка триває, результат не прогнозований.
+Рекомендовано скласти стратегію до кінця вересня.
+A red rubber-stamp impression rotated slightly with Ukrainian text:
+ОБСТЕЖЕННЯ БЕЗКОШТОВНЕ
+Printed footer in Ukrainian:
+МАРАФОН 29.09–01.10 · 19:00 · ЗАРЕЄСТРУЙТЕСЬ ЗАРАЗ
+A blank square in the top right reserved for a real uploaded KEVIN logo PNG — do not generate a logo.
+DO NOT: no real clinic names, no medical brand marks, no photographs of people.
+crisp legible Ukrainian typography, no outer quotation marks</pre>
+      </div>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-head"><div class="card-title"><span class="tag">H9</span>Трекер — три вечори, три галочки
+      <span class="hint">Хук: незакритий чек-ліст. Гіпотеза: порожня третя клітинка тягне закрити її сильніше за будь-який заклик.</span></div><button class="copy">Копіювати 1:1</button></div>
+    <div class="body"><pre class="copysrc">Flat art-directed graphic design layout, 1:1 square, designed as a minimal habit-tracker card — flat UI, not a photograph, not a 3D render.
+Background: flat warm off-white #F7F2E8 with a faint grid of thin lines at 6% opacity.
+Centred, a large rounded white card with a soft shadow and a thin grey outline.
+Card title in dark navy #1A2233 Ukrainian type:
+СТРАТЕГІЯ НМТ-2027
+Under it, small grey Ukrainian caption:
+3 вечори · 29.09–01.10
+Three large rounded checkbox rows stacked with generous spacing. The first two are filled teal #1F7A8C with a white check mark; the third is empty with a dashed grey outline and a faint pulse ring around it. Dark navy Ukrainian labels beside them:
+Напрям і 4-й предмет
+Ціль у балах і точка А
+План до травня
+A thin vertical connector line links the three checkboxes.
+Below the rows, a progress line with a small grey Ukrainian label:
+2 з 3 — стратегія неповна
+At the bottom of the card, a flat orange #F2994A rounded CTA block with dark navy Ukrainian text in two lines:
+Зареєструйтесь безкоштовно
+Щодня о 19:00 · запису не буде
+A blank square in the top right of the card reserved for a real uploaded KEVIN logo PNG — do not generate a logo.
+DO NOT: no 3D, no glow, no gradients, no shadows on the type, no app store branding. Flat UI only.
+crisp legible Ukrainian typography, no outer quotation marks</pre>
+      <div class="alt"><div class="alt-h"><span>Ресайз 9:16</span><button class="copy sm">Копіювати 9:16</button></div>
+        <pre class="copysrc">Flat art-directed graphic design layout, 9:16 vertical, designed as a minimal habit-tracker screen — flat UI, not a photograph, not a 3D render. All critical content in the TOP 70%; the bottom 30% is empty background.
+Background: flat warm off-white #F7F2E8 with a faint grid at 6% opacity.
+A large rounded white card with a soft shadow fills the upper area.
+Card title in dark navy #1A2233 Ukrainian type:
+СТРАТЕГІЯ НМТ-2027
+Small grey Ukrainian caption:
+3 вечори · 29.09–01.10
+Three large rounded checkbox rows stacked with generous spacing: the first two filled teal #1F7A8C with white check marks, the third empty with a dashed grey outline and a faint pulse ring. Dark navy Ukrainian labels:
+Напрям і 4-й предмет
+Ціль у балах і точка А
+План до травня
+A thin vertical connector line links them.
+Below, a progress line with a small grey Ukrainian label:
+2 з 3 — стратегія неповна
+At the boundary of the top-70% zone, a flat orange #F2994A rounded CTA block with dark navy Ukrainian text in two lines:
+Зареєструйтесь безкоштовно
+Щодня о 19:00 · запису не буде
+A blank square in the top right reserved for a real uploaded KEVIN logo PNG — do not generate a logo.
+DO NOT: no 3D, no glow, no gradients, no shadows on the type.
+crisp legible Ukrainian typography, no outer quotation marks</pre>
+      </div>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-head"><div class="card-title"><span class="tag b">H10</span>Друкований лист — офіційне повідомлення родині
+      <span class="hint">Хук: конверт, який відкривають. Гіпотеза: формат офіційного листа сприймається як адресований особисто, а не масово.</span></div><button class="copy">Копіювати 4:5</button></div>
+    <div class="body"><pre class="copysrc">Photorealistic 4:5 image of a real typewritten letter on cream #F5F1EA paper lying on a dark walnut desk, shot from directly above, warm side light, visible paper fibre, typewriter ink texture with slightly uneven letter pressure, one horizontal fold crease across the middle. An opened kraft envelope lies partly under the sheet.
+Typed on the letter in monospaced typewriter type, Ukrainian text:
+Right-aligned at the top, small:
+29 вересня 2026
+Left, addressed line:
+Родині одинадцятикласника
+Body paragraphs, typed:
+Повідомляємо, що до НМТ-2027 залишається дев'ять місяців.
+За цей час дитина або вийде на свої 180+, або напише той бал,
+який дає поточна підготовка. Третього варіанту немає.
+Що робити далі — розберемо за три вечори:
+напрям, ціль у балах, покроковий план до травня.
+Участь безкоштовна. Беремо сто родин.
+Запису не буде.
+A red #E8232A rubber-stamp impression rotated slightly across the lower half with Ukrainian text:
+ТЕРМІНОВО
+Typed at the bottom of the letter:
+29.09–01.10 · 19:00 · ЗАРЕЄСТРУЙТЕСЬ ЗАРАЗ
+A blank square area at the bottom right of the sheet reserved for a real uploaded KEVIN logo PNG — do not generate a logo.
+DO NOT: no government or official emblems, no signatures, no seals beyond the plain red stamp, no 3D.
+crisp legible Ukrainian typography, no outer quotation marks</pre>
+      <div class="alt"><div class="alt-h"><span>Ресайз 9:16</span><button class="copy sm">Копіювати 9:16</button></div>
+        <pre class="copysrc">Photorealistic 9:16 vertical image of a real typewritten letter on cream #F5F1EA paper held upright against a dark walnut surface, warm side light, visible paper fibre, typewriter ink texture with uneven letter pressure, one fold crease. The letter fills the TOP 72%; the bottom 28% is dark surface for Meta Stories UI.
+Typed in monospaced typewriter type, Ukrainian text:
+Small right-aligned date at the top:
+29 вересня 2026
+Addressed line:
+Родині одинадцятикласника
+Typed body:
+До НМТ-2027 залишається дев'ять місяців.
+За цей час дитина або вийде на свої 180+,
+або напише той бал, який дає поточна підготовка.
+Третього варіанту немає.
+За три вечори розберемо напрям, ціль у балах
+і покроковий план до травня.
+Участь безкоштовна. Беремо сто родин.
+Запису не буде.
+A red #E8232A rubber-stamp impression rotated slightly with Ukrainian text:
+ТЕРМІНОВО
+Typed at the bottom of the letter:
+29.09–01.10 · 19:00 · ЗАРЕЄСТРУЙТЕСЬ ЗАРАЗ
+A blank square at the bottom right of the sheet reserved for a real uploaded KEVIN logo PNG — do not generate a logo.
+DO NOT: no government or official emblems, no signatures, no seals beyond the plain red stamp.
+crisp legible Ukrainian typography, no outer quotation marks</pre>
+      </div>
+    </div>
   </div>
 </section>
 
